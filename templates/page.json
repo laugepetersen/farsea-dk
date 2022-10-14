@@ -1,0 +1,12 @@
+{
+  "sections": {
+    "name": "Page Template",
+    "main": {
+      "type": "sample-section",
+      "settings": {}
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

@@ -22,8 +22,7 @@
     {{ content_for_header }}
   </head>
 
-  <body>
-    <h1>Theme: {{ theme.name }}</h1>
+  <body class="template-{{ template.name }}">
     {{ content_for_layout }}
   </body>
 </html>
