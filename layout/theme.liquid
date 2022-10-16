@@ -8,6 +8,8 @@
     <link rel="canonical" href="{{ canonical_url }}">
     <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
 
+    {% render 'meta' %}
+
     <title>
       {{ page_title }}
       {%- if current_tags %} &ndash; tagged "{{ current_tags | join: ', ' }}"{% endif -%}
@@ -19,10 +21,21 @@
       <meta name="description" content="{{ page_description | escape }}">
     {% endif %}
     
+    {% comment %} Shopify Default {% endcomment %}
     {{ content_for_header }}
   </head>
 
   <body class="template-{{ template.name }}">
-    {{ content_for_layout }}
+
+    {% section 'pre-header' %}
+    {% section 'header' %}
+
+    <main>
+      {% comment %} Shopify Default {% endcomment %}
+      {{ content_for_layout }}
+    </main>
+
+    {% section 'footer' %}
+    
   </body>
 </html>
