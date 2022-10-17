@@ -1,4 +1,4 @@
-<div id="pre-header">
+<div id="pre-header" class="text-xl">
   free shipping | 1-3 dages levering | fremragende på trustpilot
 </div>
 
@@ -9,22 +9,46 @@
     {
       "label": "Background",
       "id": "background",
-      "type": "color",
-      "default": "#000000"
+      "type": "color"
     }
   ],
   "blocks": [
     {
-      "name": "Item",
-      "type": "item",
+      "name": "Title",
+      "type": "title",
       "settings": [
         {
-          "label": "Item text",
-          "id": "item-text",
+          "label": "Title",
+          "id": "title",
           "type": "text"
         }
       ]
     }
-  ]
+  ],
+  "default": {
+    "settings": {
+      "background": "#333333"
+    },
+    "blocks": [
+      {
+        "type": "title",
+        "settings": {
+          "title": "Fremragende på TrustPilot"
+        }
+      },
+      {
+        "type": "title",
+        "settings": {
+          "title": "Fri fragt fra 600 kr."
+        }
+      },
+      {
+        "type": "title",
+        "settings": {
+          "title": "1-3 dages levering"
+        }
+      }
+    ]
+  }
 }
 {% endschema %}
