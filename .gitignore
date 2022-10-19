@@ -9,5 +9,3 @@ ehthumbs.db
 Thumbs.db
 .vscode
 node_modules
-/snippets/vite-tag.liquid
-/snippets/vite-client.liquid
