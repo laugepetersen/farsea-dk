@@ -1,112 +1,70 @@
 <section>
-  <h1>image-banner.liquid</h1>
+  <h1>{{ section.settings.heading }}</h1>
 </section>
 
 {% schema %}
 {
   "name": "Hero Banner",
+  "limit": 1,
   "settings": [
-
-  ],
-  "blocks": [
     {
-      "name": "Heading",
-      "type": "heading",
-      "limit": 1,
-      "settings": [
-        {
-          "label": "Heading",
-          "id": "heading",
-          "type": "text",
-          "default": "Welcome to our store!"
-        }
-      ]
-    },
-    {
-      "name": "Text",
+      "label": "Heading",
+      "id": "heading",
       "type": "text",
-      "limit": 1,
-      "settings": [
-        {
-          "label": "Text",
-          "id": "text",
-          "type": "text",
-          "default": "Lorem ipsum dolor..."
-        }
-      ]
+      "default": "Welcome to our store!"
     },
     {
-      "type": "buttons",
-      "name": "Buttons",
-      "limit": 1,
-      "settings": [
-        {
-          "type": "header",
-          "content": "Button 1"
-        },
-        {
-          "type": "paragraph",
-          "content": "This is en example [learn more](https://shopify.dev/themes/architecture/settings/sidebar-settings)"
-        },
-        {
-          "label": "Label",
-          "id": "button_label_1",
-          "type": "text",
-          "default": "Shop all"
-        },
-        {
-          "label": "Button Link",
-          "id": "button_link_1",
-          "type": "url"
-        },
-        {
-          "label": "Open in new tab",
-          "id": "button_target_1",
-          "type": "checkbox",
-          "default": false
-        },
-        {
-          "type": "header",
-          "content": "Button 2"
-        },
-        {
-          "type": "paragraph",
-          "content": "This is en example [learn more](https://shopify.dev/themes/architecture/settings/sidebar-settings)"
-        },
-        {
-          "label": "Label",
-          "id": "button_label_2",
-          "type": "text",
-          "default": "Learn more"
-        },
-        {
-          "label": "Button Link",
-          "id": "button_link_2",
-          "type": "url"
-        },
-        {
-          "label": "Open in new tab",
-          "id": "button_target_2",
-          "type": "checkbox",
-          "default": false
-        }
-      ]
+      "label": "Text",
+      "id": "text",
+      "type": "text",
+      "default": "Lorem ipsum dolor..."
+    },
+    {
+      "type": "header",
+      "content": "Button 1"
+    },
+    {
+      "label": "Label",
+      "id": "button_label_1",
+      "type": "text",
+      "default": "Shop all"
+    },
+    {
+      "label": "Button Link",
+      "id": "button_link_1",
+      "type": "url"
+    },
+    {
+      "label": "Open in new tab",
+      "id": "button_target_1",
+      "type": "checkbox",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Button 2"
+    },
+    {
+      "label": "Label",
+      "id": "button_label_2",
+      "type": "text",
+      "default": "Learn more"
+    },
+    {
+      "label": "Button Link",
+      "id": "button_link_2",
+      "type": "url"
+    },
+    {
+      "label": "Open in new tab",
+      "id": "button_target_2",
+      "type": "checkbox",
+      "default": false
     }
   ],
   "presets": [
     {
-      "name": "Hero Banner",
-      "blocks": [
-        {
-          "type": "heading"
-        },
-        {
-          "type": "text"
-        },
-        {
-          "type": "buttons"
-        }
-      ]
+      "name": "Hero Banner"
     }
   ]
 }

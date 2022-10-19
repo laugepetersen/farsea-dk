@@ -1,5 +1,26 @@
-<div id="pre-header" class="text-xl">
-  free shipping | 1-3 dages levering | fremragende på trustpilot
+{% assign title_blocks = section.blocks | where: 'type', 'title' %}
+
+{% style %}
+  #pre-header {
+    background: {{ section.settings.background }};
+    color: {{ section.settings.text_color }};
+  }
+  #pre-header strong {
+    color: {{ section.settings.strong_color }}
+  }
+{% endstyle %}
+
+<div id="pre-header" class="text-xs uppercase tracking-wide h-8 grid place-items-center">
+  <div class="container flex justify-between">
+    {% for block in title_blocks %}
+      <div>
+        {{ block.settings.title }}
+      </div>
+    {% endfor %}
+  </div>
+</div>
+<div>
+  <h2>helo</h2>
 </div>
 
 {% schema %}
@@ -9,13 +30,27 @@
     {
       "label": "Background",
       "id": "background",
-      "type": "color"
+      "type": "color",
+      "default": "#0E1C37"
+    },
+    {
+      "label": "Text Color",
+      "id": "text_color",
+      "type": "color",
+      "default": "#FFFFFF"
+    },
+    {
+      "label": "Strong Color",
+      "id": "strong_color",
+      "type": "color",
+      "default": "#F3DA9F"
     }
   ],
   "blocks": [
     {
       "name": "Title",
       "type": "title",
+      "limit": 3,
       "settings": [
         {
           "label": "Title",
@@ -27,7 +62,7 @@
   ],
   "default": {
     "settings": {
-      "background": "#333333"
+      "background": "#0E1C37"
     },
     "blocks": [
       {

@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "vite",
-    "build": "vite build"
+    "build": "vite build",
+    "shopify": "npm run dev & shopify theme serve"
   },
   "repository": {
     "type": "git",
