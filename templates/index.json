@@ -28,11 +28,18 @@
           "settings": {
             "product": "royal-beluga"
           }
+        },
+        "b24bb027-03dd-4036-a45b-fc877f9a0f54": {
+          "type": "product-slide",
+          "settings": {
+            "product": "imperial-beluga"
+          }
         }
       },
       "block_order": [
         "5462fa69-5d50-4d59-bf87-15be7816cf38",
-        "5d7a29a6-a2af-460c-96e6-dc185f9681ee"
+        "5d7a29a6-a2af-460c-96e6-dc185f9681ee",
+        "b24bb027-03dd-4036-a45b-fc877f9a0f54"
       ],
       "settings": {
       }
@@ -44,11 +51,154 @@
         "link": "",
         "new_tab": false
       }
+    },
+    "71eb1a2b-e2fc-42c0-86a4-a794d4fd8afe": {
+      "type": "text-image",
+      "blocks": {
+        "template--15707237089418__71eb1a2b-e2fc-42c0-86a4-a794d4fd8afe-1668980055d6ca887e-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/model-with-leather-jacket-over-shoulders.jpg"
+          }
+        },
+        "template--15707237089418__71eb1a2b-e2fc-42c0-86a4-a794d4fd8afe-1668980055d6ca887e-1": {
+          "type": "content",
+          "settings": {
+            "heading": "Lorem Ipsum Dolor Sit Amat.",
+            "richtext": "<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p>",
+            "button_title_1": "",
+            "button_link_1": "",
+            "button_title_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15707237089418__71eb1a2b-e2fc-42c0-86a4-a794d4fd8afe-1668980055d6ca887e-0",
+        "template--15707237089418__71eb1a2b-e2fc-42c0-86a4-a794d4fd8afe-1668980055d6ca887e-1"
+      ],
+      "settings": {
+      }
+    },
+    "89729f07-af56-4292-aaa9-b9aa1181abd8": {
+      "type": "text-image",
+      "blocks": {
+        "template--15707237089418__89729f07-af56-4292-aaa9-b9aa1181abd8-1668980055d6ca887e-1": {
+          "type": "content",
+          "settings": {
+            "heading": "Lorem Ipsum Dolor Sit Amat.",
+            "richtext": "<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p>",
+            "button_title_1": "",
+            "button_link_1": "",
+            "button_title_2": "",
+            "button_link_2": ""
+          }
+        },
+        "template--15707237089418__89729f07-af56-4292-aaa9-b9aa1181abd8-1668980055d6ca887e-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/model-with-leather-jacket-over-shoulders.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "template--15707237089418__89729f07-af56-4292-aaa9-b9aa1181abd8-1668980055d6ca887e-1",
+        "template--15707237089418__89729f07-af56-4292-aaa9-b9aa1181abd8-1668980055d6ca887e-0"
+      ],
+      "settings": {
+      }
+    },
+    "afda8a31-94c9-4953-8c09-c06640d9c20b": {
+      "type": "testimonials",
+      "blocks": {
+        "template--15707237089418__afda8a31-94c9-4953-8c09-c06640d9c20b-1668980055d8361d39-0": {
+          "type": "testimonial",
+          "settings": {
+            "rating": 5,
+            "quote": "jiojoijopjopj oijiopj iopj opjiop joi jpoij iopj po jo jo jpoi jopi jpo oi",
+            "name": "jiojpo jopij",
+            "below_name_text": "jiopjoijoij",
+            "profile": "shopify:\/\/shop_images\/model-with-leather-jacket-over-shoulders.jpg"
+          }
+        },
+        "template--15707237089418__afda8a31-94c9-4953-8c09-c06640d9c20b-1668980055d8361d39-1": {
+          "type": "testimonial",
+          "settings": {
+            "rating": 5,
+            "quote": "joiojpo jpoi jpoj poij pioj poijpoijpo ijiop jpoi io",
+            "name": "jiopjjoip",
+            "below_name_text": "jiopjoijoi",
+            "profile": "shopify:\/\/shop_images\/model-with-leather-jacket-over-shoulders.jpg"
+          }
+        },
+        "template--15707237089418__afda8a31-94c9-4953-8c09-c06640d9c20b-1668980055d8361d39-2": {
+          "type": "testimonial",
+          "settings": {
+            "rating": 5,
+            "quote": "jiojpoijpoijoij",
+            "name": "jioopjopij",
+            "below_name_text": "jiopjoijo",
+            "profile": "shopify:\/\/shop_images\/model-with-leather-jacket-over-shoulders.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "template--15707237089418__afda8a31-94c9-4953-8c09-c06640d9c20b-1668980055d8361d39-0",
+        "template--15707237089418__afda8a31-94c9-4953-8c09-c06640d9c20b-1668980055d8361d39-1",
+        "template--15707237089418__afda8a31-94c9-4953-8c09-c06640d9c20b-1668980055d8361d39-2"
+      ],
+      "settings": {
+        "heading": "",
+        "button_text": "",
+        "button_link": ""
+      }
+    },
+    "0a4ef183-d026-4f9a-b44e-d2e758fc8d28": {
+      "type": "faq",
+      "blocks": {
+        "template--15707237089418__0a4ef183-d026-4f9a-b44e-d2e758fc8d28-166898005550bf07a6-0": {
+          "type": "item",
+          "settings": {
+            "title": "Question Title",
+            "text": "<p>Content to the question...<\/p>"
+          }
+        },
+        "template--15707237089418__0a4ef183-d026-4f9a-b44e-d2e758fc8d28-166898005550bf07a6-1": {
+          "type": "item",
+          "settings": {
+            "title": "Question Title",
+            "text": "<p>Content to the question...<\/p>"
+          }
+        },
+        "template--15707237089418__0a4ef183-d026-4f9a-b44e-d2e758fc8d28-166898005550bf07a6-2": {
+          "type": "item",
+          "settings": {
+            "title": "Question Title",
+            "text": "<p>Content to the question...<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--15707237089418__0a4ef183-d026-4f9a-b44e-d2e758fc8d28-166898005550bf07a6-0",
+        "template--15707237089418__0a4ef183-d026-4f9a-b44e-d2e758fc8d28-166898005550bf07a6-1",
+        "template--15707237089418__0a4ef183-d026-4f9a-b44e-d2e758fc8d28-166898005550bf07a6-2"
+      ],
+      "settings": {
+        "heading": "Lorem Ipsum",
+        "text": "<p>Start writing...<\/p>",
+        "heading_besides_button": "jiojjpj oijiopj oip j?",
+        "button_text": "jiojiojiojp",
+        "button_link": "shopify:\/\/collections"
+      }
     }
   },
   "order": [
     "e42836a0-f697-4aa9-b6c3-c8224f25182e",
     "358736bb-2d64-4c1a-ac4f-e92e57bb736c",
-    "a5bc0068-270a-4c37-b50a-616d124941f7"
+    "a5bc0068-270a-4c37-b50a-616d124941f7",
+    "71eb1a2b-e2fc-42c0-86a4-a794d4fd8afe",
+    "89729f07-af56-4292-aaa9-b9aa1181abd8",
+    "afda8a31-94c9-4953-8c09-c06640d9c20b",
+    "0a4ef183-d026-4f9a-b44e-d2e758fc8d28"
   ]
 }
