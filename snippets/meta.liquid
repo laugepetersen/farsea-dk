@@ -1,0 +1,14 @@
+{% # Favicon %}
+{%- if settings.favicon != blank -%}
+  <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 32, height: 32 }}">
+{%- endif -%}
+
+{% comment %} 
+  vite-plugin-shopify tags
+  https://github.com/barrel/barrel-shopify/tree/main/packages/vite-plugin-shopify 
+{% endcomment %}
+{% unless request.design_mode %}
+  {%- render 'vite-client' -%}
+{% endunless %}
+{%- render 'vite-tag' with 'theme.scss' -%}
+{%- render 'vite-tag' with 'theme.js' -%}

@@ -1,104 +1,60 @@
-@font-face {
-  font-family: 'ITC Avant Garde';
-  src: url('../fonts/ITCAvantGardeStd-Md.woff2') format('woff2'),
-      url('../fonts/ITCAvantGardeStd-Md.woff') format('woff');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
+@import './fonts.scss';
 
-@font-face {
-  font-family: 'Italianno';
-  src: url('../fonts/Italianno-Regular.woff2') format('woff2'),
-      url('../fonts/Italianno-Regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
-
-@font-face {
-  font-family: 'Work Sans';
-  src: url('../fonts/WorkSans-Regular.woff2') format('woff2'),
-      url('../fonts/WorkSans-Regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Work Sans';
-  src: url('../fonts/WorkSans-Medium.woff2') format('woff2'),
-      url('../fonts/WorkSans-Medium.woff') format('woff');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Work Sans';
-  src: url('../fonts/WorkSans-SemiBold.woff2') format('woff2'),
-      url('../fonts/WorkSans-SemiBold.woff') format('woff');
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Work Sans';
-  src: url('../fonts/WorkSans-Italic.woff2') format('woff2'),
-      url('../fonts/WorkSans-Italic.woff') format('woff');
-  font-weight: normal;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Work Sans';
-  src: url('../fonts/WorkSans-MediumItalic.woff2') format('woff2'),
-      url('../fonts/WorkSans-MediumItalic.woff') format('woff');
-  font-weight: 500;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Work Sans';
-  src: url('../fonts/WorkSans-SemiBoldItalic.woff2') format('woff2'),
-      url('../fonts/WorkSans-SemiBoldItalic.woff') format('woff');
-  font-weight: 600;
-  font-style: italic;
-  font-display: swap;
-}
-
-// * {
-//   -webkit-font-smoothing: antialiased;
-//   -moz-osx-font-smoothing: grayscale;
-// }
 
 body {
-  @apply font-body;
+  @apply font-body text-sm md:text-base;
 }
 
-h1 {
-  @apply text-2xl md:text-3xl lg:text-4xl font-em;
+main {
+  section.padding {
+    @apply py-16;
+  }
+
+  section.margin {
+    @apply my-16;
+  }
 }
 
-h2 {
-  @apply text-xl md:text-2xl lg:text-3xl;
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  @apply font-heading font-normal;
 }
 
-h3 {
-  @apply text-lg md:text-xl lg:text-2xl;
+h1,
+.h1 {
+  @apply text-2xl md:text-3xl lg:text-5xl mb-3;
 }
 
-h4 {
-  @apply text-base md:text-lg lg:text-xl;
+h2,
+.h2 {
+  @apply text-xl md:text-2xl lg:text-4xl mb-3;
 }
 
-h5 {
-  @apply text-sm md:text-base lg:text-lg;
+h3,
+.h3 {
+  @apply text-lg md:text-xl lg:text-3xl mb-2;
 }
 
-h6 {
-  @apply text-xs md:text-sm lg:text-base;
+h4,
+.h4 {
+  @apply text-base md:text-lg lg:text-xl mb-2;
+}
+
+h5,
+.h5 {
+  @apply text-sm md:text-base lg:text-lg mb-1;
+}
+
+h6,
+.h6 {
+  @apply text-xs md:text-sm lg:text-base mb-1;
+}
+
+strong {
+  @apply font-semibold;
 }

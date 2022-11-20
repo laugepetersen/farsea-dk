@@ -8,12 +8,27 @@
     "theme_support_url": "https:\/\/support.shopify.com\/"
   },
   {
+    "name": "Identity",
+    "settings": [
+      {
+        "label": "Favicon",
+        "id": "favicon",
+        "type": "image_picker"
+      },
+      {
+        "label": "Default Logo",
+        "id": "default_logo",
+        "type": "image_picker"
+      }
+    ]
+  },
+  {
     "name": "Colors",
     "settings": [
       {
-        "type": "color",
-        "id": "theme-background",
         "label": "Theme Background",
+        "id": "theme-background",
+        "type": "color",
         "default": "#000000"
       }
     ]

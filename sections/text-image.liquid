@@ -1,0 +1,121 @@
+{% assign ss = section.settings %}
+
+<div class="grid grid-cols-2">
+  {% for block in section.blocks %}
+    {% case block.type %}
+      {% when 'image' %}
+        <div class="relative min-h-[500px] h-[80vh]">
+          {% if block.settings.image %}
+            {{ block.settings.image | image_url: width: 900 | image_tag: class: 'object-cover absolute top-0 left-0 w-full h-full' }}
+          {% endif %}
+        </div>
+      {% when 'content' %}
+        <div class="px-[10%] py-20 grid place-items-center relative">
+          {% if section.blocks[0].type == 'content' %}
+            {% render 'icon', icon: 'triangle', class: "absolute top-0 left-0 rotate-0 w-14 h-14 text-pearl-500" %}
+          {% else %}
+            {% render 'icon', icon: 'triangle', class: "absolute top-0 right-0 rotate-90 w-14 h-14 text-pearl-500" %}
+          {% endif %}
+          <div class="max-w-[450px]">
+            <h2>{{ block.settings.heading }}</h2>
+            {{ block.settings.richtext }}
+            {%- if block.settings.button_link_1 or block.settings.button_link_2 -%}
+              <div class="mt-6">
+                {%- if block.settings.button_link_1 -%}
+                  {% render 'button', href: block.settings.button_link_1, title: block.settings.button_title_1, class: 'button secondary mr-1' -%}
+                {%- endif -%}
+                {%- if block.settings.button_link_2 -%}
+                  {%- render 'button', href: block.settings.button_link_2, title: block.settings.button_title_2, class: 'button secondary outline ml-1' -%}
+                {%- endif -%}
+              </div>
+            {% endif %}
+          </div>
+        </div>      
+    {% endcase %}
+  {% endfor %}
+</div>
+
+{% schema %}
+{
+  "name": "Text Image",
+  "class": "section-text-image",
+  "tag": "section",
+  "settings": [
+
+  ],
+  "blocks": [
+    {
+      "name": "Image",
+      "type": "image",
+      "limit": 1,
+      "settings": [
+        {
+          "label": "Image",
+          "id": "image",
+          "type": "image_picker"
+        }
+      ]
+    },
+    {
+      "name": "Content",
+      "type": "content",
+      "limit": 1,
+      "settings": [
+        {
+          "label": "Heading",
+          "id": "heading",
+          "type": "text",
+          "default": "Lorem Ipsum Dolor Sit Amat."
+        },
+        {
+          "label": "Rich Text",
+          "id": "richtext",
+          "type": "richtext",
+          "default": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        },
+        {
+          "type": "header",
+          "content": "Button 1"
+        },
+        {
+          "label": "Button Title 1",
+          "id": "button_title_1",
+          "type": "text"
+        },
+        {
+          "label": "Button link 1",
+          "id": "button_link_1",
+          "type": "url"
+        },
+        {
+          "type": "header",
+          "content": "Button 2"
+        },
+        {
+          "label": "Button Title 2",
+          "id": "button_title_2",
+          "type": "text"
+        },
+        {
+          "label": "Button link 2",
+          "id": "button_link_2",
+          "type": "url"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Text Image",
+      "blocks": [
+        {
+          "type": "image"
+        },
+        {
+          "type": "content"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

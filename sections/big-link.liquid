@@ -1,0 +1,45 @@
+{% liquid 
+  assign ss = section.settings
+  if ss.new_tab
+    assign button_target = '_blank'
+  else
+    assign button_target = ''
+  endif
+%}
+
+<div class="text-center">
+  <a href="{{ ss.url }}" target="{{ button_target }}" class="h1 group">
+    {{ ss.title }}
+    {% render 'icon', icon: 'arrow', class: 'relative top-[-12px] w-8 h-8 group-hover:w-10 h-10 transition-all duration-150 ease-out', iconClass: 'rotate-[135deg]' %}
+  </a>
+</div>
+
+{% schema %}
+{
+  "name": "Big Link",
+  "tag": "section",
+  "class": "section-big-link",
+  "settings": [
+    {
+      "label": "Title",
+      "id": "title",
+      "type": "text"
+    },
+    {
+      "label": "Link",
+      "id": "link",
+      "type": "url"
+    },
+    {
+      "label": "Open new tab",
+      "id": "new_tab",
+      "type": "checkbox"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Big Link"
+    }
+  ]
+}
+{% endschema %}

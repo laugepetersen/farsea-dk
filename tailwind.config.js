@@ -34,11 +34,27 @@ module.exports = {
       }
     },
     fontFamily: {
-      heading: ['ITC Avant Garde', 'Helvetica Neue', 'sans-serif'],
+      heading: ['Noe Display', 'serif'],
       body: ['Work Sans', 'sans-serif'],
-      em: ['Italianno', 'cursive']
     },
-    extend: {},
+    borderRadius: {
+      'none': '0',
+      'sm': '4px',
+      'md': '8px',
+      'lg': '16px',
+      'xl': '32px',
+      'max': '9999px'
+    },
+    extend: {
+      width: {
+        "screen": "100vw",
+        "max": "100%",
+      },
+      height: {
+        "screen": "100vh",
+        "max": "100%",
+      },
+    },
   },
   plugins: [],
 }

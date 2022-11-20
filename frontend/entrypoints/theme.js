@@ -1,1 +1,1 @@
-console.info("Successfully compiled theme with Vite!");
+import '../scripts/home.js'

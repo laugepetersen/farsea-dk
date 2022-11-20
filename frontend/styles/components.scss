@@ -1,5 +1,34 @@
-#pre-header {
-  strong {
-    @apply text-pearl-500;
+#shopify-section-header {
+  @apply h-16 bg-white shadow-md flex items-center top-0 left-0 z-50;
+}
+
+.button {
+  @apply px-6 py-3 rounded-sm inline-block font-medium;
+  border: 1.5px solid transparent;
+  &.primary {
+    @apply bg-pearl-500 text-ocean-500 border-pearl-500;
+  }
+  &.secondary {
+    @apply bg-ocean-500 border-ocean-500 text-white;
+    &.outline {
+      @apply text-ocean-500;
+    }
+  }
+  &.white {
+    @apply bg-white border-white text-ocean-500;
+    &.outline {
+      @apply text-white outline-0;
+    }
+  }
+  &.outline {
+    background-color: transparent!important;
+    outline: none;
+  }
+}
+
+.icon {
+  @apply w-6 h-6 inline-block;
+  svg {
+    @apply block max-w-full max-h-full;
   }
 }

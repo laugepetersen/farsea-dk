@@ -1,55 +1,47 @@
 {
-  "frontend/fonts/WorkSans-Regular.woff2": {
-    "file": "WorkSans-Regular.37d0ba05.woff2",
-    "src": "frontend/fonts/WorkSans-Regular.woff2"
-  },
-  "frontend/fonts/ITCAvantGardeStd-Md.woff2": {
-    "file": "ITCAvantGardeStd-Md.ffdb6a27.woff2",
-    "src": "frontend/fonts/ITCAvantGardeStd-Md.woff2"
-  },
-  "frontend/fonts/Italianno-Regular.woff2": {
-    "file": "Italianno-Regular.f136b9ba.woff2",
-    "src": "frontend/fonts/Italianno-Regular.woff2"
-  },
-  "frontend/fonts/WorkSans-MediumItalic.woff2": {
-    "file": "WorkSans-MediumItalic.462ae944.woff2",
-    "src": "frontend/fonts/WorkSans-MediumItalic.woff2"
+  "frontend/fonts/NoeDisplay-Regular.woff2": {
+    "file": "NoeDisplay-Regular.3dee6811.woff2",
+    "src": "frontend/fonts/NoeDisplay-Regular.woff2"
   },
   "frontend/fonts/WorkSans-Medium.woff2": {
     "file": "WorkSans-Medium.4b94eb75.woff2",
     "src": "frontend/fonts/WorkSans-Medium.woff2"
   },
-  "frontend/fonts/WorkSans-SemiBold.woff2": {
-    "file": "WorkSans-SemiBold.8c625572.woff2",
-    "src": "frontend/fonts/WorkSans-SemiBold.woff2"
+  "frontend/fonts/WorkSans-Regular.woff2": {
+    "file": "WorkSans-Regular.37d0ba05.woff2",
+    "src": "frontend/fonts/WorkSans-Regular.woff2"
   },
   "frontend/fonts/WorkSans-Italic.woff2": {
     "file": "WorkSans-Italic.d3a46107.woff2",
     "src": "frontend/fonts/WorkSans-Italic.woff2"
   },
+  "frontend/fonts/WorkSans-SemiBold.woff2": {
+    "file": "WorkSans-SemiBold.8c625572.woff2",
+    "src": "frontend/fonts/WorkSans-SemiBold.woff2"
+  },
+  "frontend/fonts/WorkSans-MediumItalic.woff2": {
+    "file": "WorkSans-MediumItalic.462ae944.woff2",
+    "src": "frontend/fonts/WorkSans-MediumItalic.woff2"
+  },
   "frontend/fonts/WorkSans-SemiBoldItalic.woff2": {
     "file": "WorkSans-SemiBoldItalic.e12498e3.woff2",
     "src": "frontend/fonts/WorkSans-SemiBoldItalic.woff2"
   },
-  "frontend/fonts/ITCAvantGardeStd-Md.woff": {
-    "file": "ITCAvantGardeStd-Md.e9b5e2d0.woff",
-    "src": "frontend/fonts/ITCAvantGardeStd-Md.woff"
-  },
-  "frontend/fonts/Italianno-Regular.woff": {
-    "file": "Italianno-Regular.aa8b2747.woff",
-    "src": "frontend/fonts/Italianno-Regular.woff"
+  "frontend/fonts/NoeDisplay-Regular.woff": {
+    "file": "NoeDisplay-Regular.c44c9ec8.woff",
+    "src": "frontend/fonts/NoeDisplay-Regular.woff"
   },
   "frontend/fonts/WorkSans-Regular.woff": {
     "file": "WorkSans-Regular.48b440c4.woff",
     "src": "frontend/fonts/WorkSans-Regular.woff"
   },
-  "frontend/fonts/WorkSans-MediumItalic.woff": {
-    "file": "WorkSans-MediumItalic.fd325cca.woff",
-    "src": "frontend/fonts/WorkSans-MediumItalic.woff"
-  },
   "frontend/fonts/WorkSans-Medium.woff": {
     "file": "WorkSans-Medium.dae9a11c.woff",
     "src": "frontend/fonts/WorkSans-Medium.woff"
+  },
+  "frontend/fonts/WorkSans-Italic.woff": {
+    "file": "WorkSans-Italic.4040639b.woff",
+    "src": "frontend/fonts/WorkSans-Italic.woff"
   },
   "frontend/fonts/WorkSans-SemiBold.woff": {
     "file": "WorkSans-SemiBold.b5db2462.woff",
@@ -59,17 +51,17 @@
     "file": "WorkSans-SemiBoldItalic.1b15bd5a.woff",
     "src": "frontend/fonts/WorkSans-SemiBoldItalic.woff"
   },
-  "frontend/fonts/WorkSans-Italic.woff": {
-    "file": "WorkSans-Italic.4040639b.woff",
-    "src": "frontend/fonts/WorkSans-Italic.woff"
+  "frontend/fonts/WorkSans-MediumItalic.woff": {
+    "file": "WorkSans-MediumItalic.fd325cca.woff",
+    "src": "frontend/fonts/WorkSans-MediumItalic.woff"
   },
   "frontend/entrypoints/theme.js": {
-    "file": "theme.765b16d7.js",
+    "file": "theme.032abd4d.js",
     "src": "frontend/entrypoints/theme.js",
     "isEntry": true
   },
   "frontend/entrypoints/theme.scss": {
-    "file": "theme.ba54c510.css",
+    "file": "theme.c1268e38.css",
     "src": "frontend/entrypoints/theme.scss",
     "isEntry": true
   }

@@ -1,0 +1,8 @@
+{%- liquid
+  if target == true
+    assign target_value = '_blank'
+  else
+    assign target_value = ''
+  endif 
+-%}
+<a class="{{ class }}" href="{{ href }}" target="{{ target_value }}">{{ title }}</a>
