@@ -1,6 +1,54 @@
 {
   "sections": {
+    "e42836a0-f697-4aa9-b6c3-c8224f25182e": {
+      "type": "hero-banner",
+      "settings": {
+        "heading": "Danmarks bedste kaviar",
+        "text": "Smag vores lækre kvalitet",
+        "desktop_image": "shopify:\/\/shop_images\/shopify-logo-window-with-plant.jpg",
+        "button_label_1": "Shop all",
+        "button_link_1": "",
+        "button_target_1": false,
+        "button_label_2": "Learn more",
+        "button_link_2": "",
+        "button_target_2": false
+      }
+    },
+    "358736bb-2d64-4c1a-ac4f-e92e57bb736c": {
+      "type": "products",
+      "blocks": {
+        "5462fa69-5d50-4d59-bf87-15be7816cf38": {
+          "type": "product-slide",
+          "settings": {
+            "product": "imperial-beluga"
+          }
+        },
+        "5d7a29a6-a2af-460c-96e6-dc185f9681ee": {
+          "type": "product-slide",
+          "settings": {
+            "product": "royal-beluga"
+          }
+        }
+      },
+      "block_order": [
+        "5462fa69-5d50-4d59-bf87-15be7816cf38",
+        "5d7a29a6-a2af-460c-96e6-dc185f9681ee"
+      ],
+      "settings": {
+      }
+    },
+    "a5bc0068-270a-4c37-b50a-616d124941f7": {
+      "type": "big-link",
+      "settings": {
+        "title": "Shop kaviar & tilbehør",
+        "link": "",
+        "new_tab": false
+      }
+    }
   },
   "order": [
+    "e42836a0-f697-4aa9-b6c3-c8224f25182e",
+    "358736bb-2d64-4c1a-ac4f-e92e57bb736c",
+    "a5bc0068-270a-4c37-b50a-616d124941f7"
   ]
 }
