@@ -1,33 +1,35 @@
-<div class="relative">
-{% assign i = 0 %}
-{% for block in section.blocks %}
-  {% case block.type %}
-    {% when 'product-slide' %}
-      {% assign i = i | plus: 1 %}
-      {% assign product = block.settings.product %}
-      <div class="product flex h-screen">
-        <div class="product-content w-[40%] h-max grid place-items-center">
-          <div class="px-[10%] py-20">
-            <div class="max-w-[350px]">
-              <p>Fra {{ product.price_min | money }}</p>
-              <h3 class="mt-2 mb-4">{{ product.title }}</h3>
-              <p>{{ product.description | truncatewords: 20 }}</p>
-              <a href="{{ product.url }}" class="button primary w-max text-center mt-6">Køb</a>
+<div class="py-4">
+  <div class="relative products-wrapper">
+  {% assign i = 0 %}
+  {% for block in section.blocks %}
+    {% case block.type %}
+      {% when 'product-slide' %}
+        {% assign i = i | plus: 1 %}
+        {% assign product = block.settings.product %}
+        <div class="product flex h-screen">
+          <div class="product-content w-[40%] h-full grid place-items-center">
+            <div class="px-[10%] py-20">
+              <div class="max-w-[350px]">
+                <p>Fra {{ product.price_min | money }}</p>
+                <h3 class="mt-2 mb-4">{{ product.title }}</h3>
+                <p>{{ product.description | truncatewords: 20 }}</p>
+                <a href="{{ product.url }}" class="button primary w-full text-center mt-6">Køb</a>
+              </div>
             </div>
           </div>
+          <div class="product-image w-[60%] h-full relative top-0 right-0 will-change-[position] pointer-events-none overflow-hidden" style="z-index: {{i}}">
+            <a href="{{ product.url }}" class="pointer-events-auto">
+              {% if i == 1 %}
+                {{ product.images[0] | image_url: width: 1400 | image_tag: class: "absolute block object-cover w-full h-full will-change-[height]" }}
+              {% else %}
+                {{ product.images[0] | image_url: width: 1400 | image_tag: class: "absolute block object-cover w-full h-[0px] will-change-[height]" }}
+              {% endif %}
+            </a>
+          </div>
         </div>
-        <div class="product-image w-[60%] h-max relative top-0 right-0 will-change-[position] pointer-events-none overflow-hidden" style="z-index: {{i}}">
-          <a href="{{ product.url }}" class="pointer-events-auto">
-            {% if i == 1 %}
-              {{ product.images[0] | image_url: width: 1400 | image_tag: class: "absolute block object-cover w-max h-max will-change-[height]" }}
-            {% else %}
-              {{ product.images[0] | image_url: width: 1400 | image_tag: class: "absolute block object-cover w-max h-[0px] will-change-[height]" }}
-            {% endif %}
-          </a>
-        </div>
-      </div>
-  {% endcase %}
-{% endfor %}
+    {% endcase %}
+  {% endfor %}
+  </div>
 </div>
 
 {% schema %}

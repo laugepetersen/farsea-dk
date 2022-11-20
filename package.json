@@ -31,6 +31,7 @@
     "vite-plugin-shopify": "^0.0.5"
   },
   "dependencies": {
-    "gsap": "^3.11.3"
+    "gsap": "^3.11.3",
+    "swiper": "^8.4.4"
   }
 }

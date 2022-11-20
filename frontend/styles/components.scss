@@ -32,3 +32,19 @@
     @apply block max-w-full max-h-full;
   }
 }
+
+.swiper {
+  .button-prev,
+  .button-next {
+    @apply w-10 h-10 rounded-full bg-white after:content-none border-solid border-ocean-500 border-[1px] absolute top-[50%] translate-y-[-50%] grid place-items-center z-10 text-ocean-500 cursor-pointer;
+    &.swiper-button-disabled {
+      @apply border-gray-50 text-gray-50;
+    }
+  }
+  .button-prev {
+    @apply left-[2%];
+  }
+  .button-next {
+    @apply right-[2%];
+  }
+}

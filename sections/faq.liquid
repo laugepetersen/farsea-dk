@@ -1,0 +1,118 @@
+{% assign ss = section.settings %}
+
+<div class="py-section my-section">
+  <div class="container">
+    <div class="grid max-w-[1200px] mx-auto grid-cols-[40%_60%]">
+
+      <div class="pr-[10%]">
+        <h2>{{ ss.heading }}</h2>
+        {{ ss.text }}
+      </div>
+
+      <div class="flex flex-col">
+        {% for block in section.blocks %}
+          {% case block.type %}
+            {% when 'item' %}
+              {% assign bs = block.settings %}
+              <div class="item mb-3">
+                <div class="title text-ocean-500 px-6 py-4 bg-white rounded-sm border-[1px] border-gray-50 shadow-sm relative cursor-pointer hover:shadow-md duration-150">
+                  <h4 class="m-0">{{ bs.title }}</h4>
+                  {% render 'icon', icon: 'arrow', class: 'absolute top-[50%] right-6 translate-y-[-50%]', iconClass: 'rotate-[-90deg] duration-300' %}
+                </div>
+                <div class="panel overflow-hidden max-h-0 duration-300 px">
+                  <div class="p-6">
+                    {{ bs.text }}
+                  </div>
+                </div>
+              </div>
+          {% endcase %}
+        {% endfor %}
+
+        {% if ss.heading_besides_button or ss.button_link %}
+          <div class="flex justify-between mt-4">
+            {% if ss.heading_besides_button %}
+              <h4>{{ ss.heading_besides_button }}</h4>
+            {% endif %}
+            {% if ss.button_link %}
+              <a href="secondary outline" href="{{ ss.button_link }}" class="button">{{ ss.button_text }}</a>
+            {% endif %}
+          </div>
+        {% endif %}
+      </div>
+
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "F.A.Q",
+  "class": "section-faq",
+  "settings": [
+    {
+      "label": "Heading",
+      "id": "heading",
+      "type": "text",
+      "default": "Lorem Ipsum"
+    },
+    {
+      "label": "Text",
+      "id": "text",
+      "type": "richtext",
+      "default": "<p>Start writing...</p>"
+    },
+    {
+      "label": "Heading besides button",
+      "id": "heading_besides_button",
+      "type": "text",
+      "default": "Lorem Ipsum"
+    },
+    {
+      "label": "Button Text",
+      "id": "button_text",
+      "type": "text"
+    },
+    {
+      "label": "Button Link",
+      "id": "button_link",
+      "type": "url"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "item",
+      "name": "Item",
+      "settings": [
+        {
+          "label": "Title",
+          "id": "title",
+          "type": "text",
+          "default": "Question Title"
+        },
+        {
+          "label": "Text",
+          "id": "text",
+          "type": "richtext",
+          "default": "<p>Content to the question...</p>"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "F.A.Q",
+      "blocks": [
+        {
+          "type": "item"
+        },
+        {
+          "type": "item"
+        },
+        {
+          "type": "item"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

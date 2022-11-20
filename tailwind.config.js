@@ -21,7 +21,7 @@ module.exports = {
         "500": "#f3da9f"
       },
       gray: {
-        "50": "#94989f",
+        "50": "#D0D0D0",
         "100": "#8a8e95",
         "200": "#80848b",
         "300": "#767a81",
@@ -43,16 +43,14 @@ module.exports = {
       'md': '8px',
       'lg': '16px',
       'xl': '32px',
-      'max': '9999px'
+      'full': '9999px'
     },
     extend: {
       width: {
         "screen": "100vw",
-        "max": "100%",
       },
       height: {
         "screen": "100vh",
-        "max": "100%",
       },
     },
   },
