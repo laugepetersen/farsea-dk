@@ -55,27 +55,27 @@
     "71eb1a2b-e2fc-42c0-86a4-a794d4fd8afe": {
       "type": "text-image",
       "blocks": {
+        "template--15707237089418__71eb1a2b-e2fc-42c0-86a4-a794d4fd8afe-1668980055d6ca887e-1": {
+          "type": "content",
+          "settings": {
+            "heading": "Hvorfor er vores kaviar så interessant?",
+            "richtext": "<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p>",
+            "button_title_1": "",
+            "button_link_1": "",
+            "button_title_2": "Lær mere",
+            "button_link_2": "shopify:\/\/collections"
+          }
+        },
         "template--15707237089418__71eb1a2b-e2fc-42c0-86a4-a794d4fd8afe-1668980055d6ca887e-0": {
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/model-with-leather-jacket-over-shoulders.jpg"
           }
-        },
-        "template--15707237089418__71eb1a2b-e2fc-42c0-86a4-a794d4fd8afe-1668980055d6ca887e-1": {
-          "type": "content",
-          "settings": {
-            "heading": "Lorem Ipsum Dolor Sit Amat.",
-            "richtext": "<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p>",
-            "button_title_1": "",
-            "button_link_1": "",
-            "button_title_2": "",
-            "button_link_2": ""
-          }
         }
       },
       "block_order": [
-        "template--15707237089418__71eb1a2b-e2fc-42c0-86a4-a794d4fd8afe-1668980055d6ca887e-0",
-        "template--15707237089418__71eb1a2b-e2fc-42c0-86a4-a794d4fd8afe-1668980055d6ca887e-1"
+        "template--15707237089418__71eb1a2b-e2fc-42c0-86a4-a794d4fd8afe-1668980055d6ca887e-1",
+        "template--15707237089418__71eb1a2b-e2fc-42c0-86a4-a794d4fd8afe-1668980055d6ca887e-0"
       ],
       "settings": {
       }
@@ -83,27 +83,27 @@
     "89729f07-af56-4292-aaa9-b9aa1181abd8": {
       "type": "text-image",
       "blocks": {
-        "template--15707237089418__89729f07-af56-4292-aaa9-b9aa1181abd8-1668980055d6ca887e-1": {
-          "type": "content",
-          "settings": {
-            "heading": "Lorem Ipsum Dolor Sit Amat.",
-            "richtext": "<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p>",
-            "button_title_1": "Læs mere",
-            "button_link_1": "shopify:\/\/collections",
-            "button_title_2": "",
-            "button_link_2": ""
-          }
-        },
         "template--15707237089418__89729f07-af56-4292-aaa9-b9aa1181abd8-1668980055d6ca887e-0": {
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/model-with-leather-jacket-over-shoulders.jpg"
           }
+        },
+        "template--15707237089418__89729f07-af56-4292-aaa9-b9aa1181abd8-1668980055d6ca887e-1": {
+          "type": "content",
+          "settings": {
+            "heading": "Bestil for over 500 kr. og få speciallavet bøtte til din kaviar.",
+            "richtext": "<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p>",
+            "button_title_1": "",
+            "button_link_1": "",
+            "button_title_2": "Shop kaviar",
+            "button_link_2": "shopify:\/\/collections"
+          }
         }
       },
       "block_order": [
-        "template--15707237089418__89729f07-af56-4292-aaa9-b9aa1181abd8-1668980055d6ca887e-1",
-        "template--15707237089418__89729f07-af56-4292-aaa9-b9aa1181abd8-1668980055d6ca887e-0"
+        "template--15707237089418__89729f07-af56-4292-aaa9-b9aa1181abd8-1668980055d6ca887e-0",
+        "template--15707237089418__89729f07-af56-4292-aaa9-b9aa1181abd8-1668980055d6ca887e-1"
       ],
       "settings": {
       }
@@ -115,9 +115,9 @@
           "type": "testimonial",
           "settings": {
             "rating": 5,
-            "quote": "jiojoijopjopj oijiopj iopj opjiop joi jpoij iopj po jo jo jpoi jopi jpo oi",
-            "name": "jiojpo jopij",
-            "below_name_text": "jiopjoijoij",
+            "quote": "Jeg har flere gange bestilt caviar gennem siden og kvaliteten er rigtig fin. Det pakkes forsvarligt og sendes med is i termokasser.",
+            "name": "Søren Hansen",
+            "below_name_text": "Fra Hellerup",
             "profile": "shopify:\/\/shop_images\/model-with-leather-jacket-over-shoulders.jpg"
           }
         },
@@ -125,9 +125,9 @@
           "type": "testimonial",
           "settings": {
             "rating": 5,
-            "quote": "joiojpo jpoi jpoj poij pioj poijpoijpo ijiop jpoi io",
-            "name": "jiopjjoip",
-            "below_name_text": "jiopjoijoi",
+            "quote": "Super. Bestilte til middag tirsdag. Havde caviaren næste eftermiddag. Stadig på is - ubrudt kølekæde!",
+            "name": "Kim S",
+            "below_name_text": "Fra Rødby",
             "profile": "shopify:\/\/shop_images\/model-with-leather-jacket-over-shoulders.jpg"
           }
         },
@@ -135,9 +135,9 @@
           "type": "testimonial",
           "settings": {
             "rating": 5,
-            "quote": "jiojpoijpoijoij",
-            "name": "jioopjopij",
-            "below_name_text": "jiopjoijo",
+            "quote": "Jeg har købt kaviar her 3 eller 4 gange, og hver gang er det kommet på en ønskede dag og fint pakket og koldt.God kvalitet og rimelige priser.",
+            "name": "Tine Hansen",
+            "below_name_text": "Fra København S",
             "profile": "shopify:\/\/shop_images\/model-with-leather-jacket-over-shoulders.jpg"
           }
         },
@@ -145,9 +145,9 @@
           "type": "testimonial",
           "settings": {
             "rating": 5,
-            "quote": "jopdiejopejdpoiewjioj",
-            "name": "jieojioe",
-            "below_name_text": "jiojpoij",
+            "quote": "Meget fin indpakning i lille flamingokølekasse med køleelementer der stadig var frosne og iskolde dåser med caviar. Meget professionelhåndtering af min ordre hele vejen og jeg handler hos Attilus når jeg skal bruge caviar igen.",
+            "name": "Tina Stage",
+            "below_name_text": "Fra Glostrup",
             "profile": "shopify:\/\/shop_images\/model-with-leather-jacket-over-shoulders.jpg"
           }
         }
@@ -170,15 +170,15 @@
         "template--15707237089418__0a4ef183-d026-4f9a-b44e-d2e758fc8d28-166898005550bf07a6-0": {
           "type": "item",
           "settings": {
-            "title": "Question Title",
-            "text": "<p>Content to the question...<\/p>"
+            "title": "Hvor hurtigt kan I levere?",
+            "text": "<p>Hvis du lægger en stor ordre hos os, leverer vi hurtigt derefter, da vi i så fald sender direkte fra vores leverandør i Tyskland. Mindre ordrer <br\/>kan forventes leveret indenfor inden for fem hverdage.<\/p>"
           }
         },
         "template--15707237089418__0a4ef183-d026-4f9a-b44e-d2e758fc8d28-166898005550bf07a6-1": {
           "type": "item",
           "settings": {
-            "title": "Question Title",
-            "text": "<p>Content to the question...<\/p>"
+            "title": "Hvordan leverer I?",
+            "text": "<p>Vi leverer gennem <strong>PostNord<\/strong>, da de som de eneste i Danmark kan love <br\/>dag-til-dag-levering. Hvis andet ikke er anført, sender vi til nærmeste <br\/>pakkehus, så vi kan sikre, at du får varene dagen efter afsendelse.<\/p><p><strong>Fødevareforsendelse:<\/strong><br\/>Er en levering indenfor 5 hverdage.<\/p>"
           }
         },
         "template--15707237089418__0a4ef183-d026-4f9a-b44e-d2e758fc8d28-166898005550bf07a6-2": {
@@ -195,10 +195,10 @@
         "template--15707237089418__0a4ef183-d026-4f9a-b44e-d2e758fc8d28-166898005550bf07a6-2"
       ],
       "settings": {
-        "heading": "Lorem Ipsum",
-        "text": "<p>Start writing...<\/p>",
-        "heading_besides_button": "jiojjpj oijiopj oip j?",
-        "button_text": "jiojiojiojp",
+        "heading": "Ofte stillede spørgsmål",
+        "text": "<p>At vero eos et accusamus et iusto odio dignissimos ducimus qu.<\/p>",
+        "heading_besides_button": "Mangler du stadig hjælp?",
+        "button_text": "Kontak os",
         "button_link": "shopify:\/\/collections"
       }
     }
