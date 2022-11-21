@@ -184,7 +184,14 @@
         "template--15707237089418__0a4ef183-d026-4f9a-b44e-d2e758fc8d28-166898005550bf07a6-2": {
           "type": "item",
           "settings": {
-            "title": "Question Title",
+            "title": "Reklamation af vare.",
+            "text": "<p>Content to the question...<\/p>"
+          }
+        },
+        "172f82db-967a-4498-90e5-ba986422256f": {
+          "type": "item",
+          "settings": {
+            "title": "Hvor kommer kaviaren fra?",
             "text": "<p>Content to the question...<\/p>"
           }
         }
@@ -192,7 +199,8 @@
       "block_order": [
         "template--15707237089418__0a4ef183-d026-4f9a-b44e-d2e758fc8d28-166898005550bf07a6-0",
         "template--15707237089418__0a4ef183-d026-4f9a-b44e-d2e758fc8d28-166898005550bf07a6-1",
-        "template--15707237089418__0a4ef183-d026-4f9a-b44e-d2e758fc8d28-166898005550bf07a6-2"
+        "template--15707237089418__0a4ef183-d026-4f9a-b44e-d2e758fc8d28-166898005550bf07a6-2",
+        "172f82db-967a-4498-90e5-ba986422256f"
       ],
       "settings": {
         "heading": "Ofte stillede spørgsmål",
