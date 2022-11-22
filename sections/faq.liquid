@@ -1,6 +1,6 @@
 {% assign ss = section.settings %}
 
-<div class="py-section my-section">
+<div class="my-section">
   <div class="container">
     <div class="grid max-w-[1200px] mx-auto grid-cols-[40%_60%]">
 
@@ -34,7 +34,7 @@
               <h4>{{ ss.heading_besides_button }}</h4>
             {% endif %}
             {% if ss.button_link %}
-              <a href="secondary outline" href="{{ ss.button_link }}" class="button">{{ ss.button_text }}</a>
+              <a class="button secondary outline" href="{{ ss.button_link }}">{{ ss.button_text }}</a>
             {% endif %}
           </div>
         {% endif %}
