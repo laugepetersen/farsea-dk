@@ -1,6 +1,38 @@
-<header class="container w-full">
-  <nav id="main-navigation" class="text-center">
-    Header.liquid
+<header class="w-full">
+  <nav id="main-navigation" class="container flex justify-between relative">
+    <div class="logo">
+      <a href="/" class="font-bold">FarSea</a>
+    </div>
+
+    <div class="menu absolute absolute-center">
+      <ul class="menu flex">
+
+        {%- for link in linklists.main-menu.links -%}
+          <li class="menu-item mx-2">
+            <a href="{{ link.url }}" class="px-1 leading-[64px] inline-block hover:underline underline-offset-8">{{ link.title }}</a>
+          </li>
+
+          {%- if link.links.size > 10 -%}
+            <div class="dropdown">
+              <ul class="dropdown-menu">
+                {%- for child_link in link.links -%}
+                  <li class="child-link">
+                    <a href="{{ child_link.url }}">{{ child_link.title }}</a>
+                  </li>
+                {%- endfor -%}
+              </ul>
+            </div>
+          {%- endif -%}
+
+        {%- endfor -%}
+
+      </ul>
+    </div>
+
+    <div class="icons">
+      Search Cart
+    </div>
+
   </nav>
 </header>
 

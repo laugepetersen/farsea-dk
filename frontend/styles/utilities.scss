@@ -9,3 +9,7 @@
 .my-section {
   @apply my-12 md:my-16 lg:my-20;
 }
+
+.absolute-center {
+  @apply left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%];
+}

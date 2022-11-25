@@ -7,7 +7,7 @@
       {% for block in section.blocks %}
         {% case block.type %}
           {% when "testimonial" %}
-          <div class="swiper-slide !h-auto">
+          <div class="swiper-slide !h-auto hover:cursor-grab">
             <div class="grid place-items-center h-full p-12 ml-[-1px] border-solid border-gray-50 border-[1px] relative">
               <div class="text-center">
                 <div>
@@ -36,10 +36,10 @@
       {% endfor %}
     </div>
 
-    <div class="button-prev">
+    <div class="button-prev select-all">
       {% render 'icon', icon: 'arrow', class: "pointer-events-none" %}
     </div>
-    <div class="button-next">
+    <div class="button-next select-all">
       {% render 'icon', icon: 'arrow', class: "pointer-events-none", iconClass: 'rotate-180' %}
     </div>
 
