@@ -1,0 +1,65 @@
+{% assign ss = section.settings %}
+
+<div class="min-h-[calc(100vh-96px)] bg-ocean-500 text-white py-20 relative text-center grid items-center">
+  <div class="container relative z-10">
+    <div class="content max-w-2xl mx-auto">
+      <h2 class="h1 sub-heading mb-4">{{ ss.sub_heading }}</h2>
+      <h1 class="h2">{{ ss.heading }}</h1>
+    </div>
+  </div>
+  <div class="absolute top-0 left-0 w-[100%] h-[100%] z-0">
+    <div class="bg-ocean-500 absolute top-0 left-0 w-[100%] h-[100%] opacity-0"></div>
+    {%- if ss.desktop_image != nil -%}
+      {{ ss.desktop_image | image_url: width: 1024 | image_tag: preload: true, class: "hidden md:block image-bg" }}
+    {%- endif -%}
+    {%- if ss.mobile_image != nil -%}
+      {{ ss.mobile_image | image_url: height: 1024 | image_tag: preload: true, class: "block md:hidden image-bg" }}
+    {%- endif -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Hero Banner Page",
+  "class": "section-hero-banner-page",
+  "tag": "section",
+  "limit": 1,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "label": "Sub Heading",
+      "id": "sub_heading",
+      "type": "text",
+      "default": "Om Farsea"
+    },
+    {
+      "label": "Heading",
+      "id": "heading",
+      "type": "textarea",
+      "default": "At levere den bedste kaviar fra det Caspiske Hav og værne om miljøet på samme vis."
+    },
+    {
+      "type": "header",
+      "content": "Images"
+    },
+    {
+      "label": "Background Image (Desktop)",
+      "id": "desktop_image",
+      "type": "image_picker"
+    },
+    {
+      "label": "Background Image (Mobile)",
+      "id": "mobile_image",
+      "type": "image_picker"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Hero Banner Page"
+    }
+  ]
+}
+{% endschema %}

@@ -1,5 +1,5 @@
 <header class="w-full">
-  <nav id="main-navigation" class="container flex justify-between relative">
+  <nav id="main-navigation" class="container flex justify-between relative items-center">
     <div class="logo">
       <a href="/" class="font-bold">FarSea</a>
     </div>
@@ -30,7 +30,7 @@
     </div>
 
     <div class="icons">
-      Search Cart
+      {% render 'icon', icon: 'cart', class: 'hover:cursor-pointer h-[64px]' %}
     </div>
 
   </nav>

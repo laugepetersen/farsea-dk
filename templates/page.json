@@ -2,7 +2,7 @@
   "name": "Default Page",
   "sections": {
     "main": {
-      "type": "hero-banner"
+      "type": "hero-banner-page"
     }
   },
   "order": [

@@ -15,10 +15,10 @@
     <h1 class="mb-2">{{ ss.heading }}</h1>
     <h2 class="text-pearl-500">{{ ss.text }}</h2>
     <div class="inline-block pt-8">
-      {%- if ss.button_label_1 -%}
+      {%- if ss.button_label_1 != blank -%}
         <a class="button white w-[150px] mr-1" href="{{ ss.button_link_1 }}" target="{{ bt_1 }}">{{ ss.button_label_1 }}</a>
       {%- endif -%}
-      {%- if ss.button_label_2 -%}
+      {%- if ss.button_label_2 != blank -%}
         <a class="button white outline w-[150px] ml-1" href="{{ ss.button_link_2 }}" target="{{ bt_2 }}">{{ ss.button_label_2 }}</a>
       {%- endif -%}
     </div>

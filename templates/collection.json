@@ -1,0 +1,18 @@
+{
+  "sections": {
+    "banner": {
+      "type": "collection-banner"
+    },
+    "product-grid": {
+      "type": "collection-product-grid"
+    },
+    "testimonials": {
+      "type": "testimonials"
+    }
+  },
+  "order": [
+    "banner",
+    "product-grid",
+    "testimonials"
+  ]
+}

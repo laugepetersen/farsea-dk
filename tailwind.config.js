@@ -34,6 +34,7 @@ module.exports = {
       }
     },
     fontFamily: {
+      script: ['Parisienne', 'cursive'],
       heading: ['Noe Display', 'serif'],
       body: ['Work Sans', 'sans-serif'],
     },

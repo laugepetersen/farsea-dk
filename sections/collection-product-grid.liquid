@@ -1,0 +1,40 @@
+{% assign current_collection = collection %}
+
+<div class="my-section">
+  <div class="container">
+    <div class="grid items-start gap-x-12 grid-cols-[1fr_4fr] relative">
+      <aside class="sticky top-6 left-0">
+        <h3 class="mb-4">Kategorier</h3>
+        <ul class="collections">
+        {%- for collection in collections -%}
+          <li class="collection">
+            {%- if collection.title == current_collection.title -%}
+              <a href="{{ collection.url }}" class="font-semibold underline underline-offset-8 mb-3 inline-block w-full">{{ collection.title }}</a>
+            {%- else -%}
+              <a href="{{ collection.url }}" class="opacity-60 hover:opacity-100 inline-block mb-1 w-full">{{ collection.title }}</a>
+            {%- endif -%}
+          </li>  
+        {%- endfor -%}
+        </ul>
+      </aside>
+      <ul class="products grid grid-cols-2 gap-x-3 gap-y-9">
+        {%- for product in collection.products -%}
+          <li class="product-item">
+            {%- render 'product-item', product: product -%}
+          </li>    
+        {%- endfor -%}
+      </ul>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Collection Product Grid",
+    "class": "collection-product-grid",
+    "tag": "section",
+    "settings": [
+     
+    ]
+  }
+{% endschema %}

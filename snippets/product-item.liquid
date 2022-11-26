@@ -1,0 +1,15 @@
+
+<a href="{{ product.url }}" class="inline-flex w-full flex-col group">
+  <div class="inline-block image relative h-0 pb-[120%]">
+    {%- if product.media.size > 1 -%}
+      {{ product.featured_image | image_url: width: 700 | image_tag: class: 'absolute top-0 left-0 w-full h-full object-cover z-10 group-hover:opacity-0 duration-150' }}
+      {{ product.media[1] | image_url: width: 700 | image_tag: class: 'absolute top-0 left-0 w-full h-full object-cover z-0' }}
+    {%- else -%}
+      {{ product.featured_image | image_url: width: 700 | image_tag: class: 'absolute top-0 left-0 w-full h-full object-cover z-10' }}
+    {%- endif -%}
+  </div>
+  <div class="product-details mt-3">
+    <h2 class="h4 mb-0">{{ product.title }}</h2>
+    <p>{%- if product.price_varies -%}Fra&nbsp;{%- endif -%}{{ product.price | money }}</p>
+  </div>
+</a>
