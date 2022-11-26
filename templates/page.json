@@ -1,11 +1,49 @@
 {
-  "name": "Default Page",
   "sections": {
     "main": {
-      "type": "hero-banner"
+      "type": "hero-banner",
+      "settings": {
+        "heading": "Om Os",
+        "text": "",
+        "button_label_1": "",
+        "button_link_1": "",
+        "button_target_1": false,
+        "button_label_2": "",
+        "button_link_2": "",
+        "button_target_2": false
+      }
+    },
+    "b87cfc16-2567-41dc-a31a-f4e12ed32ca2": {
+      "type": "text-image",
+      "blocks": {
+        "template--15752178827402__b87cfc16-2567-41dc-a31a-f4e12ed32ca2-16694763875aec357f-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/model-with-leather-jacket-over-shoulders.jpg"
+          }
+        },
+        "template--15752178827402__b87cfc16-2567-41dc-a31a-f4e12ed32ca2-16694763875aec357f-1": {
+          "type": "content",
+          "settings": {
+            "heading": "Om os section",
+            "richtext": "<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p>",
+            "button_title_1": "",
+            "button_link_1": "",
+            "button_title_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15752178827402__b87cfc16-2567-41dc-a31a-f4e12ed32ca2-16694763875aec357f-0",
+        "template--15752178827402__b87cfc16-2567-41dc-a31a-f4e12ed32ca2-16694763875aec357f-1"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "b87cfc16-2567-41dc-a31a-f4e12ed32ca2"
   ]
 }
