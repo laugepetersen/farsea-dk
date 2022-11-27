@@ -10,7 +10,7 @@
           <div class="product-content w-[40%] h-full grid place-items-center">
             <div class="px-[10%] py-20">
               <div class="max-w-[350px]">
-                <p>Fra {{ product.price_min | money }}</p>
+                <p class="text-ocean-500 opacity-100">Fra {{ product.price_min | money }}</p>
                 <h3 class="mt-2 mb-4">{{ product.title }}</h3>
                 <p>{{ product.description | truncatewords: 20 }}</p>
                 <a href="{{ product.url }}" class="button primary w-full text-center mt-6">Køb</a>
