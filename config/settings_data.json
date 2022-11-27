@@ -1,6 +1,51 @@
 {
   "current": {
     "theme-background": "#782f2f",
+    "sections": {
+      "pre-header": {
+        "type": "pre-header",
+        "blocks": {
+          "pre-header-0": {
+            "type": "title",
+            "settings": {
+              "title": "<strong>Fremragende<\/strong> på TrustPilot"
+            }
+          },
+          "pre-header-1": {
+            "type": "title",
+            "settings": {
+              "title": "<strong>Fri fragt<\/strong> fra 600 kr."
+            }
+          },
+          "pre-header-2": {
+            "type": "title",
+            "settings": {
+              "title": "<strong>1-3 dages<\/strong> levering"
+            }
+          }
+        },
+        "block_order": [
+          "pre-header-0",
+          "pre-header-1",
+          "pre-header-2"
+        ],
+        "settings": {
+          "background": "#fdfbee",
+          "text_color": "#0e1c37",
+          "strong_color": "#ec7c2b"
+        }
+      },
+      "header": {
+        "type": "header",
+        "settings": {
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "settings": {
+        }
+      }
+    },
     "content_for_index": [
 
     ]
