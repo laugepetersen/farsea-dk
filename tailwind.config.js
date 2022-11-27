@@ -21,8 +21,8 @@ module.exports = {
         "500": "#f3da9f"
       },
       gray: {
-        "background": "f5f5f5",
-        "border": "#D0D0D0",
+        "background": "#F6F7F8",
+        "border": "#CFD2D7",
         "text": "707070"
       }
     },

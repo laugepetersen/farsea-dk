@@ -13,7 +13,7 @@
 <div id="pre-header" class="text-xs tracking-wide h-8 grid place-items-center">
   <div class="container flex justify-between">
     {% for block in title_blocks %}
-      <div>
+      <div class="font-medium">
         {{ block.settings.title | upcase }}
       </div>
     {% endfor %}

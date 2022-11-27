@@ -1,0 +1,55 @@
+<section class="my-section container">
+  <div class="grid grid-cols-[6fr_4fr] gap-x-16 items-start relative">
+
+    <div class="media bg-gray-background">
+      {{ product.featured_image | image_url: width: 1024 | image_tag }}
+    </div>
+
+    <div class="product-info sticky top-6 left-0">
+      <h1 class="h2 m-0">{{ product.title }}</h1>
+      <p class="text-[18px] mt-4 mb-8">{%- if product.price_varies -%}Fra&nbsp;{%- endif -%}{{ product.price | money }}</p>
+      <p class="text-[15px] mb-10">{{ product.description }}</p>
+
+      {% render 'product-form' with product: product %}
+
+      <div class="keypoints mt-10">
+        <ul>
+          <li class="border-solid border-[1px] border-gray-border flex items-center py-3 px-4 mb-[-1px]">
+            {% render 'icon', icon: 'star' %}
+            <p class="h5 mb-0 mt-[5px] ml-4">Fri fragt fra 600,-</p>
+          </li>
+          <li class="border-solid border-[1px] border-gray-border flex items-center py-3 px-4 mb-[-1px]">
+            {% render 'icon', icon: 'star' %}
+            <p class="h5 mb-0 mt-[5px] ml-4">2% går til miljø og havene</p>
+          </li>
+        </ul>      
+      </div>
+
+      <div class="product-details mt-10">
+        <ul>
+          <li class="mb-[-1px] border-t-[1px] border-b-[1px] border-solid border-gray-border group hover:cursor-pointer">
+            <div class="title py-3 px-4 group-hover:bg-gray-background duration-75"><p class="h5 m-0">Sundhedsfaktorer</p></div>
+            <div class="panel py-3 px-4 hidden"></div>
+          </li>
+          <li class="mb-[-1px] border-t-[1px] border-b-[1px] border-solid border-gray-border group hover:cursor-pointer">
+            <div class="title py-3 px-4 group-hover:bg-gray-background duration-75"><p class="h5 m-0">Produktspecifikationer</p></div>
+            <div class="panel py-3 px-4"><p>Ingrediens: At vero eos et accusamus et iu
+            Ingrediens: At vero eos et accusamus et iu
+            Ingrediens: At vero eos et accusamus et iu
+            Ingrediens: At vero eos et accusamus et iu</p></div>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "Main Product",
+    "settings": [
+    
+    ]
+  }
+{% endschema %}
