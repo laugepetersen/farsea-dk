@@ -56,3 +56,14 @@
 .sub-heading {
   @apply font-script text-pearl-500;
 }
+
+.accordion {
+  .accordion-item {
+    .accordion-title {
+      position: relative;
+    }
+  }
+  .accordion-panel {
+    @apply overflow-hidden max-h-0 duration-300;
+  }
+}

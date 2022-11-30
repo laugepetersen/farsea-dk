@@ -10,23 +10,25 @@
       </div>
 
       <div class="flex flex-col">
-        {% for block in section.blocks %}
-          {% case block.type %}
-            {% when 'item' %}
-              {% assign bs = block.settings %}
-              <div class="item mb-3">
-                <div class="title text-ocean-500 px-6 py-4 bg-white rounded-sm border-[1px] border-gray-50 shadow-sm relative cursor-pointer hover:shadow-md duration-150">
-                  <h4 class="m-0">{{ bs.title }}</h4>
-                  {% render 'icon', icon: 'arrow', class: 'absolute top-[50%] right-6 translate-y-[-50%]', iconClass: 'rotate-[-90deg] duration-300' %}
-                </div>
-                <div class="panel overflow-hidden max-h-0 duration-300 px">
-                  <div class="p-6">
-                    {{ bs.text }}
+        <ul class="accordion">
+          {% for block in section.blocks %}
+            {% case block.type %}
+              {% when 'item' %}
+                {% assign bs = block.settings %}
+                <li class="accordion-item mb-3">
+                  <div class="accordion-title text-ocean-500 px-6 py-4 bg-white rounded-sm border-[1px] border-gray-border shadow-sm relative cursor-pointer hover:shadow-md duration-150">
+                    <h4 class="m-0">{{ bs.title }}</h4>
+                    {% render 'icon', icon: 'arrow', class: 'absolute top-[50%] right-6 translate-y-[-50%]', iconClass: 'rotate-[-90deg] duration-300' %}
                   </div>
-                </div>
-              </div>
-          {% endcase %}
-        {% endfor %}
+                  <div class="accordion-panel overflow-hidden max-h-0 duration-300">
+                    <div class="p-6">
+                      {{ bs.text }}
+                    </div>
+                  </div>
+                </li>
+            {% endcase %}
+          {% endfor %}
+        </ul>
 
         {% if ss.heading_besides_button or ss.button_link %}
           <div class="flex justify-between mt-4">

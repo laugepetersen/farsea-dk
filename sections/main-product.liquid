@@ -1,8 +1,16 @@
 <section class="my-section container">
   <div class="grid grid-cols-[6fr_4fr] gap-x-16 items-start relative">
 
-    <div class="media bg-gray-background">
-      {{ product.featured_image | image_url: width: 1024 | image_tag }}
+    <div class="media">
+      {% render 'product-media', media: product.featured_media %}
+      <div class="grid grid-cols-2 gap-2 mt-2">
+        {% for media in product.media %}
+          {%- if media == product.featured_media -%}
+            {%- continue -%}
+          {%- endif -%}
+          {% render 'product-media', media: media %}
+        {% endfor %}
+      </div>
     </div>
 
     <div class="product-info sticky top-6 left-0">
@@ -10,34 +18,55 @@
       <p class="text-[18px] mt-4 mb-8">{%- if product.price_varies -%}Fra&nbsp;{%- endif -%}{{ product.price | money }}</p>
       <p class="text-[15px] mb-10">{{ product.description }}</p>
 
-      {% render 'product-form' with product: product %}
+      {% form 'product', product, class: 'grid grid-cols-1 gap-y-3' %}
+
+        <select name="id" class="input w-full">
+          {% for variant in product.variants %}
+            <option value="{{ variant.id }}"
+              {% if variant == product.selected_or_first_available_variant %}selected="selected"{% endif %}
+            >
+              {{ variant.title }} - {{ variant.price | money }}
+              {%- if variant.price > 500000 -%}
+                + GRATIS Marmor Æske
+              {%- endif -%}
+            </option>
+          {% endfor %}
+        </select>
+      
+        <input class="button primary w-full hover:cursor-pointer" type="submit" value="Læg i kurv">
+      
+      {% endform %}
 
       <div class="keypoints mt-10">
         <ul>
-          <li class="border-solid border-[1px] border-gray-border flex items-center py-3 px-4 mb-[-1px]">
-            {% render 'icon', icon: 'star' %}
-            <p class="h5 mb-0 mt-[5px] ml-4">Fri fragt fra 600,-</p>
-          </li>
-          <li class="border-solid border-[1px] border-gray-border flex items-center py-3 px-4 mb-[-1px]">
-            {% render 'icon', icon: 'star' %}
-            <p class="h5 mb-0 mt-[5px] ml-4">2% går til miljø og havene</p>
-          </li>
+          {% for block in section.blocks %}
+            {% if block.type == "key-point" %}
+              <li class="border-solid border-[1px] border-gray-border flex items-center py-3 px-4 mb-[-1px]">
+                {% render 'icon', icon: 'star' %}
+                <p class="h5 mb-0 mt-[5px] ml-4">{{ block.settings.text }}</p>
+              </li>
+            {% endif %}            
+          {% endfor %}
         </ul>      
       </div>
 
       <div class="product-details mt-10">
-        <ul>
-          <li class="mb-[-1px] border-t-[1px] border-b-[1px] border-solid border-gray-border group hover:cursor-pointer">
-            <div class="title py-3 px-4 group-hover:bg-gray-background duration-75"><p class="h5 m-0">Sundhedsfaktorer</p></div>
-            <div class="panel py-3 px-4 hidden"></div>
-          </li>
-          <li class="mb-[-1px] border-t-[1px] border-b-[1px] border-solid border-gray-border group hover:cursor-pointer">
-            <div class="title py-3 px-4 group-hover:bg-gray-background duration-75"><p class="h5 m-0">Produktspecifikationer</p></div>
-            <div class="panel py-3 px-4"><p>Ingrediens: At vero eos et accusamus et iu
-            Ingrediens: At vero eos et accusamus et iu
-            Ingrediens: At vero eos et accusamus et iu
-            Ingrediens: At vero eos et accusamus et iu</p></div>
-          </li>
+        <ul class="accordion">
+          {% for block in section.blocks %}
+            {% if block.type == "read-more-item" %}
+              <li class="accordion-item active mb-[-1px] border-t-[1px] border-b-[1px] border-solid border-gray-border hover:cursor-pointer">
+                <div class="accordion-title py-3 px-4 group-hover:bg-gray-background duration-75">
+                  <p class="h5 m-0">{{ block.settings.title }}</p>
+                  {% render 'icon', icon: 'arrow', class: 'absolute top-[50%] right-6 translate-y-[-50%]', iconClass: 'rotate-[-90deg] duration-300' %}
+                </div>
+                <div class="accordion-panel">
+                  <div class="py-3 px-4">
+                    {{ block.settings.text }}
+                  </div>
+                </div>
+              </li>
+            {% endif %}            
+          {% endfor %}
         </ul>
       </div>
 
@@ -50,6 +79,57 @@
     "name": "Main Product",
     "settings": [
     
+    ],
+    "blocks": [
+      {
+        "name": "Key Point",
+        "type": "key-point",
+        "limit": 3,
+        "settings": [
+          {
+            "label": "Text",
+            "id": "text",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "name": "Read More Item",
+        "type": "read-more-item",
+        "settings": [
+          {
+            "label": "Title",
+            "id": "title",
+            "type": "text"
+          },
+          {
+            "label": "Text",
+            "id": "text",
+            "type": "richtext"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Produkt Banner",
+        "settings": {
+        },
+        "blocks": [
+          {
+            "type": "key-point",
+            "settings": {
+              "text": "Fri fragt fra 600 kr."
+            }
+          },
+          {
+            "type": "key-point",
+            "settings": {
+              "text": "2% Går til Project Clean Ocean"
+            }
+          }
+        ]
+      }
     ]
   }
 {% endschema %}

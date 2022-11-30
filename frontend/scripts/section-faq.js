@@ -1,16 +1,16 @@
-const faqSections = document.querySelectorAll('.section-faq');
+const accordions = document.querySelectorAll('.accordion');
 
-if ( faqSections.length ) {
+if ( accordions.length ) {
   faqSectionsScript();
 }
 
 function faqSectionsScript() {
   // Each Section
-  faqSections.forEach((section) => {
-    const items = section.querySelectorAll('.item');
+  accordions.forEach((accordion) => {
+    const items = accordion.querySelectorAll('.accordion-item');
     // Each Item
     items.forEach((item) => {
-      const title = item.querySelector('.title');
+      const title = item.querySelector('.accordion-title');
       title.addEventListener('click', () => {
         togglePanel(item, items);
       })
@@ -19,11 +19,11 @@ function faqSectionsScript() {
 }
 
 function togglePanel(item, items) {
-  const panel = item.querySelector('.panel');
+  const panel = item.querySelector('.accordion-panel');
   const icon = item.querySelector('.icon svg');
   items.forEach(_item => {
-    if(item == _item) return
-    closePanel(_item.querySelector('.panel'), _item.querySelector('.icon svg'));
+    if(item == _item) return;
+    closePanel(_item.querySelector('.accordion-panel'), _item.querySelector('.icon svg'));
     _item.classList.remove('active');
   });
   if ( panel.style.maxHeight == '0px' || panel.style.maxHeight == '' ) {
