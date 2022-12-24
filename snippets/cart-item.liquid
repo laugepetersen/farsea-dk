@@ -1,0 +1,23 @@
+<div class="item flex mb-6">
+  
+  <a href="{{ item.product.url }}">{{ item.product.featured_image | image_url: width: 200, height: 200 | image_tag: class: 'min-w-[100px] max-w-[100px] min-h-[100px] max-h-[100px] mr-3' }}</a>
+
+  <div class="item-info w-full flex justify-between">
+
+    <div class="left mr-2">
+      <a href="{{ item.product.url }}" class="hover:underline"><h6 class="tracking-wide leading-tight">{{ item.product.title }}</h6></a>
+      <p class="text-[13px] opacity-70 leading-tight">Størrelse: {{ item.variant.title }}</p>
+      <p class="text-[13px] opacity-70 leading-tight">Antal: {{ item.quantity }}</p>
+      {%- if item.product.price > 10000 -%}
+        <p class="text-xs py-1 px-2 bg-pearl-500 font-medium rounded-sm mt-2">+ Gratis marmoræske</p>
+      {%- endif -%}
+    </div>
+
+    <div class="right ml-2 text-right">
+      <p class="font-semibold tracking-tight whitespace-nowrap">{{ item.final_line_price | money }}</p>
+      <p class="text-[13px] font-medium underline px-2 -mx-2 py-[2px] rounded-sm hover:cursor-pointer hover:bg-gray-background inline-block">Fjern</p>
+    </div>
+      
+  </div>
+
+</div>

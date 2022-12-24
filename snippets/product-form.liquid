@@ -1,0 +1,24 @@
+{% form 'product', product, id: 'product-form', class: 'grid grid-cols-1 gap-y-3' %}
+
+<input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+
+<select name="id" class="input w-full">
+  {% for variant in product.variants %}
+    <option value="{{ variant.id }}"
+      {% if variant == product.selected_or_first_available_variant %}selected="selected"{% endif %}
+    >
+      {{ variant.title }} - {{ variant.price | money }}
+    </option>
+  {% endfor %}
+</select>
+
+<input 
+  class="add-to-cart button primary w-full hover:cursor-pointer disabled:bg-gray-border disabled:border-gray-border disabled:cursor-not-allowed" 
+  type="submit" 
+  value="Læg i kurv"
+  {%- if product.selected_or_first_available_variant.available == false -%}
+    disabled
+  {%- endif -%}
+>
+
+{% endform %}

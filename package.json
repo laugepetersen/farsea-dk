@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "shopify": "npm run dev & shopify theme serve"
+    "shopify": "npm run dev & shopify2 theme serve"
   },
   "repository": {
     "type": "git",

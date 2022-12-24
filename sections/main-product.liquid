@@ -18,24 +18,7 @@
       <p class="text-[18px] mt-4 mb-8">{%- if product.price_varies -%}Fra&nbsp;{%- endif -%}{{ product.price | money }}</p>
       <p class="text-[15px] mb-10">{{ product.description }}</p>
 
-      {% form 'product', product, class: 'grid grid-cols-1 gap-y-3' %}
-
-        <select name="id" class="input w-full">
-          {% for variant in product.variants %}
-            <option value="{{ variant.id }}"
-              {% if variant == product.selected_or_first_available_variant %}selected="selected"{% endif %}
-            >
-              {{ variant.title }} - {{ variant.price | money }}
-              {%- if variant.price > 500000 -%}
-                + GRATIS Marmor Æske
-              {%- endif -%}
-            </option>
-          {% endfor %}
-        </select>
-      
-        <input class="button primary w-full hover:cursor-pointer" type="submit" value="Læg i kurv">
-      
-      {% endform %}
+      {% render 'product-form', product: product %}
 
       <div class="keypoints mt-10">
         <ul>

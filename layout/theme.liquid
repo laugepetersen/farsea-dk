@@ -29,7 +29,7 @@
     {{ content_for_header }}
   </head>
 
-  <body class="template-{{ template.name }}">
+  <body class="template-{{ template.name }} [&.no-scroll]:overflow-y-hidden overflow-x-hidden">
     {% section 'pre-header' %}
     {% section 'header' %}
 
