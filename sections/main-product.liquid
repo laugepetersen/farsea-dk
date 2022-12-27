@@ -15,7 +15,7 @@
 
     <div class="product-info sticky top-6 left-0">
       <h1 class="h2 m-0">{{ product.title }}</h1>
-      <p class="text-[18px] mt-4 mb-8">{%- if product.price_varies -%}Fra&nbsp;{%- endif -%}{{ product.price | money }}</p>
+      <p class="text-[18px] mt-4 mb-8">{% render 'price', product %}</p>
       <p class="text-[15px] mb-10">{{ product.description }}</p>
 
       {% render 'product-form', product: product %}

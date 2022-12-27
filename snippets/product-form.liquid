@@ -4,11 +4,18 @@
 
 <select name="id" class="input w-full">
   {% for variant in product.variants %}
-    <option value="{{ variant.id }}"
-      {% if variant == product.selected_or_first_available_variant %}selected="selected"{% endif %}
-    >
-      {{ variant.title }} - {{ variant.price | money }}
-    </option>
+    {%- if variant.available -%}
+      <option value="{{ variant.id }}">
+        {{ variant.title }} - {{ variant.price | money }}
+        {%- if variant.inventory_quantity < 3 -%}
+          (Få tilbage)
+        {%- endif -%}
+      </option>
+    {%- else -%}
+      <option value="{{ variant.id }}" disabled>
+        {{ variant.title }} - {{ variant.price | money }} (Udsolgt)
+      </option>
+    {%- endif -%}
   {% endfor %}
 </select>
 

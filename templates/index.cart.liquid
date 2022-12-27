@@ -1,0 +1,24 @@
+{% layout none %}
+
+{%- if cart.item_count > 0 -%}
+  <form action="{{ routes.cart_url }}" method="post" class="min-h-full flex-col flex">
+
+    <div class="products">
+
+      {%- for item in cart.items -%}
+
+        {% render 'cart-item', item: item %}
+
+      {%- endfor -%}
+
+    </div>
+
+    {% render 'cart-checkout' %}
+  
+  </form>
+{%- else -%}
+  <div>
+    <h3>Din kurv er tom...</h3>
+    <a href="{{ shop.url }}">Shop nu</a>
+  </div>
+{%- endif -%}

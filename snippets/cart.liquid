@@ -1,35 +1,15 @@
 <div id="cart" class="fixed z-50 top-0 right-0 w-[420px] max-w-[100vw] h-[100vh] bg-white shadow-2xl translate-x-full transition-all [&.active]:translate-x-0">
     
-  <div class="header px-6 py-2 text-center border-b-gray-border border-b-solid border-b-[1px] relative">
-    <h4 class="m-0 mt-1">Cart</h4>
+  <div class="header h-[50px] grid place-items-center px-6 py-2 text-center border-b-gray-border border-b-solid border-b-[1px] relative">
+    <h4 class="m-0 mt-1">Kurv</h4>
     <span id="cart-continue" class="absolute top-[50%] left-[24px] translate-y-[-50%] flex items-center text-sm hover:cursor-pointer py-1 px-2 rounded-sm hover:bg-gray-background">{% render 'icon', icon: 'arrow', class: 'mr-1 mt-[2px] w-[20px]' %} Shopping</span>
   </div>
 
-  <div class="inner p-6 h-[calc(100vh-49px)] overflow-y-scroll">
-
-    {%- if cart.item_count > 0 -%}
-      <form action="{{ routes.cart_url }}" method="post">
-
-        <div class="products">
-  
-          {%- for item in cart.items -%}
-  
-            {% render 'cart-item', item: item %}
-  
-          {%- endfor -%}
-  
-        </div>
-  
-        {% render 'cart-checkout' %}
-      
-      </form>
-    {%- else -%}
-      <div>
-        <h3>Din kurv er tom...</h3>
-        <a href="{{ shop.url }}">Shop nu</a>
-      </div>
-    {%- endif -%}
-
+  <div id="cart-inner" class="inner p-6 h-[calc(100vh-50px)] overflow-y-scroll">
+    {% comment %}
+      Products will be fetched from javascript
+      from our index.cart.liquid template
+    {% endcomment %}
   </div>
 
 </div>
