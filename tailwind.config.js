@@ -23,7 +23,7 @@ module.exports = {
       gray: {
         "background": "#F6F7F8",
         "border": "#CFD2D7",
-        "text": "707070"
+        "text": "#707070"
       }
     },
     fontFamily: {

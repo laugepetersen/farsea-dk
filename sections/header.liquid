@@ -29,8 +29,15 @@
       </ul>
     </div>
 
-    <div class="icons">
-      {% render 'icon', icon: 'cart', class: 'hover:cursor-pointer h-[64px]' %}
+    <div class="icons h-[64px]">
+      <div class="cart-icon px-1 grid place-items-center h-full hover:cursor-pointer">
+        <div class="wrapper w-[23px] h-[24px] relative">
+          <div id="cart-icon-counter" class="absolute top-0 right-0 translate-x-[50%] translate-y-[-50%] counter w-5 h-5 rounded-full bg-ocean-500 border-solid border-[2px] border-white grid place-items-center text-xs font-medium text-white leading-4">
+            {{ cart.item_count }}
+          </div>
+          {% render 'icon', icon: 'cart' %}
+        </div>
+      </div>
     </div>
 
   </nav>

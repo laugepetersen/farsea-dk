@@ -2,22 +2,59 @@
 
 <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
 
-<select name="id" class="input w-full">
-  {% for variant in product.variants %}
-    {%- if variant.available -%}
-      <option value="{{ variant.id }}">
-        {{ variant.title }} - {{ variant.price | money }}
-        {%- if variant.inventory_quantity < 3 -%}
-          (Få tilbage)
-        {%- endif -%}
-      </option>
-    {%- else -%}
-      <option value="{{ variant.id }}" disabled>
-        {{ variant.title }} - {{ variant.price | money }} (Udsolgt)
-      </option>
-    {%- endif -%}
-  {% endfor %}
-</select>
+  <select id="product-select" name="id" class="input w-full hidden">
+    {% for variant in product.variants %}
+      {%- if variant.available -%}
+        <option value="{{ variant.id }}">
+          {{ variant.title }} - {{ variant.price | money }}
+        </option>
+      {%- endif -%}
+    {% endfor %}
+  </select>
+
+  <div class="custom-selector mb-10">
+    <label class=" text-sm tracking-wide opacity-50 mb-3 block">Gram</label>
+    <div class="product-variants">
+      {%- for variant in product.variants -%}
+        <div class="variant">
+          {%- if variant.inventory_quantity > 0 -%}
+            {%- if variant.id == product.selected_or_first_available_variant.id -%}
+              <input checked class="hidden" type="radio" id="{{ variant.id }}" name="product-variants" value="{{ variant.id }}">
+              <label class="variant-option checked" for="{{ variant.id }}">{{- variant.title -}}</label>
+            {%- else -%}
+              <input class="hidden" type="radio" id="{{ variant.id }}" name="product-variants" value="{{ variant.id }}">
+              <label class="variant-option" for="{{ variant.id }}">{{- variant.title -}}</label>
+            {%- endif -%}
+          {%- else -%}
+            <input class="hidden" disabled type="radio" id="{{ variant.id }}" name="product-variants" value="{{ variant.id }}">
+            <label class="variant-option disabled" for="{{ variant.id }}">{{- variant.title -}}</label>
+            <div class="cross">
+              <span></span>
+              <span></span>
+            </div>
+          {%- endif -%}
+        </div>
+      {%- endfor -%}
+    </div>
+  </div>
+
+  {% comment %} <div class="custom-selectors">
+    {% unless product.has_only_default_variant %}
+      {% for option in product.options_with_values %}
+        <div class="variant-selector">
+          <label class="variant-title">{{ option.name }}</label>
+          <div class="select">
+            {% for value in option.values %}
+              <div class="option">
+                <input type="radio" id="{{ value | escape }}" name="{{ option.name | escape }}" value="{{ value | escape }}">
+                <label for="{{ value | escape }}">{{ value | escape }}</label>
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+      {% endfor %}
+    {% endunless %}
+  </div> {% endcomment %}
 
 <input 
   class="add-to-cart button primary w-full hover:cursor-pointer disabled:bg-gray-border disabled:border-gray-border disabled:cursor-not-allowed" 
