@@ -1,7 +1,51 @@
 {
   "sections": {
     "main-product": {
-      "type": "main-product"
+      "type": "main-product",
+      "blocks": {
+        "78bc9cd0-14c6-426b-a884-f667c62f3849": {
+          "type": "key-point",
+          "settings": {
+            "text": "2% til Havets Miljø"
+          }
+        },
+        "873d5811-d138-45f8-8a46-5a4b33a71b1e": {
+          "type": "key-point",
+          "settings": {
+            "text": "Gratis fragt fra 499,-"
+          }
+        },
+        "c29e806d-51c4-4bad-9ca9-bbdddd52b86b": {
+          "type": "read-more-item",
+          "settings": {
+            "title": "Specifikationer",
+            "text": "<p>{{ product.metafields.metafields.produktspecifikationer | metafield_tag }}<\/p>"
+          }
+        },
+        "1d2d70cc-d80f-48b1-89db-8636b005f22d": {
+          "type": "read-more-item",
+          "settings": {
+            "title": "Allergener",
+            "text": "<p>{{ product.metafields.metafields.allegener | metafield_tag }}<\/p>"
+          }
+        },
+        "05cdb1a8-2aef-469e-b625-2d5a55b665a6": {
+          "type": "read-more-item",
+          "settings": {
+            "title": "Sundhedsfaktorer",
+            "text": "<p>{{ product.metafields.metafields.sundhedsfaktorer | metafield_tag }}<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "78bc9cd0-14c6-426b-a884-f667c62f3849",
+        "873d5811-d138-45f8-8a46-5a4b33a71b1e",
+        "c29e806d-51c4-4bad-9ca9-bbdddd52b86b",
+        "1d2d70cc-d80f-48b1-89db-8636b005f22d",
+        "05cdb1a8-2aef-469e-b625-2d5a55b665a6"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
