@@ -91,10 +91,40 @@
         "button_text": "",
         "button_link": ""
       }
+    },
+    "439aecdd-4d7f-4c37-88f1-3c8be7e9239c": {
+      "type": "text-image",
+      "blocks": {
+        "template--15756435456138__439aecdd-4d7f-4c37-88f1-3c8be7e9239c-1673628434c7b16ac8-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_76-1.jpg"
+          }
+        },
+        "template--15756435456138__439aecdd-4d7f-4c37-88f1-3c8be7e9239c-1673628434c7b16ac8-1": {
+          "type": "content",
+          "settings": {
+            "heading": "FarSea Kaviar - Danmarks bedste til kaviar.",
+            "richtext": "<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p>",
+            "button_title_1": "",
+            "button_link_1": "",
+            "button_title_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15756435456138__439aecdd-4d7f-4c37-88f1-3c8be7e9239c-1673628434c7b16ac8-0",
+        "template--15756435456138__439aecdd-4d7f-4c37-88f1-3c8be7e9239c-1673628434c7b16ac8-1"
+      ],
+      "settings": {
+        "layout": "contained"
+      }
     }
   },
   "order": [
     "main-product",
-    "ec037995-7586-4943-b8b2-78f388cedf7c"
+    "ec037995-7586-4943-b8b2-78f388cedf7c",
+    "439aecdd-4d7f-4c37-88f1-3c8be7e9239c"
   ]
 }
