@@ -1,5 +1,7 @@
 <span class="icon icon-{{ icon }} {{ class }}">
   {%- case icon -%}
+    {%- when 'simple-arrow' -%}
+      <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.999 1.5L9.99902 10.5L0.999023 1.5" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>        
     {%- when 'arrow' -%}
       <svg class="{{ iconClass }}" height="48" viewBox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M40 22h-24.34l11.17-11.17-2.83-2.83-16 16 16 16 2.83-2.83-11.17-11.17h24.34v-4z"/></svg>
     {% when 'triangle' %}

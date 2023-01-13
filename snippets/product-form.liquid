@@ -12,9 +12,9 @@
     {% endfor %}
   </select>
 
-  <div class="custom-selector mb-10">
-    <label class=" text-sm tracking-wide opacity-50 mb-3 block">Gram</label>
-    <div class="product-variants">
+  <div class="custom-selector">
+    {% comment %} <label class=" text-sm tracking-wide opacity-50 mb-3 block">Købsmuligheder</label>
+    <div class="product-variants radio">
       {%- for variant in product.variants -%}
         <div class="variant">
           {%- if variant.inventory_quantity > 0 -%}
@@ -35,6 +35,48 @@
           {%- endif -%}
         </div>
       {%- endfor -%}
+    </div> {% endcomment %}
+    <div class="product-variants select relative">
+      <div class="select w-full border-solid border-2 border-ocean-500 hover:cursor-pointer">
+        <div class="inner px-5 py-3 pr-[calc(24px+20px+16px)] flex justify-start items-center">
+          <span class="opacity-50 select-none">Vælg</span>
+          <span class="item"></span>
+          <span class="price"></span>
+        </div>
+        {% render 'icon', icon: 'simple-arrow', class: 'absolute top-[50%] right-[20px] translate-y-[-50%]' %}
+      </div>
+      <div class="dropdown w-full border-solid border-2 border-ocean-500 flex-col absolute top-[calc(100%-2px)] left-0 z-10 bg-white hidden">
+        {%- for variant in product.variants -%}
+          {%- if variant.available == false -%}
+            <div disabled class="variant px-5 py-4 flex justify-start items-center border-b-[1px] border-b-solid border-b-gray-border hover:cursor-pointer hover:bg-gray-background pointer-events-[all]">
+              <span class="title font-medium opacity-50">{{ variant.title }}</span>
+              
+              {%- if variant.price > 300000 -%}
+                <span class="notice text-sm bg-pearl-500 font-medium rounded-[2px] px-2 py-1 ml-3 hidden lg:block">+Marmoræske</span>
+              {%- endif -%}
+            
+              <div class="prices ml-auto">
+                <span class="price opacity-50">Udsolgt</span>
+              </div>
+            </div>
+          {%- else -%}
+            <div data-variant="{{ variant.id }}" class="variant px-5 py-4 flex justify-start items-center border-b-[1px] border-b-solid border-b-gray-border hover:cursor-pointer hover:bg-gray-background pointer-events-[all]">
+              <span class="title font-medium">{{ variant.title }}</span>
+              
+              {%- if variant.price > 300000 -%}
+                <span class="notice text-sm bg-pearl-500 font-medium rounded-[2px] px-2 py-1 ml-3 hidden lg:block">+Marmoræske</span>
+              {%- endif -%}
+            
+              <div class="prices ml-auto">
+                {% if variant.compare_at_price %}
+                  <span class="before-price opacity-50 line-through mr-1">{{ variant.compare_at_price | money }}</span>
+                {% endif %}
+                <span class="price">{{ variant.price | money }}</span>
+              </div>
+            </div>
+          {%- endif -%}
+        {%- endfor -%}
+      </div>  
     </div>
   </div>
 
