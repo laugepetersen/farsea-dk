@@ -46,9 +46,55 @@
       ],
       "settings": {
       }
+    },
+    "ec037995-7586-4943-b8b2-78f388cedf7c": {
+      "type": "testimonials",
+      "blocks": {
+        "template--15756435456138__ec037995-7586-4943-b8b2-78f388cedf7c-1673628434951369c7-0": {
+          "type": "testimonial",
+          "settings": {
+            "rating": 5,
+            "quote": "jfiwojfwp jfj fjepiojfpewj fjfoiewj fpejw fijwej",
+            "name": "jioejfoewjf oejfo",
+            "below_name_text": "jiofj eoifjeifje ofj",
+            "profile": "shopify:\/\/shop_images\/model-with-leather-jacket-over-shoulders.jpg"
+          }
+        },
+        "template--15756435456138__ec037995-7586-4943-b8b2-78f388cedf7c-1673628434951369c7-1": {
+          "type": "testimonial",
+          "settings": {
+            "rating": 5,
+            "quote": "oiej fpioewjfipo jeiofjweiopfj eiow jfioj fopjfojfowej fojofpj epiofj ewio jfewjfio jwepfi",
+            "name": "lauge",
+            "below_name_text": "jeiojeoij",
+            "profile": "shopify:\/\/shop_images\/model-with-leather-jacket-over-shoulders.jpg"
+          }
+        },
+        "template--15756435456138__ec037995-7586-4943-b8b2-78f388cedf7c-1673628434951369c7-2": {
+          "type": "testimonial",
+          "settings": {
+            "rating": 5,
+            "quote": "ijffhifh hfui ehfeiohui hfeiuhfiouehfuihfiu iuehfiueh fie hfuihfiwh fofhewih oiu ho",
+            "name": "huiheiurg",
+            "below_name_text": "hui hrirh",
+            "profile": "shopify:\/\/shop_images\/Rectangle_76-1.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "template--15756435456138__ec037995-7586-4943-b8b2-78f388cedf7c-1673628434951369c7-0",
+        "template--15756435456138__ec037995-7586-4943-b8b2-78f388cedf7c-1673628434951369c7-1",
+        "template--15756435456138__ec037995-7586-4943-b8b2-78f388cedf7c-1673628434951369c7-2"
+      ],
+      "settings": {
+        "heading": "",
+        "button_text": "",
+        "button_link": ""
+      }
     }
   },
   "order": [
-    "main-product"
+    "main-product",
+    "ec037995-7586-4943-b8b2-78f388cedf7c"
   ]
 }
