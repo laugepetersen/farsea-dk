@@ -10,13 +10,35 @@
   }
 {% endstyle %}
 
-<div id="pre-header" class="text-xs tracking-wide h-8 grid place-items-center">
-  <div class="container flex justify-between">
+<div id="pre-header" class="text-xs tracking-wide h-8 flex items-center md:grid md:place-items-center">
+  <div class="hidden md:flex container justify-between items-center relative">
     {% for block in title_blocks %}
-      <div class="font-medium">
-        {{ block.settings.title | upcase }}
-      </div>
+      {% if forloop.index == 2 %}
+        <div class="font-medium absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%]">
+          {{ block.settings.title | upcase }}
+        </div>
+      {% else %}
+        <div class="font-medium">
+          {{ block.settings.title | upcase }}
+        </div>
+      {% endif %}
     {% endfor %}
+  </div>
+  <div class="md:hidden overflow-y-scroll flex flex-nowrap px-4">
+    <div class="inline-flex border-ocean-500 border-solid border-[1px]">
+      {%- for block in title_blocks -%}
+        <div class="font-medium mr-8 whitespace-nowrap">
+          {{ block.settings.title | upcase }}
+        </div>
+      {%- endfor -%}
+    </div>
+    <div class="inline-flex border-ocean-500 border-solid border-[1px]">
+      {%- for block in title_blocks -%}
+        <div class="font-medium mr-8 whitespace-nowrap">
+          {{ block.settings.title | upcase }}
+        </div>
+      {%- endfor -%}
+    </div>
   </div>
 </div>
 

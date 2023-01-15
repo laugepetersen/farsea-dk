@@ -1,7 +1,7 @@
-<section class="my-section container">
-  <div class="grid grid-cols-[6fr_4fr] gap-x-16 items-start relative">
+<section class="my-section container product-page">
+  <div class="grid relative lg:grid-cols-[6fr_4fr] lg:gap-x-16 lg:items-start">
 
-    <div class="media">
+    <div class="media desktop hidden lg:block">
       {% render 'product-media', media: product.featured_media %}
       <div class="grid grid-cols-2 gap-2 mt-2">
         {% for media in product.media %}
@@ -13,10 +13,24 @@
       </div>
     </div>
 
-    <div class="product-info sticky top-6 left-0">
+    <div class="media mobile block w-[100vw] -mx-[6vw] lg:hidden mb-6">
+      <div class="product-media-swiper relative">
+        <div class="swiper-wrapper">
+          {%- for media in product.media -%}
+            <div class="swiper-slide">
+              {% render 'product-media', media: media %}
+            </div>
+          {%- endfor -%}
+        </div>
+  
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    
+    <div class="product-info lg:sticky lg:top-6 lg:left-0">
       <h1 class="h2 m-0">{{ product.title }}</h1>
-      <p class="text-[18px] mt-4 mb-8">{% render 'price', product %}</p>
-      <p class="text-[15px] mb-10">{{ product.description }}</p>
+      <p class="text-[18px] mt-2 mb-6 md:mt-4 md:mb-8">{% render 'price', product %}</p>
+      <p class="text-[15px] mb-8 md:mb-10">{{ product.description }}</p>
 
       {% render 'product-form', product: product %}
 
@@ -37,7 +51,7 @@
         <ul class="accordion">
           {% for block in section.blocks %}
             {% if block.type == "read-more-item" %}
-              <li class="accordion-item active mb-[-1px] border-t-[1px] border-b-[1px] border-solid border-gray-border hover:cursor-pointer">
+              <li class="group accordion-item active mb-[-1px] border-t-[1px] border-b-[1px] border-solid border-gray-border hover:cursor-pointer">
                 <div class="accordion-title py-3 px-4 group-hover:bg-gray-background duration-75">
                   <p class="h5 m-0">{{ block.settings.title }}</p>
                   {% render 'icon', icon: 'arrow', class: 'absolute top-[50%] right-6 translate-y-[-50%]', iconClass: 'rotate-[-90deg] duration-300' %}

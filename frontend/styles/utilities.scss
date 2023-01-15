@@ -8,8 +8,18 @@
 
 .my-section {
   @apply my-12 md:my-16 lg:my-20;
+  &.product-page {
+    @apply mt-0 mb-12 lg:my-20;
+  }
 }
 
 .absolute-center {
   @apply left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%];
+}
+
+.container {
+  max-width: none;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  @apply max-w-none px-[6vw] lg:px-[4vw] lg:max-w-[1440px];
 }

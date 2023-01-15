@@ -4,23 +4,23 @@
   <div class="container my-section">
 {%- endif -%}
 
-  <div class="grid grid-cols-2">
+  <div class="grid md:grid-cols-2">
     {% for block in section.blocks %}
       {% case block.type %}
         {% when 'image' %}
-          <div class="relative min-h-[500px] h-[80vh]">
+          <div class="relative min-h-[500px] h-[80vh] max-sm:row-start-1">
             {% if block.settings.image %}
               {{ block.settings.image | image_url: width: 900 | image_tag: class: 'object-cover absolute top-0 left-0 w-full h-full' }}
             {% endif %}
           </div>
         {% when 'content' %}
-          <div class="px-[10%] py-20 grid place-items-center relative">
+          <div class="pt-6 md:px-[10%] md:py-20 grid place-items-center relative">
             {% if section.blocks[0].type == 'content' %}
-              {% render 'icon', icon: 'triangle', class: "absolute top-0 left-0 rotate-0 w-14 h-14 text-pearl-500" %}
+              {% render 'icon', icon: 'triangle', class: "hidden md:block absolute top-0 left-0 rotate-0 w-14 h-14 text-pearl-500" %}
             {% else %}
-              {% render 'icon', icon: 'triangle', class: "absolute top-0 right-0 rotate-90 w-14 h-14 text-pearl-500" %}
+              {% render 'icon', icon: 'triangle', class: "hidden md:block absolute top-0 right-0 rotate-90 w-14 h-14 text-pearl-500" %}
             {% endif %}
-            <div class="max-w-[450px]">
+            <div class="md:max-w-[450px]">
               <h2>{{ block.settings.heading }}</h2>
               {{ block.settings.richtext }}
               {%- if block.settings.button_link_1 or block.settings.button_link_2 -%}

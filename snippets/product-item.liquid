@@ -10,6 +10,6 @@
   </div>
   <div class="product-details mt-3">
     <h2 class="h4 mb-0">{{ product.title }}</h2>
-    <p>{%- if product.price_varies -%}Fra&nbsp;{%- endif -%}{{ product.price | money }}</p>
+    <p>{% render 'price', product: product %}</p>
   </div>
 </a>

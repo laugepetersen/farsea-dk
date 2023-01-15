@@ -4,14 +4,13 @@
       <a href="/" class="font-bold">FarSea</a>
     </div>
 
-    <div class="menu absolute absolute-center">
+    <div class="hidden lg:block menu absolute absolute-center">
       <ul class="menu flex">
-
         {%- for link in linklists.main-menu.links -%}
           <li class="menu-item mx-2">
             <a href="{{ link.url }}" class="px-1 leading-[64px] inline-block hover:underline underline-offset-8">{{ link.title }}</a>
           </li>
-
+        
           {%- if link.links.size > 10 -%}
             <div class="dropdown">
               <ul class="dropdown-menu">
@@ -23,13 +22,12 @@
               </ul>
             </div>
           {%- endif -%}
-
+        
         {%- endfor -%}
-
       </ul>
     </div>
 
-    <div class="icons h-[64px]">
+    <div class="icons h-[64px] flex items-stretch">
       <div class="cart-icon px-1 grid place-items-center h-full hover:cursor-pointer">
         <div class="wrapper w-[23px] h-[24px] relative">
           <div id="cart-icon-counter" class="absolute top-0 right-0 translate-x-[50%] translate-y-[-50%] counter w-5 h-5 rounded-full bg-ocean-500 border-solid border-[2px] border-white grid place-items-center text-xs font-medium text-white leading-4">
@@ -38,12 +36,21 @@
           {% render 'icon', icon: 'cart' %}
         </div>
       </div>
+      <div class="menu-icon grid place-items-center px-1 ml-4 hover:cursor-pointer lg:hidden">
+        <div class="wrapper h-[12px] flex flex-col justify-between items-end">
+          <span class="w-[34px] h-[2px] rounded-full bg-ocean-500"></span>
+          <span class="w-[24px] h-[2px] rounded-full bg-ocean-500"></span>
+        </div>
+      </div>
     </div>
 
   </nav>
 
   <div id="overlay" class="fixed top-0 left-0 w-full h-full bg-ocean-500 opacity-50 z-40 invisible [&.active]:visible"></div>
+
   {% render 'cart' %}
+
+  {% render 'burger-menu' %}
 </header>
 
 {% schema %}

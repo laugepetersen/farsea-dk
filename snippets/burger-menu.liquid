@@ -1,0 +1,16 @@
+<div class="translate-x-[100%] fixed top-0 right-0 w-[100vw] h-[100vh] z-50 bg-white py-10 px-6 overflow-y-scroll grid place-items-center [&.open]:translate-x-0 transition-all" id="burger-menu">
+  <div class="close-btn absolute top-6 right-6 w-6 h-6 hover:cursor-pointer">
+    <span class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-6 h-[2px] rounded-full bg-ocean-500 -rotate-45"></span>
+    <span class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-6 h-[2px] rounded-full bg-ocean-500 rotate-45"></span>
+  </div>
+
+  <div class="flex flex-col items-center">
+    {%- for link in linklists.main-menu.links -%}
+      {% if link.active %}
+        <a class="h1 my-2 border-b-solid border-b-2 border-b-ocean-500" href="{{ link.url }}">{{ link.title }}</a>
+      {% else %}
+        <a class="h1 my-2" href="{{ link.url }}">{{ link.title }}</a>
+      {% endif %}
+    {%- endfor -%}
+  </div>
+</div>

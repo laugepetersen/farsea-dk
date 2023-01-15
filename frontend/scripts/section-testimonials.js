@@ -1,5 +1,4 @@
 import Swiper, { Navigation, Autoplay } from 'swiper';
-import 'swiper/css/bundle';
 
 const testimonialsSections = document.querySelectorAll('.section-testimonials');
 
@@ -11,7 +10,7 @@ function testimonialsScript() {
   const swiper = new Swiper('.swiper', {
     // Install modules
     modules: [Navigation, Autoplay],
-    slidesPerView: 3,
+    slidesPerView: 1,
     spaceBetween: 0,
     autoplay: {
       delay: 2500,
@@ -23,5 +22,10 @@ function testimonialsScript() {
       nextEl: '.button-next',
       prevEl: '.button-prev',
     },
+    breakpoints: {
+      1024: {
+        slidesPerView: 3,
+      },
+    }
   });
 }
