@@ -5,7 +5,8 @@
       "settings": {
         "heading": "Danmarks bedste kaviar",
         "text": "Smag vores lækre kvalitet",
-        "desktop_image": "shopify:\/\/shop_images\/shopify-logo-window-with-plant.jpg",
+        "desktop_image": "shopify:\/\/shop_images\/exampleimage.webp",
+        "mobile_image": "shopify:\/\/shop_images\/exampleimage.webp",
         "button_label_1": "Shop all",
         "button_link_1": "",
         "button_target_1": false,
@@ -69,7 +70,7 @@
         "template--15707237089418__71eb1a2b-e2fc-42c0-86a4-a794d4fd8afe-1668980055d6ca887e-0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/model-with-leather-jacket-over-shoulders.jpg"
+            "image": "shopify:\/\/shop_images\/exampleimage.webp"
           }
         }
       },
@@ -78,6 +79,7 @@
         "template--15707237089418__71eb1a2b-e2fc-42c0-86a4-a794d4fd8afe-1668980055d6ca887e-0"
       ],
       "settings": {
+        "layout": "contained"
       }
     },
     "89729f07-af56-4292-aaa9-b9aa1181abd8": {
@@ -86,7 +88,7 @@
         "template--15707237089418__89729f07-af56-4292-aaa9-b9aa1181abd8-1668980055d6ca887e-0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/model-with-leather-jacket-over-shoulders.jpg"
+            "image": "shopify:\/\/shop_images\/exampleimage.webp"
           }
         },
         "template--15707237089418__89729f07-af56-4292-aaa9-b9aa1181abd8-1668980055d6ca887e-1": {
@@ -106,6 +108,7 @@
         "template--15707237089418__89729f07-af56-4292-aaa9-b9aa1181abd8-1668980055d6ca887e-1"
       ],
       "settings": {
+        "layout": "contained"
       }
     },
     "afda8a31-94c9-4953-8c09-c06640d9c20b": {
@@ -118,7 +121,7 @@
             "quote": "Jeg har flere gange bestilt caviar gennem siden og kvaliteten er rigtig fin. Det pakkes forsvarligt og sendes med is i termokasser.",
             "name": "Søren Hansen",
             "below_name_text": "Fra Hellerup",
-            "profile": "shopify:\/\/shop_images\/model-with-leather-jacket-over-shoulders.jpg"
+            "profile": "shopify:\/\/shop_images\/exampleimage.webp"
           }
         },
         "template--15707237089418__afda8a31-94c9-4953-8c09-c06640d9c20b-1668980055d8361d39-1": {
@@ -128,7 +131,7 @@
             "quote": "Super. Bestilte til middag tirsdag. Havde caviaren næste eftermiddag. Stadig på is - ubrudt kølekæde!",
             "name": "Kim S",
             "below_name_text": "Fra Rødby",
-            "profile": "shopify:\/\/shop_images\/model-with-leather-jacket-over-shoulders.jpg"
+            "profile": "shopify:\/\/shop_images\/exampleimage.webp"
           }
         },
         "template--15707237089418__afda8a31-94c9-4953-8c09-c06640d9c20b-1668980055d8361d39-2": {
@@ -138,7 +141,7 @@
             "quote": "Jeg har købt kaviar her 3 eller 4 gange, og hver gang er det kommet på en ønskede dag og fint pakket og koldt.God kvalitet og rimelige priser.",
             "name": "Tine Hansen",
             "below_name_text": "Fra København S",
-            "profile": "shopify:\/\/shop_images\/model-with-leather-jacket-over-shoulders.jpg"
+            "profile": "shopify:\/\/shop_images\/exampleimage.webp"
           }
         },
         "2fef9c06-f969-4307-8a4d-25945c9538f8": {
@@ -148,7 +151,7 @@
             "quote": "Meget fin indpakning i lille flamingokølekasse med køleelementer der stadig var frosne og iskolde dåser med caviar. Meget professionelhåndtering af min ordre hele vejen og jeg handler hos Attilus når jeg skal bruge caviar igen.",
             "name": "Tina Stage",
             "below_name_text": "Fra Glostrup",
-            "profile": "shopify:\/\/shop_images\/model-with-leather-jacket-over-shoulders.jpg"
+            "profile": "shopify:\/\/shop_images\/exampleimage.webp"
           }
         }
       },
