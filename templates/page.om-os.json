@@ -5,7 +5,8 @@
       "settings": {
         "sub_heading": "Om FarSea",
         "heading": "At levere den bedste kaviar fra det Caspiske Hav og værne om miljøet på samme vis.",
-        "desktop_image": "shopify:\/\/shop_images\/bg-page-sample.jpg"
+        "desktop_image": "shopify:\/\/shop_images\/exampleimage2.webp",
+        "mobile_image": "shopify:\/\/shop_images\/exampleimage2.webp"
       }
     },
     "b87cfc16-2567-41dc-a31a-f4e12ed32ca2": {
@@ -14,7 +15,7 @@
         "template--15752178827402__b87cfc16-2567-41dc-a31a-f4e12ed32ca2-16694763875aec357f-0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_76.jpg"
+            "image": "shopify:\/\/shop_images\/exampleimage.webp"
           }
         },
         "template--15752178827402__b87cfc16-2567-41dc-a31a-f4e12ed32ca2-16694763875aec357f-1": {
@@ -54,7 +55,7 @@
         "template--15752178827402__21b99c6b-162e-4a56-a04f-7dbedee48eed-16695001242135bc16-0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_76-1.jpg"
+            "image": "shopify:\/\/shop_images\/exampleimage.webp"
           }
         }
       },
