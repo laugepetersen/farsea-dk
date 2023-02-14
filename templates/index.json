@@ -29,18 +29,11 @@
           "settings": {
             "product": "royal-beluga"
           }
-        },
-        "b24bb027-03dd-4036-a45b-fc877f9a0f54": {
-          "type": "product-slide",
-          "settings": {
-            "product": "imperial-beluga"
-          }
         }
       },
       "block_order": [
         "5462fa69-5d50-4d59-bf87-15be7816cf38",
-        "5d7a29a6-a2af-460c-96e6-dc185f9681ee",
-        "b24bb027-03dd-4036-a45b-fc877f9a0f54"
+        "5d7a29a6-a2af-460c-96e6-dc185f9681ee"
       ],
       "settings": {
       }
