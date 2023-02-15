@@ -10,7 +10,7 @@
         {% case block.type %}
           {% when "testimonial" %}
           <div class="swiper-slide !h-auto hover:cursor-grab">
-            <div class="grid place-items-center h-full py-12 px-14 ml-[-1px] border-solid border-gray-border border-[1px] relative">
+            <div class="grid place-items-center h-full py-6 md:py-12 px-14 ml-[-1px] border-solid border-gray-border border-[1px] relative">
               <div class="text-center">
                 <div>
                   <div class="flex justify-center mb-3 text-pearl-500">
@@ -48,7 +48,7 @@
   </div>
 
   {% if section.settings.button_link %}
-    <div class="container text-center mt-6">
+    <div class="container text-center mt-4 md:mt-6">
       <a class="button secondary outline" href="{{ section.settings.button_link }}" target="_blank">{{ section.settings.button_text }}</a>
     </div>
   {% endif %}

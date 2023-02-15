@@ -7,7 +7,7 @@
 }
 
 .my-section {
-  @apply my-12 md:my-16 lg:my-20;
+  @apply my-16 md:my-16 lg:my-20;
   &.product-page {
     @apply mt-0 mb-12 lg:my-20;
   }

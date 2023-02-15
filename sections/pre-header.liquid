@@ -10,7 +10,8 @@
   }
 {% endstyle %}
 
-<div id="pre-header" class="text-xs tracking-wide h-8 flex items-center md:grid md:place-items-center">
+<div id="pre-header" class="text-xs tracking-wide h-8 md:flex md:items-center md:grid md:place-items-center">
+  {% comment %} Desktop {% endcomment %}
   <div class="hidden md:flex container justify-between items-center relative">
     {% for block in title_blocks %}
       {% if forloop.index == 2 %}
@@ -24,21 +25,17 @@
       {% endif %}
     {% endfor %}
   </div>
-  <div class="md:hidden overflow-y-scroll flex flex-nowrap px-4">
-    <div class="inline-flex border-ocean-500 border-solid border-[1px]">
-      {%- for block in title_blocks -%}
-        <div class="font-medium mr-8 whitespace-nowrap">
-          {{ block.settings.title | upcase }}
-        </div>
-      {%- endfor -%}
-    </div>
-    <div class="inline-flex border-ocean-500 border-solid border-[1px]">
-      {%- for block in title_blocks -%}
-        <div class="font-medium mr-8 whitespace-nowrap">
-          {{ block.settings.title | upcase }}
-        </div>
-      {%- endfor -%}
-    </div>
+  {% comment %} Mobile {% endcomment %}
+  <div class="md:hidden w-full h-full relative">
+    {%- for i in (1..2) -%}
+      <div class="pre-header-slide-text inline-flex absolute top-[50%] left-[100%] translate-y-[-50%]">
+          {%- for block in title_blocks -%}
+            <div class="font-medium px-4 whitespace-nowrap">
+              {{ block.settings.title | upcase }}
+            </div>
+          {%- endfor -%}
+      </div>
+    {%- endfor -%}
   </div>
 </div>
 

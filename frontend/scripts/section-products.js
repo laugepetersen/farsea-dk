@@ -29,8 +29,8 @@ if(productSections.length) {
     let blocks = section.querySelectorAll('.product');
     let i = 0;
     blocks.forEach(block => {
-      const image = block.querySelector('img');
       const wrapper = block.querySelector('.product-image');
+      const image = wrapper.querySelector('img');
       const priorProduct = blocks[i-1];
 
       ScrollTrigger.create({
@@ -40,7 +40,7 @@ if(productSections.length) {
         onUpdate: self => {
 
           if(priorProduct) {
-            let priorImage = priorProduct.querySelector('img');
+            let priorImage = priorProduct.querySelector('.product-image img');
             let scale = 1.05 - (self.progress / 20);
             priorImage.style.transform = 'scale(' + scale + ')';
           }          

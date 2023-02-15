@@ -8,13 +8,13 @@
     {% for block in section.blocks %}
       {% case block.type %}
         {% when 'image' %}
-          <div class="relative min-h-[500px] h-[80vh] max-sm:row-start-1">
+          <div class="relative h-[40vh] md:min-h-[500px] md:h-[80vh] max-sm:row-start-1">
             {% if block.settings.image %}
               {{ block.settings.image | image_url: width: 900 | image_tag: class: 'object-cover absolute top-0 left-0 w-full h-full' }}
             {% endif %}
           </div>
         {% when 'content' %}
-          <div class="pt-6 md:px-[10%] md:py-20 grid place-items-center relative">
+          <div class="pt-4 md:pt-6 md:px-[10%] md:py-20 grid place-items-center relative">
             {% if section.blocks[0].type == 'content' %}
               {% render 'icon', icon: 'triangle', class: "hidden md:block absolute top-0 left-0 rotate-0 w-14 h-14 text-pearl-500" %}
             {% else %}
@@ -24,12 +24,12 @@
               <h2>{{ block.settings.heading }}</h2>
               {{ block.settings.richtext }}
               {%- if block.settings.button_link_1 or block.settings.button_link_2 -%}
-                <div class="mt-6">
+                <div class="mt-4 md:mt-6 -mx-1">
                   {%- if block.settings.button_link_1 -%}
-                    {% render 'button', href: block.settings.button_link_1, title: block.settings.button_title_1, class: 'button secondary mr-1' -%}
+                    {% render 'button', href: block.settings.button_link_1, title: block.settings.button_title_1, class: 'button secondary mx-1' -%}
                   {%- endif -%}
                   {%- if block.settings.button_link_2 -%}
-                    {%- render 'button', href: block.settings.button_link_2, title: block.settings.button_title_2, class: 'button secondary outline ml-1' -%}
+                    {%- render 'button', href: block.settings.button_link_2, title: block.settings.button_title_2, class: 'button secondary outline mx-1' -%}
                   {%- endif -%}
                 </div>
               {% endif %}

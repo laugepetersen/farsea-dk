@@ -2,8 +2,6 @@ const burgerMenu = document.querySelector('nav .menu-icon');
 const menu = document.querySelector('#burger-menu');
 const closeIcon = menu.querySelector('.close-btn');
 
-console.log(burgerMenu, menu, closeIcon);
-
 burgerMenu.addEventListener('click', function() {
   document.body.classList.add('no-scroll');
   menu.classList.add('open');
