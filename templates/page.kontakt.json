@@ -2,9 +2,12 @@
   "sections": {
     "4494117e-534a-4204-bc70-922690c71a8b": {
       "type": "hero-banner-page",
+      "custom_css": [
+        ".min-h-[calc(100vh-96px)] {height: 300px !important;}"
+      ],
       "settings": {
         "sub_heading": "Kontakt Os",
-        "heading": "",
+        "heading": "Har du spørgsmål?",
         "desktop_image": "shopify:\/\/shop_images\/exampleimage2.webp",
         "mobile_image": "shopify:\/\/shop_images\/exampleimage2.webp"
       }
