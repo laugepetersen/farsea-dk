@@ -1,13 +1,19 @@
-<footer class="h-40 bg-ocean-500 text-white grid place-items-center">
-  <div>
+<footer class="h-40 bg-ocean-500 text-white">
+  <div class="flex justify-between">
     {% if section.settings.logo %}
       {{ section.settings.logo | image_url: width: 300 | image_tag: class: 'footer-logo max-w-[250px] max-h-[120px] object-contain block' }}
     {% else %}
       <h3>Logo Missing</h3>
     {% endif %}
     <div>
-      <div>menu items</div>
-      <div>payment icons</div>
+      <div>
+        {% for link in section.settings.menu.links %}
+          <a href="{{ link.url }}">{{ link.title }}</a>
+        {% endfor %}
+      </div>
+      <div>
+        {{ section.settings.payment_icons | image_url: height: 70 | image_tag: class: "payment-icons" }}
+      </div>
     </div>
   </div>
 </footer>
