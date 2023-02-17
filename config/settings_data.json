@@ -1,6 +1,17 @@
 {
   "current": {
-    "theme-background": "#782f2f",
+    "favicon": "shopify:\/\/shop_images\/favicon.png",
+    "default_logo": "shopify:\/\/shop_images\/logo.png",
+    "theme-background": "#ffffff",
+    "checkout_header_image": "shopify:\/\/shop_images\/exampleimage2.webp",
+    "checkout_logo_image": "shopify:\/\/shop_images\/logo-white.png",
+    "checkout_logo_position": "center",
+    "checkout_logo_size": "medium",
+    "checkout_body_background_color": "#f8f8f8",
+    "checkout_heading_font": "Helvetica Neue",
+    "checkout_body_font": "Helvetica Neue",
+    "checkout_accent_color": "#2da1df",
+    "checkout_button_color": "#20895e",
     "sections": {
       "pre-header": {
         "type": "pre-header",
@@ -47,6 +58,19 @@
       }
     },
     "content_for_index": [
+
+    ],
+    "blocks": {
+      "2153490007123654574": {
+        "type": "shopify:\/\/apps\/gdpr-ccpa-cookie-management\/blocks\/gdpr_cookie_consent\/4fbe573f-a377-4fea-9801-3ee0858cae41",
+        "disabled": false,
+        "settings": {
+        }
+      }
+    }
+  },
+  "platform_customizations": {
+    "custom_css": [
 
     ]
   }
