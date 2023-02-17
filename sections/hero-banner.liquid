@@ -1,4 +1,8 @@
 {% assign ss = section.settings %}
+{% assign heightClass = "min-h-[500px]" %}
+{% if section.settings.height == "small" %}
+  {% assign heightClass = "min-h-[300px]" %}
+{% endif %}
 {% if ss.button_target_1 %}
   {% assign bt_1 = '_blank' %}
 {% else %}
@@ -10,10 +14,10 @@
   {% assign bt_2 = '' %}
 {% endif %}
 
-<div class="min-h-[500px] bg-ocean-500 text-white py-20 relative text-center grid items-center">
+<div class="{{ heightClass }} bg-ocean-500 text-white py-20 relative text-center grid items-center">
   <div class="container relative z-10">
     <h1 class="mb-2">{{ ss.heading }}</h1>
-    <h2 class="text-pearl-500">{{ ss.text }}</h2>
+    <h3 class="text-pearl-500">{{ ss.text }}</h3>
     <div class="inline-block pt-8">
       {%- if ss.button_label_1 != blank -%}
         <a class="button white w-[150px] mr-1" href="{{ ss.button_link_1 }}" target="{{ bt_1 }}">{{ ss.button_label_1 }}</a>
@@ -31,6 +35,10 @@
     {%- if ss.mobile_image != nil -%}
       {{ ss.mobile_image | image_url: height: 1024 | image_tag: preload: true, class: "block md:hidden image-bg" }}
     {%- endif -%}
+  </div>
+  <div class="udforsk absolute bottom-8 left-[50%] translate-x-[-50%]">
+    <p class=" font-semibold tracking-[0.16em] uppercase text-sm">Udforsk</p>
+    {% render 'icon', icon: "simple-arrow", class: "mt-[8px] animate-bounce" %}
   </div>
 </div>
 
@@ -112,6 +120,26 @@
       "id": "button_target_2",
       "type": "checkbox",
       "default": false
+    },
+    {
+      "type": "header",
+      "content": "Settings"
+    },
+    {
+      "label": "Height",
+      "id": "height",
+      "type": "select",
+      "default": "large",
+      "options": [
+        {
+          "label": "Large",
+          "value": "large"
+        },
+        {
+          "label": "Small",
+          "value": "small"
+        }
+      ]
     }
   ],
   "presets": [

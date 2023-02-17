@@ -1,3 +1,36 @@
 <footer class="h-40 bg-ocean-500 text-white grid place-items-center">
-  Footer.liquid
+  <div>
+    {% if section.settings.logo %}
+      {{ section.settings.logo | image_url: width: 300 | image_tag: class: 'footer-logo max-w-[250px] max-h-[120px] object-contain block' }}
+    {% else %}
+      <h3>Logo Missing</h3>
+    {% endif %}
+    <div>
+      <div>menu items</div>
+      <div>payment icons</div>
+    </div>
+  </div>
 </footer>
+
+{% schema %}
+{
+  "name": "Footer",
+  "settings": [
+    {
+      "label": "Logo",
+      "id": "logo",
+      "type": "image_picker"
+    },
+    {
+      "label": "Payment Icons",
+      "id": "payment_icons",
+      "type": "image_picker"
+    },
+    {
+      "label": "Menu",
+      "id": "menu",
+      "type": "link_list"
+    }
+  ]
+}
+{% endschema %}
