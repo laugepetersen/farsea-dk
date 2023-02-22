@@ -57,7 +57,7 @@
           "logo": "shopify:\/\/shop_images\/logo-white_a37e7fce-c6e0-4b7d-b9b3-4fdcc44bf06a.png",
           "logo_width": 78,
           "payment_icons": "shopify:\/\/shop_images\/payemnts.png",
-          "menu": "main-menu"
+          "menu": "footer"
         }
       }
     },
