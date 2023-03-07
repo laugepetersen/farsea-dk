@@ -6,6 +6,7 @@ if(productMediaSwiper) {
     modules: [Navigation, Autoplay, Pagination],
     slidesPerView: 1,
     spaceBetween: 0,
+    loop: true,
     autoplay: {
       delay: 2500,
     },

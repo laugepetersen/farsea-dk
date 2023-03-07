@@ -28,9 +28,26 @@
     </div>
     
     <div class="product-info lg:sticky lg:top-6 lg:left-0">
+      {% render 'breadcrumbs' %}
       <h1 class="h2 m-0">{{ product.title }}</h1>
+
       <p class="text-[18px] mt-2 mb-6 md:mt-4 md:mb-8">{% render 'price', product %}</p>
-      <p class="text-[15px] mb-8 md:mb-10">{{ product.description }}</p>
+
+      <div class="text-[15px] mb-8 md:mb-10">
+        <div class="short-desc">
+          {{ product.description | truncatewords: 20, '...' }}
+          {%- assign descSize = product.description | split: ' ' | size -%}
+          {%- if descSize > 20 -%}
+            <p class="mb-0 inline-block font-medium hover:cursor-pointer" id="desc-read-more">Læs mere</p>
+          {%- endif -%}
+        </div>
+        {%- if descSize > 20 -%}
+          <div class="desc hidden">
+            {{ product.description }}
+            <p class="mb-0 inline-block font-medium hover:cursor-pointer" id="desc-read-less">Læs mindre</p>
+          </div>
+        {%- endif -%}
+      </div>
 
       {% render 'product-form', product: product %}
 

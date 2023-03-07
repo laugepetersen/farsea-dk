@@ -171,6 +171,15 @@
 .pre-header-slide-text:first-of-type {
   animation: preHeaderSlide 12s linear infinite;
 }
-// .pre-header-slide-text:last-of-type {
-//   animation: preHeaderSlide 12s 9.6s linear infinite;
-// }
+
+.breadcrumbs {
+  ol {
+    @apply flex uppercase tracking-wide text-sm mb-3 text-gray-text;
+    li:hover {
+      @apply text-ocean-500 underline;
+    }
+    li:not(:last-child) {
+      white-space: nowrap;
+    }
+  }
+}

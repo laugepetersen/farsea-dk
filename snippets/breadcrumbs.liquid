@@ -1,0 +1,18 @@
+{% assign t = template | split: '.' | first %}
+
+<div class="breadcrumbs">
+  <ol>
+    {%- case t -%}
+      {%- when 'product' -%}
+        <li>
+          <a href="/collections/all">Shop</a>
+        </li>
+        <span class="mx-2">></span>
+        <li>
+          <a href="{{- collections.first.url -}}">{{- product.collections.first.title -}}</a>
+        </li>
+      {%- else -%}
+        
+    {%- endcase -%}
+  </ol>
+</div>

@@ -3,7 +3,7 @@ import viteShopify from "vite-plugin-shopify";
 
 export default defineConfig({
   server: {
-    port: 5051,
+    port: 5050,
   },
   plugins: [
     /* Plugin options are not required, defaults shown */
