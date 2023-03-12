@@ -1,4 +1,4 @@
-{% assign logo_width = section.settings.logo_width %}
+{% #assign logo_width = section.settings.logo_width %}
 
 <footer class="bg-ocean-500 text-white py-10">
 
@@ -6,7 +6,15 @@
 
     <div class="flex justify-between items-center max-md:flex-col">
 
-      
+      {%- comment -%}
+      {% if section.settings.logo %}
+        <div class="max-w-[200] max-md:mb-6" style="width: {{ logo_width }}px;">
+          {{ section.settings.logo | image_url: width: 300 | image_tag: class: 'footer-logo w-full h-auto object-contain block' }}
+        </div>
+      {% else %}
+        <h3>Logo Missing</h3>
+      {% endif %}
+      {%- endcomment -%}
 
       <div class="md:text-right">
 
