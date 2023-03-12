@@ -7,8 +7,7 @@
     <div class="flex justify-between items-center max-md:flex-col">
 
       {% if section.settings.logo %}
-        <div class="max-w-[200] max-md:mb-6" style="">
-          {{ logo_width }}
+        <div class="max-w-[200] max-md:mb-6" style="width: {{ logo_width }}px;">
           {{ section.settings.logo | image_url: width: 300 | image_tag: class: 'footer-logo w-full h-auto object-contain block' }}
         </div>
       {% else %}
@@ -20,7 +19,7 @@
         <div class="flex md:-mx-3 text-sm max-md:flex-col max-md:-my-2 max-md:items-center max-md:text-center">
           {% if section.settings.menu %}
             {% for link in section.settings.menu.links %}
-              <a class="block md:mx-3 hover:underline max-md:my-2" href="{{ link.url }}">{{ link.title }}</a>
+              <a class="block md:mx-2 hover:underline max-md:my-2" href="{{ link.url }}">{{ link.title }}</a>
             {% endfor %}
           {% else %}
             <p>Missing menu</p>

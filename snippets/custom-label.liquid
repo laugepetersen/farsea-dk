@@ -1,0 +1,21 @@
+{%- liquid 
+  assign grams = item.variant.title | remove_last: 'g' | plus: 0
+  assign tags = item.product.tags
+  assign isCaviar = false
+  assign isEnoughWeight = false
+  assign certifiedWeight = 50
+  assign allowedTags = 'caviar, kaviar, Kaviar, Caviar' | split: ', '
+
+  for allowedTag in allowedTags
+    if tags contains allowedTag
+      assign isCaviar = true
+    endif
+  endfor
+
+  if grams >= certifiedWeight
+    assign isEnoughWeight = true
+  endif
+-%}
+{%- if isCaviar and isEnoughWeight -%}
+<span class="inline-block text-xs py-1 px-2 bg-pearl-500 font-medium rounded-sm mt-2">+ Marmoræske</span>
+{%- endif -%}

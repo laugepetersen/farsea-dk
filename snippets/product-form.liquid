@@ -63,7 +63,17 @@
             <div data-variant="{{ variant.id }}" class="variant px-5 py-4 flex justify-start items-center border-b-[1px] border-b-solid border-b-gray-border hover:cursor-pointer hover:bg-gray-background pointer-events-[all]">
               <span class="title font-medium">{{ variant.title }}</span>
               
-              {%- if variant.price > 300000 -%}
+              {%- liquid 
+                assign grams = variant.title | remove_last: 'g' | plus: 0 
+                assign allowedTags = 'caviar, kaviar, Kaviar, Caviar' | split: ', '
+                assign isCaviar = false
+                for allowedTag in allowedTags
+                  if product.tags contains allowedTag
+                    assign isCaviar = true
+                  endif
+                endfor
+              -%}
+              {%- if grams >= 50 and isCaviar -%}
                 <span class="notice text-sm bg-pearl-500 font-medium rounded-[2px] px-2 py-1 ml-3">+Marmoræske</span>
               {%- endif -%}
             
