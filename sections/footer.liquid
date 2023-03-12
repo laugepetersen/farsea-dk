@@ -6,13 +6,7 @@
 
     <div class="flex justify-between items-center max-md:flex-col">
 
-      {% if section.settings.logo %}
-        <div class="max-w-[200] max-md:mb-6" style="width: {{ logo_width }}px;">
-          {{ section.settings.logo | image_url: width: 300 | image_tag: class: 'footer-logo w-full h-auto object-contain block' }}
-        </div>
-      {% else %}
-        <h3>Logo Missing</h3>
-      {% endif %}
+      
 
       <div class="md:text-right">
 
