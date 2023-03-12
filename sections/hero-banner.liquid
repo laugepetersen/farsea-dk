@@ -1,18 +1,23 @@
-{% assign ss = section.settings %}
-{% assign heightClass = "min-h-[500px]" %}
-{% if section.settings.height == "small" %}
-  {% assign heightClass = "min-h-[300px]" %}
-{% endif %}
-{% if ss.button_target_1 %}
-  {% assign bt_1 = '_blank' %}
-{% else %}
-  {% assign bt_1 = '' %}
-{% endif %}
-{% if ss.button_target_2 %}
-  {% assign bt_2 = '_blank' %}
-{% else %}
-  {% assign bt_2 = '' %}
-{% endif %}
+{% liquid
+  assign ss = section.settings
+  assign heightClass = "min-h-[500px]" 
+
+  if section.settings.height == "small"
+    assign heightClass = "min-h-[300px]"
+  endif
+
+  if ss.button_target_1
+    assign bt_1 = '_blank'
+  else
+    assign bt_1 = ''
+  endif
+  
+  if ss.button_target_2
+    assign bt_2 = '_blank'
+  else
+    assign bt_2 = ''
+  endif
+%}
 
 <div class="{{ heightClass }} bg-ocean-500 text-white py-20 relative text-center grid items-center">
   <div class="container relative z-10">

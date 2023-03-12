@@ -88,61 +88,61 @@
 </section>
 
 {% schema %}
-  {
-    "name": "Main Product",
-    "settings": [
-    
-    ],
-    "blocks": [
-      {
-        "name": "Key Point",
-        "type": "key-point",
-        "limit": 3,
-        "settings": [
-          {
-            "label": "Text",
-            "id": "text",
-            "type": "text"
-          }
-        ]
-      },
-      {
-        "name": "Read More Item",
-        "type": "read-more-item",
-        "settings": [
-          {
-            "label": "Title",
-            "id": "title",
-            "type": "text"
-          },
-          {
-            "label": "Text",
-            "id": "text",
-            "type": "richtext"
-          }
-        ]
-      }
-    ],
-    "presets": [
-      {
-        "name": "Produkt Banner",
-        "settings": {
+{
+  "name": "Main Product",
+  "settings": [
+
+  ],
+  "blocks": [
+    {
+      "name": "Key Point",
+      "type": "key-point",
+      "limit": 3,
+      "settings": [
+        {
+          "label": "Text",
+          "id": "text",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "Read More Item",
+      "type": "read-more-item",
+      "settings": [
+        {
+          "label": "Title",
+          "id": "title",
+          "type": "text"
         },
-        "blocks": [
-          {
-            "type": "key-point",
-            "settings": {
-              "text": "Fri fragt fra 600 kr."
-            }
-          },
-          {
-            "type": "key-point",
-            "settings": {
-              "text": "2% Går til Project Clean Ocean"
-            }
+        {
+          "label": "Text",
+          "id": "text",
+          "type": "richtext"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Produkt Banner",
+      "settings": {
+      },
+      "blocks": [
+        {
+          "type": "key-point",
+          "settings": {
+            "text": "Fri fragt fra 600 kr."
           }
-        ]
-      }
-    ]
-  }
+        },
+        {
+          "type": "key-point",
+          "settings": {
+            "text": "2% Går til Project Clean Ocean"
+          }
+        }
+      ]
+    }
+  ]
+}
 {% endschema %}
