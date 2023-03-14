@@ -7,7 +7,7 @@
       
       {% if section.settings.logo %}
         <div class="max-w-[200] max-md:mb-6">
-          <h1>HEY</h1>
+          <h1>HEY {{ section.settings.font_size }}</h1>
           {{ section.settings.logo | image_url: width: 300 | image_tag: class: 'footer-logo w-full h-auto object-contain block' }}
         </div>
       {% else %}
@@ -49,6 +49,16 @@
       "label": "Logo",
       "id": "logo",
       "type": "image_picker"
+    },
+    {
+      "type": "range",
+      "id": "font_size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Font size",
+      "default": 16
     },
     {
       "label": "Payment Icons",
