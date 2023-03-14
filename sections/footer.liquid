@@ -6,7 +6,7 @@
 
       
       {% if section.settings.logo %}
-        <div class="footer-logo max-w-[200] max-md:mb-6">
+        <div class="footer-logo-wrapper max-w-[200] max-md:mb-6">
           {{ section.settings.logo | image_url: width: 300 | image_tag: class: 'footer-logo w-full h-auto object-contain block' }}
         </div>
       {% else %}
@@ -41,8 +41,8 @@
 </footer>
 
 {% stylesheet %}
-  .footer-logo {
-    width: {{ section.settings.logo_size }}px;
+  .footer-logo-wrapper {
+    width: {{ section.settings.logo_size }}px !important;
   }
 {% endstylesheet %}
 
