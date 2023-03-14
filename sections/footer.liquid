@@ -7,7 +7,7 @@
       
       {% if section.settings.logo %}
         <div class="max-w-[200] max-md:mb-6">
-          <h1>HEY {{ section.settings.font_size }}</h1>
+          <h1>HEY {{ section.settings.logo_size }}</h1>
           {{ section.settings.logo | image_url: width: 300 | image_tag: class: 'footer-logo w-full h-auto object-contain block' }}
         </div>
       {% else %}
