@@ -7,7 +7,7 @@
       
       {% if section.settings.logo %}
         <div class="max-w-[200] max-md:mb-6">
-          {% comment %} <h1>HEY {{ section.settings.logo_width }}</h1> {% endcomment %}
+          <h1>HEY {{ section.settings.logo_width }}</h1>
           {{ section.settings.logo | image_url: width: 300 | image_tag: class: 'footer-logo w-full h-auto object-contain block' }}
         </div>
       {% else %}
@@ -49,6 +49,17 @@
       "label": "Logo",
       "id": "logo",
       "type": "image_picker"
+    },
+
+    {
+      "label": "Logo Width",
+      "id": "logo_width",
+      "type": "range",
+      "min": 75,
+      "max": 200,
+      "step": 5,
+      "unit": "px",
+      "default": 120
     },
     {
       "label": "Payment Icons",
