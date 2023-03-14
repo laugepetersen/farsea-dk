@@ -1,6 +1,5 @@
-{% #assign logo_width = section.settings.logo_width %}
+{% comment %} {% assign logo_width = section.settings.logo_width %} {% endcomment %}
 
-{% comment %}
 <footer class="bg-ocean-500 text-white py-10">
 
   <div class="container">
@@ -9,7 +8,7 @@
 
       
       {% if section.settings.logo %}
-        <div class="max-w-[200] max-md:mb-6" style="width: {{ logo_width }}px;">
+        <div class="max-w-[200] max-md:mb-6">
           {{ section.settings.logo | image_url: width: 300 | image_tag: class: 'footer-logo w-full h-auto object-contain block' }}
         </div>
       {% else %}
@@ -42,13 +41,7 @@
   </div>
 
 </footer>
-{% endcomment %}
 
-<div>
-  <h1>footer</h1>
-</div>
-
-{% comment %}
 {% schema %}
 {
   "name": "Footer",
@@ -57,16 +50,6 @@
       "label": "Logo",
       "id": "logo",
       "type": "image_picker"
-    },
-    {
-      "label": "Logo Width",
-      "id": "logo_width",
-      "type": "range",
-      "min": 75,
-      "max": 200,
-      "step": 5,
-      "unit": "px",
-      "default": 120
     },
     {
       "label": "Payment Icons",
@@ -81,4 +64,3 @@
   ]
 }
 {% endschema %}
-{% endcomment %}
