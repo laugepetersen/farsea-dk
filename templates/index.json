@@ -12,30 +12,8 @@
         "button_target_1": false,
         "button_label_2": "Learn more",
         "button_link_2": "",
-        "button_target_2": false
-      }
-    },
-    "358736bb-2d64-4c1a-ac4f-e92e57bb736c": {
-      "type": "products",
-      "blocks": {
-        "5462fa69-5d50-4d59-bf87-15be7816cf38": {
-          "type": "product-slide",
-          "settings": {
-            "product": "imperial-beluga"
-          }
-        },
-        "5d7a29a6-a2af-460c-96e6-dc185f9681ee": {
-          "type": "product-slide",
-          "settings": {
-            "product": "royal-beluga"
-          }
-        }
-      },
-      "block_order": [
-        "5462fa69-5d50-4d59-bf87-15be7816cf38",
-        "5d7a29a6-a2af-460c-96e6-dc185f9681ee"
-      ],
-      "settings": {
+        "button_target_2": false,
+        "height": "large"
       }
     },
     "a5bc0068-270a-4c37-b50a-616d124941f7": {
@@ -44,6 +22,29 @@
         "title": "Shop kaviar & tilbehør",
         "link": "",
         "new_tab": false
+      }
+    },
+    "59a458a8-ca4c-4bcf-b31f-389726f93fd5": {
+      "type": "products",
+      "blocks": {
+        "4cb89677-d3af-4a35-9ffd-f3e886766b8c": {
+          "type": "product-slide",
+          "settings": {
+            "product": "royal-beluga"
+          }
+        },
+        "8cceddea-5a2a-47b3-8b66-dd5b953f63d8": {
+          "type": "product-slide",
+          "settings": {
+            "product": "imperial-beluga"
+          }
+        }
+      },
+      "block_order": [
+        "4cb89677-d3af-4a35-9ffd-f3e886766b8c",
+        "8cceddea-5a2a-47b3-8b66-dd5b953f63d8"
+      ],
+      "settings": {
       }
     },
     "71eb1a2b-e2fc-42c0-86a4-a794d4fd8afe": {
@@ -209,8 +210,8 @@
   },
   "order": [
     "e42836a0-f697-4aa9-b6c3-c8224f25182e",
-    "358736bb-2d64-4c1a-ac4f-e92e57bb736c",
     "a5bc0068-270a-4c37-b50a-616d124941f7",
+    "59a458a8-ca4c-4bcf-b31f-389726f93fd5",
     "71eb1a2b-e2fc-42c0-86a4-a794d4fd8afe",
     "89729f07-af56-4292-aaa9-b9aa1181abd8",
     "afda8a31-94c9-4953-8c09-c06640d9c20b",
