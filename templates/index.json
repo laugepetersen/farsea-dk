@@ -16,14 +16,6 @@
         "height": "large"
       }
     },
-    "a5bc0068-270a-4c37-b50a-616d124941f7": {
-      "type": "big-link",
-      "settings": {
-        "title": "Shop kaviar & tilbehør",
-        "link": "",
-        "new_tab": false
-      }
-    },
     "59a458a8-ca4c-4bcf-b31f-389726f93fd5": {
       "type": "products",
       "blocks": {
@@ -38,13 +30,28 @@
           "settings": {
             "product": "imperial-beluga"
           }
+        },
+        "6ac00268-64c8-4b2e-a2d0-5a88c3cc1ccb": {
+          "type": "product-slide",
+          "settings": {
+            "product": "test-produkt"
+          }
         }
       },
       "block_order": [
         "4cb89677-d3af-4a35-9ffd-f3e886766b8c",
-        "8cceddea-5a2a-47b3-8b66-dd5b953f63d8"
+        "8cceddea-5a2a-47b3-8b66-dd5b953f63d8",
+        "6ac00268-64c8-4b2e-a2d0-5a88c3cc1ccb"
       ],
       "settings": {
+      }
+    },
+    "a5bc0068-270a-4c37-b50a-616d124941f7": {
+      "type": "big-link",
+      "settings": {
+        "title": "Shop kaviar & tilbehør",
+        "link": "shopify:\/\/collections",
+        "new_tab": false
       }
     },
     "71eb1a2b-e2fc-42c0-86a4-a794d4fd8afe": {
@@ -210,8 +217,8 @@
   },
   "order": [
     "e42836a0-f697-4aa9-b6c3-c8224f25182e",
-    "a5bc0068-270a-4c37-b50a-616d124941f7",
     "59a458a8-ca4c-4bcf-b31f-389726f93fd5",
+    "a5bc0068-270a-4c37-b50a-616d124941f7",
     "71eb1a2b-e2fc-42c0-86a4-a794d4fd8afe",
     "89729f07-af56-4292-aaa9-b9aa1181abd8",
     "afda8a31-94c9-4953-8c09-c06640d9c20b",
