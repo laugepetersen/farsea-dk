@@ -19,12 +19,6 @@
     "59a458a8-ca4c-4bcf-b31f-389726f93fd5": {
       "type": "products",
       "blocks": {
-        "6ac00268-64c8-4b2e-a2d0-5a88c3cc1ccb": {
-          "type": "product-slide",
-          "settings": {
-            "product": "test-produkt"
-          }
-        },
         "4cb89677-d3af-4a35-9ffd-f3e886766b8c": {
           "type": "product-slide",
           "settings": {
@@ -39,7 +33,6 @@
         }
       },
       "block_order": [
-        "6ac00268-64c8-4b2e-a2d0-5a88c3cc1ccb",
         "4cb89677-d3af-4a35-9ffd-f3e886766b8c",
         "8cceddea-5a2a-47b3-8b66-dd5b953f63d8"
       ],
