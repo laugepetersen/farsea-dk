@@ -32,8 +32,8 @@
         "05cdb1a8-2aef-469e-b625-2d5a55b665a6": {
           "type": "read-more-item",
           "settings": {
-            "title": "Sundhedsfaktorerbhjbjhb",
-            "text": "<p>{{ product.metafields.metafields.sundhedsfaktorer | metafield_tag }}<\/p><p>jiojio<\/p>"
+            "title": "Sundhedsfaktorer",
+            "text": "<p>{{ product.metafields.metafields.sundhedsfaktorer | metafield_tag }}<\/p>"
           }
         }
       },
