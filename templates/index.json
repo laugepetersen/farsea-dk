@@ -114,7 +114,7 @@
             "rating": 5,
             "quote": "Jeg har flere gange bestilt caviar gennem siden og kvaliteten er rigtig fin. Det pakkes forsvarligt og sendes med is i termokasser.",
             "name": "Søren Hansen",
-            "below_name_text": "Fra Hellerup",
+            "below_name_text": "",
             "profile": "shopify:\/\/shop_images\/exampleimage.webp"
           }
         },
@@ -164,18 +164,18 @@
     "0a4ef183-d026-4f9a-b44e-d2e758fc8d28": {
       "type": "faq",
       "blocks": {
-        "template--15707237089418__0a4ef183-d026-4f9a-b44e-d2e758fc8d28-166898005550bf07a6-0": {
-          "type": "item",
-          "settings": {
-            "title": "Hvor hurtigt kan I levere?",
-            "text": "<p>Hvis du lægger en stor ordre hos os, leverer vi hurtigt derefter, da vi i så fald sender direkte fra vores leverandør i Tyskland. Mindre ordrer <br\/>kan forventes leveret indenfor inden for fem hverdage.<\/p>"
-          }
-        },
         "template--15707237089418__0a4ef183-d026-4f9a-b44e-d2e758fc8d28-166898005550bf07a6-1": {
           "type": "item",
           "settings": {
             "title": "Hvordan leverer I?",
             "text": "<p>Vi leverer gennem <strong>PostNord<\/strong>, da de som de eneste i Danmark kan love <br\/>dag-til-dag-levering. Hvis andet ikke er anført, sender vi til nærmeste <br\/>pakkehus, så vi kan sikre, at du får varene dagen efter afsendelse.<\/p><p><strong>Fødevareforsendelse:<\/strong><br\/>Er en levering indenfor 5 hverdage.<\/p>"
+          }
+        },
+        "template--15707237089418__0a4ef183-d026-4f9a-b44e-d2e758fc8d28-166898005550bf07a6-0": {
+          "type": "item",
+          "settings": {
+            "title": "Hvor hurtigt kan I levere?",
+            "text": "<p>Hvis du lægger en stor ordre hos os, leverer vi hurtigt derefter, da vi i så fald sender direkte fra vores leverandør i Tyskland. Mindre ordrer <br\/>kan forventes leveret indenfor inden for fem hverdage.<\/p>"
           }
         },
         "template--15707237089418__0a4ef183-d026-4f9a-b44e-d2e758fc8d28-166898005550bf07a6-2": {
@@ -194,8 +194,8 @@
         }
       },
       "block_order": [
-        "template--15707237089418__0a4ef183-d026-4f9a-b44e-d2e758fc8d28-166898005550bf07a6-0",
         "template--15707237089418__0a4ef183-d026-4f9a-b44e-d2e758fc8d28-166898005550bf07a6-1",
+        "template--15707237089418__0a4ef183-d026-4f9a-b44e-d2e758fc8d28-166898005550bf07a6-0",
         "template--15707237089418__0a4ef183-d026-4f9a-b44e-d2e758fc8d28-166898005550bf07a6-2",
         "172f82db-967a-4498-90e5-ba986422256f"
       ],
