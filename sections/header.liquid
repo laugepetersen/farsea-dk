@@ -1,9 +1,9 @@
 <header class="w-full">
   <nav id="main-navigation" class="container flex justify-between relative items-center">
     <div class="logo">
-        <a href="{{ shop.url }}">
+        <a href="{{ shop.url }}" class="block">
             {% if section.settings.logo %}
-                {{ section.settings.logo | image_url: height: 200 | image_tag }}
+                {{ section.settings.logo | image_url: height: 200 | image_tag: class: " block max-h-[48px] w-auto" }}
             {% else %}
                 <strong>FarSea.dk</strong>
             {% endif %}

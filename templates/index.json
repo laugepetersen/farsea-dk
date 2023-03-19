@@ -5,35 +5,36 @@
       "settings": {
         "heading": "Danmarks bedste kavia",
         "text": "Smag vores lækre kvalitet",
-        "desktop_image": "shopify:\/\/shop_images\/exampleimage.webp",
+        "desktop_image": "shopify:\/\/shop_images\/Artboard_1_copy.png",
         "mobile_image": "shopify:\/\/shop_images\/exampleimage.webp",
         "button_label_1": "Shop all",
         "button_link_1": "",
         "button_target_1": false,
         "button_label_2": "Learn more",
         "button_link_2": "",
-        "button_target_2": false
+        "button_target_2": false,
+        "height": "large"
       }
     },
-    "358736bb-2d64-4c1a-ac4f-e92e57bb736c": {
+    "59a458a8-ca4c-4bcf-b31f-389726f93fd5": {
       "type": "products",
       "blocks": {
-        "5462fa69-5d50-4d59-bf87-15be7816cf38": {
-          "type": "product-slide",
-          "settings": {
-            "product": "imperial-beluga"
-          }
-        },
-        "5d7a29a6-a2af-460c-96e6-dc185f9681ee": {
+        "4cb89677-d3af-4a35-9ffd-f3e886766b8c": {
           "type": "product-slide",
           "settings": {
             "product": "royal-beluga"
           }
+        },
+        "8cceddea-5a2a-47b3-8b66-dd5b953f63d8": {
+          "type": "product-slide",
+          "settings": {
+            "product": "imperial-beluga"
+          }
         }
       },
       "block_order": [
-        "5462fa69-5d50-4d59-bf87-15be7816cf38",
-        "5d7a29a6-a2af-460c-96e6-dc185f9681ee"
+        "4cb89677-d3af-4a35-9ffd-f3e886766b8c",
+        "8cceddea-5a2a-47b3-8b66-dd5b953f63d8"
       ],
       "settings": {
       }
@@ -42,7 +43,7 @@
       "type": "big-link",
       "settings": {
         "title": "Shop kaviar & tilbehør",
-        "link": "",
+        "link": "shopify:\/\/collections",
         "new_tab": false
       }
     },
@@ -52,8 +53,8 @@
         "template--15707237089418__71eb1a2b-e2fc-42c0-86a4-a794d4fd8afe-1668980055d6ca887e-1": {
           "type": "content",
           "settings": {
-            "heading": "Hvorfor er vores kaviar så interessant?",
-            "richtext": "<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p>",
+            "heading": "Kunsten af Iransk kaviar",
+            "richtext": "<p>Irans 740 km lange kystlinje langs Det Kaspiske Hav er hjemsted for en af verdens mest eftertragtede delikatesser - Beluga kaviar. Men ikke enhver Beluga kaviar er skabt lige, og iransk Beluga kaviar er noget helt specielt. Dybden på 900 meter og økosystemet i Det Kaspiske Hav sikrer, at kaviaren fra Iran er sjælden og af dyrebar kvalitet.<br\/><br\/>Iransk kaviar er kendt som verdens bedste, og det er ikke svært at forstå hvorfor. Dens lyse mørkegrå farve og smeltende konsistens efterlader en ekstraordinær subtil smag med smørlignende og nøddeagtige undertoner, der vil tage din smagssans på en uforglemmelig rejse.<br\/><br\/>Men iransk kaviar er mere end blot en luksuriøs spise - det er en kunstform i sig selv. Hver bøtte med disse små sorte perler repræsenterer mindst 14 års arbejde, hvor eksperter kaldet \"khâviâr sâzân\" (kaviarproducenter) har perfektioneret deres håndværk gennem 10 års erfaring for at opnå denne titel.<br\/><br\/>Så når du nyder en skefuld af denne ekstravagante delikatesse, så ved du, at du ikke blot smager på den fineste kvalitet kaviar, men også på århundreders viden og kunstnerisk håndværk. Det er kunsten af iransk kaviar - en oplevelse, der vil få din smagssans til at synge af glæde.<\/p>",
             "button_title_1": "",
             "button_link_1": "",
             "button_title_2": "Lær mere",
@@ -63,7 +64,7 @@
         "template--15707237089418__71eb1a2b-e2fc-42c0-86a4-a794d4fd8afe-1668980055d6ca887e-0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/exampleimage.webp"
+            "image": "shopify:\/\/shop_images\/Artboard_1_copy_6.png"
           }
         }
       },
@@ -87,8 +88,8 @@
         "template--15707237089418__89729f07-af56-4292-aaa9-b9aa1181abd8-1668980055d6ca887e-1": {
           "type": "content",
           "settings": {
-            "heading": "Bestil for over 500 kr. og få speciallavet bøtte til din kaviar.",
-            "richtext": "<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p>",
+            "heading": "Tilbehør til kaviaren",
+            "richtext": "",
             "button_title_1": "",
             "button_link_1": "",
             "button_title_2": "Shop kaviar",
@@ -113,7 +114,7 @@
             "rating": 5,
             "quote": "Jeg har flere gange bestilt caviar gennem siden og kvaliteten er rigtig fin. Det pakkes forsvarligt og sendes med is i termokasser.",
             "name": "Søren Hansen",
-            "below_name_text": "Fra Hellerup",
+            "below_name_text": "",
             "profile": "shopify:\/\/shop_images\/exampleimage.webp"
           }
         },
@@ -163,18 +164,18 @@
     "0a4ef183-d026-4f9a-b44e-d2e758fc8d28": {
       "type": "faq",
       "blocks": {
-        "template--15707237089418__0a4ef183-d026-4f9a-b44e-d2e758fc8d28-166898005550bf07a6-0": {
-          "type": "item",
-          "settings": {
-            "title": "Hvor hurtigt kan I levere?",
-            "text": "<p>Hvis du lægger en stor ordre hos os, leverer vi hurtigt derefter, da vi i så fald sender direkte fra vores leverandør i Tyskland. Mindre ordrer <br\/>kan forventes leveret indenfor inden for fem hverdage.<\/p>"
-          }
-        },
         "template--15707237089418__0a4ef183-d026-4f9a-b44e-d2e758fc8d28-166898005550bf07a6-1": {
           "type": "item",
           "settings": {
             "title": "Hvordan leverer I?",
-            "text": "<p>Vi leverer gennem <strong>PostNord<\/strong>, da de som de eneste i Danmark kan love <br\/>dag-til-dag-levering. Hvis andet ikke er anført, sender vi til nærmeste <br\/>pakkehus, så vi kan sikre, at du får varene dagen efter afsendelse.<\/p><p><strong>Fødevareforsendelse:<\/strong><br\/>Er en levering indenfor 5 hverdage.<\/p>"
+            "text": "<p>Vi leverer gennem <strong>PostNord og GLS<\/strong>, da de kan love <br\/>dag-til-dag-levering. Hvis andet ikke er anført, sender vi til nærmeste <br\/>pakkehus, så vi kan sikre, at du får varene dagen efter afsendelse.<\/p><p><strong>Fødevareforsendelse:<\/strong><br\/>Er en levering indenfor 5 hverdage.<\/p>"
+          }
+        },
+        "template--15707237089418__0a4ef183-d026-4f9a-b44e-d2e758fc8d28-166898005550bf07a6-0": {
+          "type": "item",
+          "settings": {
+            "title": "Hvor hurtigt kan I levere?",
+            "text": "<p>Vi tilbyder hurtig levering, så du kan nyde din kaviar på ingen tid! Vi leverer din ordre inden for 1-3 hverdage, men hvis du har brug for det endnu hurtigere, tilbyder vi også en ekspres leveringsmulighed, som du kan tilkøbe ved checkout. På den måde kan du nyde vores lækre kaviar så hurtigt som muligt!<\/p>"
           }
         },
         "template--15707237089418__0a4ef183-d026-4f9a-b44e-d2e758fc8d28-166898005550bf07a6-2": {
@@ -188,19 +189,19 @@
           "type": "item",
           "settings": {
             "title": "Hvor kommer kaviaren fra?",
-            "text": "<p>Content to the question...<\/p>"
+            "text": "<p>Beluga kaviaren fra Iran stammer fra huso huso fisken, også kendt som den kaspiske havmonster. Disse fisk kan vokse til at blive helt op til 1.500 kg og 6 m lange og leve i op til 100 år, hvilket gør dem til en af de mest imponerende fiskearter i verden. Faktisk er huso huso en af de ældste arter af ferskvandsfisk i verden, og de har eksisteret i mere end 200 millioner år. Deres sjældenhed og dyrebare kvalitet skyldes både deres alder og det særlige økosystem i det kaspiske hav, som sikrer, at deres kaviar er af højeste kvalitet. Derfor er beluga kaviaren fra Iran kendt som en af verdens mest eftertragtede delikatesser.<\/p>"
           }
         }
       },
       "block_order": [
-        "template--15707237089418__0a4ef183-d026-4f9a-b44e-d2e758fc8d28-166898005550bf07a6-0",
         "template--15707237089418__0a4ef183-d026-4f9a-b44e-d2e758fc8d28-166898005550bf07a6-1",
+        "template--15707237089418__0a4ef183-d026-4f9a-b44e-d2e758fc8d28-166898005550bf07a6-0",
         "template--15707237089418__0a4ef183-d026-4f9a-b44e-d2e758fc8d28-166898005550bf07a6-2",
         "172f82db-967a-4498-90e5-ba986422256f"
       ],
       "settings": {
         "heading": "Ofte stillede spørgsmål",
-        "text": "<p>At vero eos et accusamus et iusto odio dignissimos ducimus qu.<\/p>",
+        "text": "",
         "heading_besides_button": "Mangler du stadig hjælp?",
         "button_text": "Kontak os",
         "button_link": "shopify:\/\/collections"
@@ -209,7 +210,7 @@
   },
   "order": [
     "e42836a0-f697-4aa9-b6c3-c8224f25182e",
-    "358736bb-2d64-4c1a-ac4f-e92e57bb736c",
+    "59a458a8-ca4c-4bcf-b31f-389726f93fd5",
     "a5bc0068-270a-4c37-b50a-616d124941f7",
     "71eb1a2b-e2fc-42c0-86a4-a794d4fd8afe",
     "89729f07-af56-4292-aaa9-b9aa1181abd8",
