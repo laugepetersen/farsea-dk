@@ -168,7 +168,7 @@
           "type": "item",
           "settings": {
             "title": "Hvordan leverer I?",
-            "text": "<p>Vi leverer gennem <strong>PostNord<\/strong>, da de som de eneste i Danmark kan love <br\/>dag-til-dag-levering. Hvis andet ikke er anført, sender vi til nærmeste <br\/>pakkehus, så vi kan sikre, at du får varene dagen efter afsendelse.<\/p><p><strong>Fødevareforsendelse:<\/strong><br\/>Er en levering indenfor 5 hverdage.<\/p>"
+            "text": "<p>Vi leverer gennem <strong>PostNord og GLS<\/strong>, da de kan love <br\/>dag-til-dag-levering. Hvis andet ikke er anført, sender vi til nærmeste <br\/>pakkehus, så vi kan sikre, at du får varene dagen efter afsendelse.<\/p><p><strong>Fødevareforsendelse:<\/strong><br\/>Er en levering indenfor 5 hverdage.<\/p>"
           }
         },
         "template--15707237089418__0a4ef183-d026-4f9a-b44e-d2e758fc8d28-166898005550bf07a6-0": {
