@@ -1,61 +1,68 @@
 <div class="container my-section">
 
-  <div class="md:flex md:justify-between mb-10 md:items-end">
-    <h1 class="h3 mb-0">Din kurv</h1>
-    <a href="{{ shop.url }}/collections/all" class="underline mb-2 text-sm">Fortsæt shopping</a>
-  </div>
-
-  <div class="grid gap-y-6">
-    {%- if cart.item_count > 0 -%}
-      <div class="grid grid-cols-[4fr,2fr,1fr,2fr] gap-x-10 -mb-5">
-        <span class="opacity-60 uppercase text-[12px] tracking-wide">Vare</span>
-        <span class="opacity-60 uppercase text-[12px] tracking-wide">Pris</span>
-        <span class="opacity-60 uppercase text-[12px] tracking-wide">Antal</span>
-        <span class="opacity-60 uppercase text-[12px] tracking-wide text-right">Total</span>
-      </div>
-      <div class="h-[1px] bg-gray-border"></div>
-      {%- for item in cart.items -%}
-        <div class="grid grid-cols-[4fr,2fr,1fr,2fr] gap-x-10">
-          <div class="product flex">
-            <div class="image mr-6">
-              <a class="block" href="{{ item.product.url }}">{{ item.product.featured_image | image_url: width: 150, height: 150 | image_tag }}</a>
-            </div>
-            <div class="desc">
-              <h2 class="h5 tracking-wide leading-tight hover:underline"><a href="{{ item.product.url }}">{{ item.product.title }}</a></h2>
-              {%- for option in item.variant.options -%}
-                {%- if option -%}
-                  <span class="opacity-60 text-sm">{{ item.product.options[forloop.index0] }}: {{ option }}</span>
-                {%- endif -%}
-              {%- endfor -%}
-              <div>
-                {% render 'custom-label', item: item %}
-              </div>
-            </div>
-          </div>
-          <div class="price">
-            <span>{{ item.final_price | money }}</span>
-          </div>
-          <div class="quantity">
-            <span>{{ item.quantity }}</span>
-          </div>
-          <div class="total text-right">
-            <span class="block font-bold">{{ item.final_line_price | money }}</span>
-            <span class="inline-block remove-item text-[13px] font-medium underline px-2 -mx-2 py-[2px] rounded-sm hover:cursor-pointer hover:bg-gray-background">Fjern</span>
-          </div>
+    {%- if cart.item_count == 0 -%}
+        
+        <div class="text-center">
+            <h1 class="h3 mb-0">Din kurv er tom...</h1>
+            <a href="{{ shop.url }}/collections/all" class="underline mb-2 text-sm">Fortsæt shopping</a>
         </div>
-        <div class="h-[1px] bg-gray-border"></div>
-      {%- endfor -%}
+
+    {%- else -%}
+
+        <div class="md:flex md:justify-between mb-10 md:items-end">
+            <h1 class="h3 mb-0">Du har {{ cart.item_count }} varer i din kurv</h1>
+            <a href="{{ shop.url }}/collections/all" class="underline mb-2 text-sm">Fortsæt shopping</a>
+        </div>
+
+        <div class="grid gap-y-6">
+            <div class="max-sm:hidden grid grid-cols-[4fr,2fr,1fr,2fr] gap-x-10 -mb-5">
+                <span class="opacity-60 uppercase text-[12px] tracking-wide">Vare</span>
+                <span class="opacity-60 uppercase text-[12px] tracking-wide">Pris</span>
+                <span class="opacity-60 uppercase text-[12px] tracking-wide">Antal</span>
+                <span class="opacity-60 uppercase text-[12px] tracking-wide text-right">Total</span>
+            </div>
+            <div class="h-[1px] bg-gray-border"></div>
+            {%- for item in cart.items -%}
+                <div class="cart-item grid grid-cols-[1fr,min-content] gap-x-6 md:grid-cols-[4fr,2fr,1fr,2fr] md:gap-x-10" data-variant-id="{{ item.variant_id }}">
+                    <div class="product flex">
+                        <div class="image mr-3 md:mr-6">
+                            <a class="block max-w-[80px]" href="{{ item.product.url }}">{{ item.product.featured_image | image_url: width: 150, height: 150 | image_tag }}</a>
+                        </div>
+                        <div class="desc">
+                            <h2 class="h5 tracking-wide leading-tight hover:underline"><a href="{{ item.product.url }}">{{ item.product.title }}</a></h2>
+                            {%- for option in item.variant.options -%}
+                                {%- if option -%}
+                                    <span class="opacity-60 block text-sm">{{ item.product.options[forloop.index0] }}: {{ option }}</span>
+                                {%- endif -%}
+                            {%- endfor -%}
+                            <span class="md:hidden block opacity-60 text-sm">Antal: {{ item.quantity }}</span>
+                            <div>
+                                {% render 'custom-label', item: item %}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price max-sm:hidden">
+                        <span>{{ item.final_price | money }}</span>
+                    </div>
+                    <div class="quantity max-sm:hidden">
+                        <span>{{ item.quantity }}</span>
+                    </div>
+                    <div class="total text-right">
+                        <span class="block font-bold whitespace-nowrap">{{ item.final_line_price | money }}</span>
+                        <span class="inline-block remove-item text-[13px] font-medium underline px-2 -mx-2 py-[2px] rounded-sm hover:cursor-pointer hover:bg-gray-background">Fjern</span>
+                    </div>
+                </div>
+                <div class="h-[1px] bg-gray-border"></div>
+            {%- endfor -%}
+        </div>
+
+        <div class="mt-10">
+            <form action="{{ routes.cart_url }}" method="post">
+            <div class="md:max-w-[250px] md:ml-auto md:mr-0 md:text-right">
+                <p class="mb-3"><span class="text-sm">Subtotal:</span>&nbsp;<span class="text-lg font-bold">{{ cart.checkout_charge_amount | money }}</span></p>
+                <input name="checkout" type="submit" value="Checkout" class="button secondary block w-full text-center hover:cursor-pointer hover:bg-ocean-400 transition-all">
+            </div>
+            </form>
+        </div>
     {%- endif -%}
-
-  </div>
-
-  <div class="mt-10">
-    <form action="{{ routes.cart_url }}" method="post">
-      <div class="md:max-w-[250px] md:ml-auto md:mr-0 md:text-right">
-        <p class="mb-0"><span class="text-sm">Subtotal:</span>&nbsp;<span class="text-lg font-bold">{{ cart.checkout_charge_amount | money }}</span></p>
-        <p><span class="text-sm">Gratis fragt</span></p>
-        <input name="checkout" type="submit" value="Checkout" class="button secondary block w-full text-center hover:cursor-pointer hover:bg-ocean-400 transition-all">
-      </div>
-    </form>
-  </div>
 </div>

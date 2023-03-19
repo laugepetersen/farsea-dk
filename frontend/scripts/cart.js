@@ -106,3 +106,27 @@ function updateCartHTML() {
     item.querySelector('.remove-item').addEventListener('click', (event) => removeItem(item, event));
   })
 }
+
+
+// Template /cart
+const cartTemplate = document.querySelector('.template-cart');
+if(cartTemplate) {
+    const cartItems = cartTemplate.querySelectorAll('main .cart-item');
+    cartItems.forEach(item => {
+        item.querySelector('.remove-item').addEventListener('click', async (event) => {
+            let postData = {
+                id: item.getAttribute('data-variant-id'),
+                quantity: 0
+            }
+            
+            await fetch(window.Shopify.routes.root + 'cart/change.js', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(postData)
+            })
+            .catch(err => console.log('Error removing item from cart...'));
+
+            location.reload();
+        });
+    });
+}

@@ -1,17 +1,13 @@
-<div class="mt-auto mb-0">
-  <div class="price py-2 border-y-solid border-y-gray-border border-y-[1px]">
+<div class="mb-0">
+  <div class="price pt-6 pb-6 border-t-solid border-t-gray-border border-t-[1px]">
     <div class="subtotal flex justify-between">
-      <p class="font-bold">Subtotal:</p>
-      <p>{{ cart.checkout_charge_amount | money }}</p>
-    </div>
-    <div class="delivery flex justify-between">
-      <p class="opacity-70 text-sm">Levering</p>
-      <p class="opacity-70 text-sm">Gratis</p>
+      <p class="font-bold mb-0">Subtotal:</p>
+      <p class="mb-0">{{ cart.checkout_charge_amount | money }}</p>
     </div>
   </div>
 
   <div class="checkout">
-    <a href="{{ shop.url }}/cart" class="font-bold block w-full text-center my-4 hover:underline">View Cart</a>
+    {% comment %} <a href="{{ shop.url }}/cart" class="font-bold block w-full text-center my-4 hover:underline">Se Kurv</a> {% endcomment %}
     <input name="checkout" type="submit" value="Checkout" class="button secondary block w-full text-center hover:cursor-pointer hover:bg-ocean-400 transition-all">
   </div>
 </div>

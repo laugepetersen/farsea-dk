@@ -1,7 +1,13 @@
 <header class="w-full">
   <nav id="main-navigation" class="container flex justify-between relative items-center">
     <div class="logo">
-      <a href="/" class="font-bold">FarSea</a>
+        <a href="{{ shop.url }}">
+            {% if section.settings.logo %}
+                {{ section.settings.logo | image_url: height: 200 | image_tag }}
+            {% else %}
+                <strong>FarSea.dk</strong>
+            {% endif %}
+        </a>
     </div>
 
     <div class="hidden lg:block menu absolute absolute-center">
@@ -37,10 +43,7 @@
         </div>
       </div>
       <div class="menu-icon grid place-items-center px-1 ml-4 hover:cursor-pointer lg:hidden">
-        <div class="wrapper h-[12px] flex flex-col justify-between items-end">
-          <span class="w-[34px] h-[2px] rounded-full bg-ocean-500"></span>
-          <span class="w-[24px] h-[2px] rounded-full bg-ocean-500"></span>
-        </div>
+        {% render 'icon', icon: 'menu-icon', class: "w-[32px] h-[32px]" %}
       </div>
     </div>
 
