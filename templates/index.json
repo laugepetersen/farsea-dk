@@ -178,13 +178,6 @@
             "text": "<p>Vi tilbyder hurtig levering, så du kan nyde din kaviar på ingen tid! Vi leverer din ordre inden for 1-3 hverdage, men hvis du har brug for det endnu hurtigere, tilbyder vi også en ekspres leveringsmulighed, som du kan tilkøbe ved checkout. På den måde kan du nyde vores lækre kaviar så hurtigt som muligt!<\/p>"
           }
         },
-        "template--15707237089418__0a4ef183-d026-4f9a-b44e-d2e758fc8d28-166898005550bf07a6-2": {
-          "type": "item",
-          "settings": {
-            "title": "Reklamation af vare.",
-            "text": "<p>Content to the question...<\/p>"
-          }
-        },
         "172f82db-967a-4498-90e5-ba986422256f": {
           "type": "item",
           "settings": {
@@ -196,7 +189,6 @@
       "block_order": [
         "template--15707237089418__0a4ef183-d026-4f9a-b44e-d2e758fc8d28-166898005550bf07a6-1",
         "template--15707237089418__0a4ef183-d026-4f9a-b44e-d2e758fc8d28-166898005550bf07a6-0",
-        "template--15707237089418__0a4ef183-d026-4f9a-b44e-d2e758fc8d28-166898005550bf07a6-2",
         "172f82db-967a-4498-90e5-ba986422256f"
       ],
       "settings": {
