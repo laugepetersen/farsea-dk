@@ -3,14 +3,14 @@
     "e42836a0-f697-4aa9-b6c3-c8224f25182e": {
       "type": "hero-banner",
       "settings": {
-        "heading": "Danmarks bedste kavia",
-        "text": "Smag vores lækre kvalitet",
-        "desktop_image": "shopify:\/\/shop_images\/Artboard_1_copy.png",
+        "heading": "",
+        "text": "",
+        "desktop_image": "shopify:\/\/shop_images\/Caviar_med_ske_og_daase.png",
         "mobile_image": "shopify:\/\/shop_images\/exampleimage.webp",
-        "button_label_1": "Shop all",
+        "button_label_1": "Køb nu",
         "button_link_1": "",
         "button_target_1": false,
-        "button_label_2": "Learn more",
+        "button_label_2": "Kaviar info",
         "button_link_2": "",
         "button_target_2": false,
         "height": "large"
@@ -82,7 +82,7 @@
         "template--17677362004236__2e148043-6719-4fc9-84de-818055ea5478-16794201284a2cf928-0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Artboard_1_copy_6_bc7c45f2-f6cf-46a5-a1b7-9b0308fd88ec.png"
+            "image": "shopify:\/\/shop_images\/Kadaver_kaviar2867.jpg"
           }
         },
         "template--17677362004236__2e148043-6719-4fc9-84de-818055ea5478-16794201284a2cf928-1": {
