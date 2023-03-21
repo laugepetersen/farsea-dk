@@ -54,7 +54,7 @@
           "type": "content",
           "settings": {
             "heading": "Kunsten af Iransk kaviar",
-            "richtext": "<p>Irans 740 km lange kystlinje langs Det Kaspiske Hav er hjemsted for en af verdens mest eftertragtede delikatesser - Beluga kaviar. Men ikke enhver Beluga kaviar er skabt lige, og iransk Beluga kaviar er noget helt specielt. Dybden på 900 meter og økosystemet i Det Kaspiske Hav sikrer, at kaviaren fra Iran er sjælden og af dyrebar kvalitet.<br\/><br\/>Iransk kaviar er kendt som verdens bedste, og det er ikke svært at forstå hvorfor. Dens lyse mørkegrå farve og smeltende konsistens efterlader en ekstraordinær subtil smag med smørlignende og nøddeagtige undertoner, der vil tage din smagssans på en uforglemmelig rejse.<br\/><br\/>Men iransk kaviar er mere end blot en luksuriøs spise - det er en kunstform i sig selv. Hver bøtte med disse små sorte perler repræsenterer mindst 14 års arbejde, hvor eksperter kaldet \"khâviâr sâzân\" (kaviarproducenter) har perfektioneret deres håndværk gennem 10 års erfaring for at opnå denne titel.<br\/><br\/>Så når du nyder en skefuld af denne ekstravagante delikatesse, så ved du, at du ikke blot smager på den fineste kvalitet kaviar, men også på århundreders viden og kunstnerisk håndværk. Det er kunsten af iransk kaviar - en oplevelse, der vil få din smagssans til at synge af glæde.<\/p>",
+            "richtext": "<p>Irans 740 km lange kystlinje langs Det Kaspiske Hav er hjemsted for en af verdens mest eftertragtede delikatesser - Beluga kaviar. Men ikke enhver Beluga kaviar er skabt lige, og iransk Beluga kaviar er noget helt specielt. Dybden på 900 meter og økosystemet i Det Kaspiske Hav sikrer, at kaviaren fra Iran er sjælden og af dyrebar kvalitet.<br\/><\/p>",
             "button_title_1": "",
             "button_link_1": "",
             "button_title_2": "Lær mere",
@@ -76,30 +76,30 @@
         "layout": "contained"
       }
     },
-    "89729f07-af56-4292-aaa9-b9aa1181abd8": {
+    "2e148043-6719-4fc9-84de-818055ea5478": {
       "type": "text-image",
       "blocks": {
-        "template--15707237089418__89729f07-af56-4292-aaa9-b9aa1181abd8-1668980055d6ca887e-0": {
+        "template--17677362004236__2e148043-6719-4fc9-84de-818055ea5478-16794201284a2cf928-0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/exampleimage.webp"
+            "image": "shopify:\/\/shop_images\/Artboard_1_copy_6_bc7c45f2-f6cf-46a5-a1b7-9b0308fd88ec.png"
           }
         },
-        "template--15707237089418__89729f07-af56-4292-aaa9-b9aa1181abd8-1668980055d6ca887e-1": {
+        "template--17677362004236__2e148043-6719-4fc9-84de-818055ea5478-16794201284a2cf928-1": {
           "type": "content",
           "settings": {
-            "heading": "Tilbehør til kaviaren",
-            "richtext": "",
-            "button_title_1": "",
+            "heading": "Iransk kaviar er kendt som verdens bedste",
+            "richtext": "<p>Iransk kaviar er kendt som verdens bedste, og det er ikke svært at forstå hvorfor. Dens lyse mørkegrå farve og smeltende konsistens efterlader en ekstraordinær subtil smag med smørlignende og nøddeagtige undertoner, der vil tage din smagssans på en uforglemmelig rejse. <\/p><p>Men iransk kaviar er mere end blot en luksuriøs spise - det er en kunstform i sig selv. Hver bøtte med disse små sorte perler repræsenterer mindst 14 års arbejde, hvor eksperter kaldet \"khâviâr sâzân\" (kaviarproducenter) har perfektioneret deres håndværk gennem 10 års erfaring for at opnå denne titel.<\/p><p>Så når du nyder en skefuld af denne ekstravagante delikatesse, så ved du, at du ikke blot smager på den fineste kvalitet kaviar, men også på århundreders viden og kunstnerisk håndværk. Det er kunsten af iransk kaviar - en oplevelse, der vil få din smagssans til at synge af glæde.<\/p>",
+            "button_title_1": "Læs mere",
             "button_link_1": "",
-            "button_title_2": "Shop kaviar",
-            "button_link_2": "shopify:\/\/collections"
+            "button_title_2": "",
+            "button_link_2": ""
           }
         }
       },
       "block_order": [
-        "template--15707237089418__89729f07-af56-4292-aaa9-b9aa1181abd8-1668980055d6ca887e-0",
-        "template--15707237089418__89729f07-af56-4292-aaa9-b9aa1181abd8-1668980055d6ca887e-1"
+        "template--17677362004236__2e148043-6719-4fc9-84de-818055ea5478-16794201284a2cf928-0",
+        "template--17677362004236__2e148043-6719-4fc9-84de-818055ea5478-16794201284a2cf928-1"
       ],
       "settings": {
         "layout": "contained"
@@ -213,7 +213,7 @@
     "59a458a8-ca4c-4bcf-b31f-389726f93fd5",
     "a5bc0068-270a-4c37-b50a-616d124941f7",
     "71eb1a2b-e2fc-42c0-86a4-a794d4fd8afe",
-    "89729f07-af56-4292-aaa9-b9aa1181abd8",
+    "2e148043-6719-4fc9-84de-818055ea5478",
     "afda8a31-94c9-4953-8c09-c06640d9c20b",
     "0a4ef183-d026-4f9a-b44e-d2e758fc8d28"
   ]
