@@ -19,9 +19,9 @@
           "type": "content",
           "settings": {
             "heading": "Kundeinformation",
-            "richtext": "<p><strong>Email<\/strong><\/p><p>contact@farsea.dk<\/p><p><strong>Telefon<\/strong><\/p><p>+45 5027 5223<\/p><p><\/p><p><strong>Adresse<\/strong><\/p><p>Industrigrenen 15A, 2635 Ishøj<\/p><p><\/p><p><strong>CVR<\/strong><\/p><p>DK43393030<\/p>",
+            "richtext": "<p><strong>Email<br\/><\/strong>contact@farsea.dk<\/p><p><strong>Telefon<br\/><\/strong>+45 5027 5223<\/p><p><strong>Adresse<br\/><\/strong>Industrigrenen 15A, 2635 Ishøj<\/p><p><strong>CVR<br\/><\/strong>DK43393030<\/p>",
             "button_title_1": "Send e-mail",
-            "button_link_1": "mailto:info@farsea.dk",
+            "button_link_1": "mailto:contact@farsea.dk",
             "button_title_2": "",
             "button_link_2": ""
           }
