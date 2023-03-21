@@ -40,6 +40,9 @@
           "pre-header-1",
           "pre-header-2"
         ],
+        "custom_css": [
+          "#pre-header {display: none;}"
+        ],
         "settings": {
           "background": "#fcf9e7",
           "text_color": "#0e1c37",
