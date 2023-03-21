@@ -3,9 +3,9 @@
     "4494117e-534a-4204-bc70-922690c71a8b": {
       "type": "hero-banner-page",
       "settings": {
-        "sub_heading": "Om FarSea",
-        "heading": "At levere den bedste kaviar fra det Caspiske Hav og værne om miljøet på samme vis.",
-        "desktop_image": "shopify:\/\/shop_images\/exampleimage2.webp",
+        "sub_heading": "",
+        "heading": "At levere den bedste kaviar fra det Kaspiske Hav og værne om miljøet på samme vis.",
+        "desktop_image": "shopify:\/\/shop_images\/pexels-jayson-delos-santos-1139541.jpg",
         "mobile_image": "shopify:\/\/shop_images\/exampleimage2.webp"
       }
     },
@@ -15,7 +15,7 @@
         "template--15752178827402__b87cfc16-2567-41dc-a31a-f4e12ed32ca2-16694763875aec357f-0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/exampleimage.webp"
+            "image": "shopify:\/\/shop_images\/Tea_can_background_132c973c-8ee6-4534-82e4-6c8a53c42338.png"
           }
         },
         "template--15752178827402__b87cfc16-2567-41dc-a31a-f4e12ed32ca2-16694763875aec357f-1": {
