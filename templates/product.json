@@ -102,7 +102,7 @@
           "type": "content",
           "settings": {
             "heading": "FarSea Kaviar - Danmarks bedste til kaviar.",
-            "richtext": "<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p>",
+            "richtext": "{{ product.metafields.custom.yderligere_beskrivelse | metafield_tag }}",
             "button_title_1": "",
             "button_link_1": "",
             "button_title_2": "",
