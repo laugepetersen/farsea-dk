@@ -4,8 +4,7 @@
       "type": "hero-banner-page",
       "settings": {
         "sub_heading": "Om FarSea",
-        "heading": "At levere den bedste kaviar fra det Caspiske Hav og værne om miljøet på samme vis.",
-        "desktop_image": "shopify:\/\/shop_images\/bg-page-sample.jpg"
+        "heading": "At levere den bedste kaviar fra det Caspiske Hav og værne om miljøet på samme vis."
       }
     },
     "b87cfc16-2567-41dc-a31a-f4e12ed32ca2": {
@@ -14,14 +13,13 @@
         "template--15752178827402__b87cfc16-2567-41dc-a31a-f4e12ed32ca2-16694763875aec357f-0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_76.jpg"
           }
         },
         "template--15752178827402__b87cfc16-2567-41dc-a31a-f4e12ed32ca2-16694763875aec357f-1": {
           "type": "content",
           "settings": {
-            "heading": "Miljøvenlige farme og sunde fisk ingredienserne i vores kaviar",
-            "richtext": "<p>An obsession with quality has been the hallmark of The Macallan since its founding by Alexander Reid on a plateau above the river Spey in north-east Scotland. The distillery is surrounded by a 485 acre estate with Easter Elchies House at its heart. <\/p>",
+            "heading": "Beluga kaviar Irans perle",
+            "richtext": "<p>Irans 740 km lange kystlinje langs Det Kaspiske Hav er hjemsted for en af verdens mest eftertragtede delikatesser - Beluga kaviar. Men ikke enhver Beluga kaviar er skabt lige, og Iransk Beluga kaviar er noget helt specielt. Dybden på 900 meter og økosystemet i Det Kaspiske Hav sikrer, at kaviaren fra Iran er sjælden og af dyrebar kvalitet.<\/p>",
             "button_title_1": "",
             "button_link_1": "",
             "button_title_2": "",
@@ -54,7 +52,6 @@
         "template--15752178827402__21b99c6b-162e-4a56-a04f-7dbedee48eed-16695001242135bc16-0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_76-1.jpg"
           }
         }
       },
