@@ -3,10 +3,6 @@
     "file": "Parisienne-Regular.f788ce7d.woff2",
     "src": "frontend/fonts/Parisienne-Regular.woff2"
   },
-  "frontend/fonts/WorkSans-Medium.woff2": {
-    "file": "WorkSans-Medium.4b94eb75.woff2",
-    "src": "frontend/fonts/WorkSans-Medium.woff2"
-  },
   "frontend/fonts/NoeDisplay-Regular.woff2": {
     "file": "NoeDisplay-Regular.3dee6811.woff2",
     "src": "frontend/fonts/NoeDisplay-Regular.woff2"
@@ -15,13 +11,17 @@
     "file": "WorkSans-Regular.37d0ba05.woff2",
     "src": "frontend/fonts/WorkSans-Regular.woff2"
   },
-  "frontend/fonts/WorkSans-Italic.woff2": {
-    "file": "WorkSans-Italic.d3a46107.woff2",
-    "src": "frontend/fonts/WorkSans-Italic.woff2"
+  "frontend/fonts/WorkSans-Medium.woff2": {
+    "file": "WorkSans-Medium.4b94eb75.woff2",
+    "src": "frontend/fonts/WorkSans-Medium.woff2"
   },
   "frontend/fonts/WorkSans-SemiBold.woff2": {
     "file": "WorkSans-SemiBold.8c625572.woff2",
     "src": "frontend/fonts/WorkSans-SemiBold.woff2"
+  },
+  "frontend/fonts/WorkSans-Italic.woff2": {
+    "file": "WorkSans-Italic.d3a46107.woff2",
+    "src": "frontend/fonts/WorkSans-Italic.woff2"
   },
   "frontend/fonts/WorkSans-MediumItalic.woff2": {
     "file": "WorkSans-MediumItalic.462ae944.woff2",
@@ -31,13 +31,13 @@
     "file": "WorkSans-SemiBoldItalic.e12498e3.woff2",
     "src": "frontend/fonts/WorkSans-SemiBoldItalic.woff2"
   },
-  "frontend/fonts/Parisienne-Regular.woff": {
-    "file": "Parisienne-Regular.a43e860e.woff",
-    "src": "frontend/fonts/Parisienne-Regular.woff"
-  },
   "frontend/fonts/NoeDisplay-Regular.woff": {
     "file": "NoeDisplay-Regular.c44c9ec8.woff",
     "src": "frontend/fonts/NoeDisplay-Regular.woff"
+  },
+  "frontend/fonts/Parisienne-Regular.woff": {
+    "file": "Parisienne-Regular.a43e860e.woff",
+    "src": "frontend/fonts/Parisienne-Regular.woff"
   },
   "frontend/fonts/WorkSans-Medium.woff": {
     "file": "WorkSans-Medium.dae9a11c.woff",
@@ -69,7 +69,7 @@
     "isEntry": true
   },
   "frontend/entrypoints/theme.scss": {
-    "file": "theme.f430a7e4.css",
+    "file": "theme.2498a541.css",
     "src": "frontend/entrypoints/theme.scss",
     "isEntry": true
   }
