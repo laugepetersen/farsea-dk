@@ -3,8 +3,8 @@
     "e42836a0-f697-4aa9-b6c3-c8224f25182e": {
       "type": "hero-banner",
       "settings": {
-        "heading": "",
-        "text": "",
+        "heading": "Danmarks bedste kaviar",
+        "text": "Smag vores lækre varianter",
         "desktop_image": "shopify:\/\/shop_images\/Caviar_med_ske_og_daase.png",
         "mobile_image": "shopify:\/\/shop_images\/exampleimage.webp",
         "button_label_1": "Køb nu",
@@ -14,7 +14,7 @@
         "button_link_2": "",
         "button_target_2": false,
         "height": "large",
-        "bg_visibility": 20
+        "bg_visibility": 40
       }
     },
     "59a458a8-ca4c-4bcf-b31f-389726f93fd5": {
