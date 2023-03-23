@@ -18,7 +18,7 @@
     </div>
   </div>
   <div class="absolute top-0 left-0 w-[100%] h-[100%] z-0">
-    <div class="bg-ocean-500 absolute top-0 left-0 w-[100%] h-[100%] z-10 opacity-[{{ bgVisibility }}]"></div>
+    <div class="bg-ocean-500 absolute top-0 left-0 w-[100%] h-[100%] z-10" style="opacity: {{ bgVisibility }}"></div>
     {%- if ss.desktop_image != nil -%}
       {{ ss.desktop_image | image_url: width: 1024 | image_tag: preload: true, class: "hidden md:block image-bg z-0" }}
     {%- endif -%}
