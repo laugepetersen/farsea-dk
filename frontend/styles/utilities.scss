@@ -12,6 +12,9 @@
     @apply mt-0 mb-12 lg:my-20;
   }
 }
+.my-section-padding {
+    @apply py-16 md:py-16 lg:py-16;
+}
 
 .absolute-center {
   @apply left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%];
