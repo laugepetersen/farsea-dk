@@ -1,6 +1,7 @@
 {% liquid
   assign ss = section.settings
   assign heightClass = "min-h-[500px]" 
+  assign bgVisibility = section.settings.bg_visibility | divided_by: 100
 
   if section.settings.height == "small"
     assign heightClass = "min-h-[300px]"
@@ -33,7 +34,7 @@
     </div>
   </div>
   <div class="absolute top-0 left-0 w-[100%] h-[100%] z-0">
-    <div class="bg-ocean-500 absolute top-0 left-0 w-[100%] h-[100%] opacity-80"></div>
+    <div class="bg-ocean-500 absolute top-0 left-0 w-[100%] h-[100%] opacity-[{{ bgVisibility }}]"></div>
     {%- if ss.desktop_image != nil -%}
       {{ ss.desktop_image | image_url: width: 1024 | image_tag: preload: true, class: "hidden md:block image-bg" }}
     {%- endif -%}
@@ -145,6 +146,16 @@
           "value": "small"
         }
       ]
+    },
+    {
+      "type": "range",
+      "id": "bg_visibility",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "label": "Blue Background Visibility",
+      "default": 30
     }
   ],
   "presets": [

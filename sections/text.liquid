@@ -1,0 +1,91 @@
+{% liquid 
+    assign hasBg = ''
+    unless section.settings.background_image or section.settings.background_video or section.settings.background_color
+        assign hasBg = 'my-section min-h-[500px] grid place-items-center'
+    endunless
+%}
+<div class="my-section">
+    <div
+        class="bg-cover bg-center bg-no-repeat bg-fixed overflow-hidden {{ hasBg }} relative"
+        style="
+            background-color: {{ section.settings.background_color }};
+            background-image: url({{ section.settings.background_image | image_url: width: 1920 }});
+        "
+    >
+        {%- unless section.settings.background_video -%}
+            <video 
+                muted 
+                autoplay 
+                playsinline 
+                loop 
+                src="{{ section.settings.background_video.video_source.url }}"
+                class="object-cover w-full h-full absolute top-0 left-0 z-0"
+            >
+            </video>
+        {%- endunless -%}
+        <div class="container w-full">
+            <div class="content max-w-xl text-[{{ section.settings.text_position }}]">
+                {{ section.settings.content }}
+            </div>
+        </div>
+    </div>
+
+</div>
+
+{% schema %}
+{
+  "name": "Text Image",
+  "class": "section-text-image",
+  "tag": "section",
+  "settings": [
+    {
+      "label": "Content",
+      "id": "content",
+      "type": "richtext"
+    },
+    {
+        "label": "Text Position",
+        "id": "text_position",
+        "type": "select",
+        "options": [
+            {
+            "value": "left",
+            "label": "Left"
+            },
+            {
+            "value": "center",
+            "label": "Center"
+            },
+            {
+            "value": "right",
+            "label": "Right"
+            }
+        ],
+        "default": "center"
+    },
+    {
+      "label": "Background Color",
+      "id": "background_color",
+      "type": "color"
+    },
+    {
+      "label": "Background Image",
+      "id": "background_image",
+      "type": "image_picker"
+    },
+    {
+      "label": "Background Video",
+      "id": "background_video",
+      "type": "video"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Text",
+      "blocks": [
+
+      ]
+    }
+  ]
+}
+{% endschema %}

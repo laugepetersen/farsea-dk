@@ -1,6 +1,16 @@
-{% assign ss = section.settings %}
+{% liquid
+    assign ss = section.settings 
+    assign heightClass = "min-h-[500px]" 
 
-<div class="min-h-[calc(100vh-96px)] bg-ocean-500 text-white py-20 relative text-center grid items-center">
+    if section.settings.height == "small"
+        assign heightClass = "min-h-[300px]"
+    endif
+
+    assign bgVisibility = section.settings.bg_visibility | divided_by: 100
+%}
+
+
+<div class="{{ heightClass }} bg-ocean-500 text-white py-20 relative text-center grid items-center">
   <div class="container relative z-10">
     <div class="content max-w-2xl mx-auto">
       <h2 class="h1 sub-heading mb-4">{{ ss.sub_heading }}</h2>
@@ -8,12 +18,12 @@
     </div>
   </div>
   <div class="absolute top-0 left-0 w-[100%] h-[100%] z-0">
-    <div class="bg-ocean-500 absolute top-0 left-0 w-[100%] h-[100%] opacity-0"></div>
+    <div class="bg-ocean-500 absolute top-0 left-0 w-[100%] h-[100%] z-10 opacity-[{{ bgVisibility }}]"></div>
     {%- if ss.desktop_image != nil -%}
-      {{ ss.desktop_image | image_url: width: 1024 | image_tag: preload: true, class: "hidden md:block image-bg" }}
+      {{ ss.desktop_image | image_url: width: 1024 | image_tag: preload: true, class: "hidden md:block image-bg z-0" }}
     {%- endif -%}
     {%- if ss.mobile_image != nil -%}
-      {{ ss.mobile_image | image_url: height: 1024 | image_tag: preload: true, class: "block md:hidden image-bg" }}
+      {{ ss.mobile_image | image_url: height: 1024 | image_tag: preload: true, class: "block md:hidden image-bg z-0" }}
     {%- endif -%}
   </div>
 </div>
@@ -54,6 +64,36 @@
       "label": "Background Image (Mobile)",
       "id": "mobile_image",
       "type": "image_picker"
+    },
+    {
+      "type": "header",
+      "content": "Settings"
+    },
+    {
+      "label": "Height",
+      "id": "height",
+      "type": "select",
+      "default": "large",
+      "options": [
+        {
+          "label": "Large",
+          "value": "large"
+        },
+        {
+          "label": "Small",
+          "value": "small"
+        }
+      ]
+    },
+    {
+      "type": "range",
+      "id": "bg_visibility",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "label": "Blue Background Visibility",
+      "default": 30
     }
   ],
   "presets": [
