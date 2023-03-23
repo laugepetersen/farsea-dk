@@ -3,10 +3,6 @@
     "file": "NoeDisplay-Regular.3dee6811.woff2",
     "src": "frontend/fonts/NoeDisplay-Regular.woff2"
   },
-  "frontend/fonts/WorkSans-Regular.woff2": {
-    "file": "WorkSans-Regular.37d0ba05.woff2",
-    "src": "frontend/fonts/WorkSans-Regular.woff2"
-  },
   "frontend/fonts/Parisienne-Regular.woff2": {
     "file": "Parisienne-Regular.f788ce7d.woff2",
     "src": "frontend/fonts/Parisienne-Regular.woff2"
@@ -15,13 +11,17 @@
     "file": "WorkSans-Medium.4b94eb75.woff2",
     "src": "frontend/fonts/WorkSans-Medium.woff2"
   },
-  "frontend/fonts/WorkSans-SemiBold.woff2": {
-    "file": "WorkSans-SemiBold.8c625572.woff2",
-    "src": "frontend/fonts/WorkSans-SemiBold.woff2"
+  "frontend/fonts/WorkSans-Regular.woff2": {
+    "file": "WorkSans-Regular.37d0ba05.woff2",
+    "src": "frontend/fonts/WorkSans-Regular.woff2"
   },
   "frontend/fonts/WorkSans-Italic.woff2": {
     "file": "WorkSans-Italic.d3a46107.woff2",
     "src": "frontend/fonts/WorkSans-Italic.woff2"
+  },
+  "frontend/fonts/WorkSans-SemiBold.woff2": {
+    "file": "WorkSans-SemiBold.8c625572.woff2",
+    "src": "frontend/fonts/WorkSans-SemiBold.woff2"
   },
   "frontend/fonts/WorkSans-MediumItalic.woff2": {
     "file": "WorkSans-MediumItalic.462ae944.woff2",
@@ -39,21 +39,21 @@
     "file": "Parisienne-Regular.a43e860e.woff",
     "src": "frontend/fonts/Parisienne-Regular.woff"
   },
-  "frontend/fonts/WorkSans-Regular.woff": {
-    "file": "WorkSans-Regular.48b440c4.woff",
-    "src": "frontend/fonts/WorkSans-Regular.woff"
-  },
   "frontend/fonts/WorkSans-Medium.woff": {
     "file": "WorkSans-Medium.dae9a11c.woff",
     "src": "frontend/fonts/WorkSans-Medium.woff"
   },
-  "frontend/fonts/WorkSans-SemiBold.woff": {
-    "file": "WorkSans-SemiBold.b5db2462.woff",
-    "src": "frontend/fonts/WorkSans-SemiBold.woff"
+  "frontend/fonts/WorkSans-Regular.woff": {
+    "file": "WorkSans-Regular.48b440c4.woff",
+    "src": "frontend/fonts/WorkSans-Regular.woff"
   },
   "frontend/fonts/WorkSans-Italic.woff": {
     "file": "WorkSans-Italic.4040639b.woff",
     "src": "frontend/fonts/WorkSans-Italic.woff"
+  },
+  "frontend/fonts/WorkSans-SemiBold.woff": {
+    "file": "WorkSans-SemiBold.b5db2462.woff",
+    "src": "frontend/fonts/WorkSans-SemiBold.woff"
   },
   "frontend/fonts/WorkSans-MediumItalic.woff": {
     "file": "WorkSans-MediumItalic.fd325cca.woff",

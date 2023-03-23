@@ -5,7 +5,7 @@
 {% case media.media_type %}
   {% when 'image' %}
     <div class="media-item bg-gray-background max-w-full" data-media-id="{{ media.id }}">
-      {{ media | image_url: width: 1440, crop: 'center', format: 'WebP' | image_tag }}
+      {{ media | image_url: width: 1024, height: 1024, crop: 'center', format: 'WebP' | image_tag }}
     </div>
   {% when 'video' %}
     <div class="media-item bg-gray-background" data-media-id="{{ media.id }}">
