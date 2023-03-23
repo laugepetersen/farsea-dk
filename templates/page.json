@@ -69,10 +69,10 @@
       "type": "text",
       "settings": {
         "content": "<h2>Dette er en test Block<\/h2><p>An obsession with quality has been the hallmark of The Macallan since <br\/>its founding by Alexander Reid on a plateau above the river Spey in <br\/>north-east Scotland. The distillery is surrounded by a 485 acre estate <br\/>with Easter Elchies House at its heart. <\/p>",
-        "text_color": "",
+        "text_color": "white",
         "text_position": "center",
-        "background_color": "#754646",
-        "background_color_visiblity": 100,
+        "background_color": "#0c1324",
+        "background_color_visiblity": 50,
         "background_image": "shopify:\/\/shop_images\/Kadaver_kaviar2927.jpg",
         "background_video": "shopify:\/\/files\/videos\/pexels-mar-fer-6899912.mp4",
         "remove_spacing_bottom": true
