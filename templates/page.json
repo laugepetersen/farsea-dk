@@ -5,7 +5,8 @@
       "settings": {
         "sub_heading": "Om FarSea",
         "heading": "At levere den bedste kaviar fra det Caspiske Hav og værne om miljøet på samme vis.",
-        "desktop_image": "shopify:\/\/shop_images\/bg-page-sample.jpg"
+        "height": "large",
+        "bg_visibility": 30
       }
     },
     "b87cfc16-2567-41dc-a31a-f4e12ed32ca2": {
@@ -14,7 +15,6 @@
         "template--15752178827402__b87cfc16-2567-41dc-a31a-f4e12ed32ca2-16694763875aec357f-0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_76.jpg"
           }
         },
         "template--15752178827402__b87cfc16-2567-41dc-a31a-f4e12ed32ca2-16694763875aec357f-1": {
@@ -54,7 +54,6 @@
         "template--15752178827402__21b99c6b-162e-4a56-a04f-7dbedee48eed-16695001242135bc16-0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_76-1.jpg"
           }
         }
       },
@@ -65,11 +64,22 @@
       "settings": {
         "layout": "contained"
       }
+    },
+    "02ea2f4f-eb60-4edf-89ec-b2378d09a27e": {
+      "type": "text",
+      "settings": {
+        "content": "<h2>Dette er en test Block<\/h2><p>An obsession with quality has been the hallmark of The Macallan since <br\/>its founding by Alexander Reid on a plateau above the river Spey in <br\/>north-east Scotland. The distillery is surrounded by a 485 acre estate <br\/>with Easter Elchies House at its heart. <\/p>",
+        "text_position": "center",
+        "background_color": "#754646",
+        "background_image": "shopify:\/\/shop_images\/Kadaver_kaviar2927.jpg",
+        "background_video": "shopify:\/\/files\/videos\/pexels-mar-fer-6899912.mp4"
+      }
     }
   },
   "order": [
     "4494117e-534a-4204-bc70-922690c71a8b",
     "b87cfc16-2567-41dc-a31a-f4e12ed32ca2",
-    "21b99c6b-162e-4a56-a04f-7dbedee48eed"
+    "21b99c6b-162e-4a56-a04f-7dbedee48eed",
+    "02ea2f4f-eb60-4edf-89ec-b2378d09a27e"
   ]
 }
