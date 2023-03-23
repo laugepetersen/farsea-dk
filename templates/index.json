@@ -13,7 +13,8 @@
         "button_label_2": "Kaviar info",
         "button_link_2": "",
         "button_target_2": false,
-        "height": "large"
+        "height": "large",
+        "bg_visibility": 20
       }
     },
     "59a458a8-ca4c-4bcf-b31f-389726f93fd5": {
@@ -22,13 +23,15 @@
         "4cb89677-d3af-4a35-9ffd-f3e886766b8c": {
           "type": "product-slide",
           "settings": {
-            "product": "royal-beluga"
+            "product": "royal-beluga",
+            "description": ""
           }
         },
         "8cceddea-5a2a-47b3-8b66-dd5b953f63d8": {
           "type": "product-slide",
           "settings": {
-            "product": "imperial-beluga"
+            "product": "imperial-beluga",
+            "description": ""
           }
         }
       },
