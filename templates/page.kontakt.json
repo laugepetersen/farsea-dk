@@ -9,7 +9,9 @@
         "sub_heading": "Kontakt Os",
         "heading": "Har du spørgsmål?",
         "desktop_image": "shopify:\/\/shop_images\/exampleimage2.webp",
-        "mobile_image": "shopify:\/\/shop_images\/exampleimage2.webp"
+        "mobile_image": "shopify:\/\/shop_images\/exampleimage2.webp",
+        "height": "small",
+        "bg_visibility": 20
       }
     },
     "b87cfc16-2567-41dc-a31a-f4e12ed32ca2": {
