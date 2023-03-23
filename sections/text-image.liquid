@@ -20,7 +20,7 @@
             {% else %}
               {% render 'icon', icon: 'triangle', class: "hidden md:block absolute top-0 right-0 rotate-90 w-14 h-14 text-pearl-500" %}
             {% endif %}
-            <div class="md:max-w-[450px]">
+            <div class="w-full md:max-w-[450px]">
               <h2>{{ block.settings.heading }}</h2>
               {{ block.settings.richtext }}
               {%- if block.settings.button_link_1 or block.settings.button_link_2 -%}
