@@ -39,6 +39,17 @@
         "layout": "contained"
       }
     },
+    "93c06612-2ed2-4c25-bcc6-9fac2e8c10b8": {
+      "type": "text",
+      "settings": {
+        "content": "",
+        "text_color": "",
+        "text_position": "center",
+        "background_color": "",
+        "background_color_visiblity": 100,
+        "background_video": "shopify:\/\/files\/videos\/video.mp4"
+      }
+    },
     "21b99c6b-162e-4a56-a04f-7dbedee48eed": {
       "type": "text-image",
       "blocks": {
@@ -83,6 +94,7 @@
   "order": [
     "4494117e-534a-4204-bc70-922690c71a8b",
     "b87cfc16-2567-41dc-a31a-f4e12ed32ca2",
+    "93c06612-2ed2-4c25-bcc6-9fac2e8c10b8",
     "21b99c6b-162e-4a56-a04f-7dbedee48eed",
     "45bd9648-8269-4951-97ae-b5b912bfbda8"
   ]
