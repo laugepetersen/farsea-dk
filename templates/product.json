@@ -150,7 +150,7 @@
         "template--17677362233612__0fa26897-498e-47fc-9c57-7bcabddc1577-16798474873ce5666a-0": {
           "type": "image",
           "settings": {
-            "image": "{{ product.metafields.custom.yderligere_billede_2.value }}"
+            "image": "shopify:\/\/shop_images\/Kadaver_kaviar2885.jpg"
           }
         }
       },
