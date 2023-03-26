@@ -33,7 +33,7 @@
           "type": "read-more-item",
           "settings": {
             "title": "Sundhedsfaktorer",
-            "text": "<p>{{ product.metafields.metafields.sundhedsfaktorer | metafield_tag }}Kaviar anses generelt for at være sundt, da det er en kilde til højkvalitetsproteiner, som er vigtige byggesten i kroppen. Det er også rig på omega-3-fedtsyrer, som er gavnlige for hjertet og hjernen. Kaviar indeholder også vitaminer og mineraler, såsom A-vitamin, D-vitamin, jern og calcium<\/p>"
+            "text": "<p>Kaviar anses generelt for at være sundt, da det er en kilde til højkvalitetsproteiner, som er vigtige byggesten i kroppen. Det er også rig på omega-3-fedtsyrer, som er gavnlige for hjertet og hjernen. Kaviar indeholder også vitaminer og mineraler, såsom A-vitamin, D-vitamin, jern og calcium<\/p>"
           }
         }
       },
