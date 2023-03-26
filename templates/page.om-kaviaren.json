@@ -5,7 +5,9 @@
       "settings": {
         "sub_heading": "",
         "heading": "At levere den bedste kaviar fra det Caspiske Hav og værne om miljøet på samme vis.",
-        "desktop_image": "shopify:\/\/shop_images\/pexels-jayson-delos-santos-1139541.jpg"
+        "desktop_image": "shopify:\/\/shop_images\/pexels-jayson-delos-santos-1139541.jpg",
+        "height": "large",
+        "bg_visibility": 30
       }
     },
     "b87cfc16-2567-41dc-a31a-f4e12ed32ca2": {
@@ -65,11 +67,22 @@
       "settings": {
         "layout": "contained"
       }
+    },
+    "45bd9648-8269-4951-97ae-b5b912bfbda8": {
+      "type": "text",
+      "settings": {
+        "content": "<h2>Om vores kavaiar<\/h2><p>jeiofheoiuhfio ewhfoiw hioueh fiouhewfio hfiuwh foiehfuioe hfiowhfeiuowhf iowhfihheio hwu he hfiuow hfeiwofheiouw hh uihiugyug yfrtyg edt bb iug ty bv yu .<\/p>",
+        "text_color": "",
+        "text_position": "left",
+        "background_color": "",
+        "background_color_visiblity": 100
+      }
     }
   },
   "order": [
     "4494117e-534a-4204-bc70-922690c71a8b",
     "b87cfc16-2567-41dc-a31a-f4e12ed32ca2",
-    "21b99c6b-162e-4a56-a04f-7dbedee48eed"
+    "21b99c6b-162e-4a56-a04f-7dbedee48eed",
+    "45bd9648-8269-4951-97ae-b5b912bfbda8"
   ]
 }
