@@ -4,7 +4,8 @@
       "type": "hero-banner-page",
       "settings": {
         "sub_heading": "",
-        "heading": "At levere den bedste kaviar fra det Kaspiske Hav og værne om miljøet på samme vis.",
+        "heading": "",
+        "desktop_image": "shopify:\/\/shop_images\/Hjemmeside_header_2.jpg",
         "mobile_image": "shopify:\/\/shop_images\/Hjemmeside_header_2.jpg",
         "height": "large",
         "bg_visibility": 30
