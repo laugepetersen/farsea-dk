@@ -33,7 +33,7 @@
             </div>
         {%- endif -%}
         <div class="container w-full relative z-[1]">
-            <div class="content max-w-xl" style="text-align: {{ section.settings.text_position }}; color: {{ section.settings.text_color }}">
+            <div class="content max-w-xl mx-auto" style="text-align: {{ section.settings.text_position }}; color: {{ section.settings.text_color }}">
                 {{ section.settings.content }}
             </div>
         </div>
@@ -44,7 +44,7 @@
 {% schema %}
 {
   "name": "Text",
-  "class": "section-text",
+  "class": "section-text-image",
   "tag": "section",
   "settings": [
     {
