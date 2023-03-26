@@ -8,10 +8,10 @@
         "desktop_image": "shopify:\/\/shop_images\/Kadaver_kaviar2867.jpg",
         "mobile_image": "shopify:\/\/shop_images\/exampleimage.webp",
         "button_label_1": "Køb nu",
-        "button_link_1": "",
+        "button_link_1": "shopify:\/\/collections\/all",
         "button_target_1": false,
         "button_label_2": "Kaviar info",
-        "button_link_2": "",
+        "button_link_2": "shopify:\/\/pages\/om-kaviaren",
         "button_target_2": false,
         "height": "large",
         "bg_visibility": 45
