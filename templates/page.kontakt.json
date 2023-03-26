@@ -6,7 +6,7 @@
 
       ],
       "settings": {
-        "sub_heading": "Kontakt Os",
+        "sub_heading": "",
         "heading": "Har du spørgsmål?",
         "desktop_image": "shopify:\/\/shop_images\/Artboard_1.png",
         "mobile_image": "shopify:\/\/shop_images\/Artboard_1.png",
@@ -31,7 +31,7 @@
         "9575bd73-4d21-48dd-bf2d-df41e2146d6c": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/exampleimage.webp"
+            "image": "shopify:\/\/shop_images\/Caviar_med_ske_og_daase_9ec32599-8e72-4dbb-bc9c-2419dd2b8ca7.png"
           }
         }
       },
