@@ -15,6 +15,13 @@
             "text": "Gratis fragt fra 499,-"
           }
         },
+        "91aecd9f-db5a-4405-b6fa-2068b3c8dff2": {
+          "type": "read-more-item",
+          "settings": {
+            "title": "Specifikationer",
+            "text": "<ul><li>Rogn-størrelse fra 3.0-3.6mm.   <\/li><\/ul><p>                                                                               <\/p><ul><li>Smagen er cremet, let saltet med nuancer af smør og nødder.                                 <\/li><\/ul><p><\/p><ul><li>Støren er 16-25 år  ved høst<\/li><\/ul>"
+          }
+        },
         "c29e806d-51c4-4bad-9ca9-bbdddd52b86b": {
           "type": "read-more-item",
           "settings": {
@@ -35,22 +42,15 @@
             "title": "Sundhedsfaktorer",
             "text": "<p>Kaviar anses generelt for at være sundt, da det er en kilde til højkvalitetsproteiner, som er vigtige byggesten i kroppen. Det er også rig på omega-3-fedtsyrer, som er gavnlige for hjertet og hjernen. Kaviar indeholder også vitaminer og mineraler, såsom A-vitamin, D-vitamin, jern og calcium<\/p>"
           }
-        },
-        "91aecd9f-db5a-4405-b6fa-2068b3c8dff2": {
-          "type": "read-more-item",
-          "settings": {
-            "title": "Specifikationer",
-            "text": "<ul><li>Rogn-størrelse fra 3.0-3.6mm.   <\/li><\/ul><p>                                                                               <\/p><ul><li>Smagen er cremet, let saltet med nuancer af smør og nødder.                                 <\/li><\/ul><p><\/p><ul><li>Støren er 16-25 år  ved høst<\/li><\/ul>"
-          }
         }
       },
       "block_order": [
         "78bc9cd0-14c6-426b-a884-f667c62f3849",
         "873d5811-d138-45f8-8a46-5a4b33a71b1e",
+        "91aecd9f-db5a-4405-b6fa-2068b3c8dff2",
         "c29e806d-51c4-4bad-9ca9-bbdddd52b86b",
         "1d2d70cc-d80f-48b1-89db-8636b005f22d",
-        "05cdb1a8-2aef-469e-b625-2d5a55b665a6",
-        "91aecd9f-db5a-4405-b6fa-2068b3c8dff2"
+        "05cdb1a8-2aef-469e-b625-2d5a55b665a6"
       ],
       "settings": {
       }
@@ -62,9 +62,9 @@
           "type": "testimonial",
           "settings": {
             "rating": 5,
-            "quote": "jfiwojfwp jfj fjepiojfpewj fjfoiewj fpejw fijwej",
-            "name": "jioejfoewjf oejfo",
-            "below_name_text": "jiofj eoifjeifje ofj"
+            "quote": "Fantastisk kaviar! Top karakter.",
+            "name": "Morten Isaksen",
+            "below_name_text": ""
           }
         },
         "template--15756435456138__ec037995-7586-4943-b8b2-78f388cedf7c-1673628434951369c7-1": {
