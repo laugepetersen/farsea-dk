@@ -68,14 +68,25 @@
         "layout": "contained"
       }
     },
-    "45bd9648-8269-4951-97ae-b5b912bfbda8": {
+    "fd9ee606-7531-42ac-b723-c6eed9abd3ba": {
       "type": "text",
       "settings": {
-        "content": "<h2>Om vores kavaiar<\/h2><p>jeiofheoiuhfio ewhfoiw hioueh fiouhewfio hfiuwh foiehfuioe hfiowhfeiuowhf iowhfihheio hwu he hfiuow hfeiwofheiouw hh uihiugyug yfrtyg edt bb iug ty bv yu .<\/p>",
+        "content": "<h2>Et håndværk gennem årtier<\/h2><p>Iransk kaviar er kendt som verdens bedste, og det er <br\/>ikke svært at forstå hvorfor. Dens lyse mørkegrå farve og smeltende <br\/>konsistens efterlader en ekstraordinær subtil smag med smørlignende og <br\/>nøddeagtige undertoner, der vil tage din smagssans på en uforglemmelig <br\/>rejse. Men iransk kaviar er mere end blot en luksuriøs spise - det er en<br\/> kunstform i sig selv. Hver bøtte med disse små sorte perler <br\/>repræsenterer mindst 14 års arbejde, hvor eksperter kaldet \"khâviâr <br\/>sâzân\" har perfektioneret deres håndværk gennem 10 års erfaring for at <br\/>opnå denne titel. Så når du nyder en skefuld af denne ekstravagante <br\/>delikatesse, så ved du, at du ikke blot smager på den fineste kvalitet <br\/>kaviar, men også på århundreders viden og kunstnerisk håndværk. Det er <br\/>kunsten af iransk kaviar - en oplevelse, der vil få din smagssans til at<br\/> synge af glæde.<\/p>",
         "text_color": "",
         "text_position": "left",
         "background_color": "",
         "background_color_visiblity": 100
+      }
+    },
+    "45bd9648-8269-4951-97ae-b5b912bfbda8": {
+      "type": "text",
+      "settings": {
+        "content": "",
+        "text_color": "white",
+        "text_position": "left",
+        "background_color": "#110e2a",
+        "background_color_visiblity": 0,
+        "background_video": "shopify:\/\/files\/videos\/pexels-mar-fer-6899912.mp4"
       }
     }
   },
@@ -83,6 +94,7 @@
     "4494117e-534a-4204-bc70-922690c71a8b",
     "b87cfc16-2567-41dc-a31a-f4e12ed32ca2",
     "21b99c6b-162e-4a56-a04f-7dbedee48eed",
+    "fd9ee606-7531-42ac-b723-c6eed9abd3ba",
     "45bd9648-8269-4951-97ae-b5b912bfbda8"
   ]
 }
