@@ -110,7 +110,7 @@
         "template--17677362233612__2cae3ef0-844b-42c6-b4a4-16052d984ed0-16798474873ce5666a-0": {
           "type": "image",
           "settings": {
-            "image": "{{ product.metafields.custom.yderligere_billede_1.value }}"
+            "image": "shopify:\/\/shop_images\/Kadaver_kaviar2873_e1d9bdef-433e-43ee-b911-994d077b87bf.jpg"
           }
         },
         "template--17677362233612__2cae3ef0-844b-42c6-b4a4-16052d984ed0-16798474873ce5666a-1": {
