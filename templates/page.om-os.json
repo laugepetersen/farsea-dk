@@ -97,24 +97,12 @@
       "settings": {
         "layout": "contained"
       }
-    },
-    "c23405d1-265c-435a-a7c0-c34ccc58cc3c": {
-      "type": "text",
-      "settings": {
-        "content": "<p><br\/>Vi er stolte af at kunne tilbyde en kvalitet, som er uden sidestykke, og som kan konkurrere med kaviar fra selv de mest anerkendte producenter i verden. Vi vil gerne være med til at bevare denne helt unikke Beluga kaviar og har derfor valgt at donere 2% af overskuddet fra hver dåse kaviar til foreninger, der bekæmper plastikforurening i verdenshavene. Vores yngledam og opdrætningsfaciliteter drives med et avanceret filtersystem, som sikrer exceptionel vandkvalitet fra det kaspiske hav. Vi har intet vandspild, da det vand, der bliver brugt, kommer fra deres eget naturlige habitat<\/p>",
-        "text_color": "white",
-        "text_position": "center",
-        "background_color": "",
-        "background_color_visiblity": 100,
-        "background_image": "shopify:\/\/shop_images\/pexels-josh-sorenson-1054391_1.jpg"
-      }
     }
   },
   "order": [
     "4494117e-534a-4204-bc70-922690c71a8b",
     "b87cfc16-2567-41dc-a31a-f4e12ed32ca2",
     "21b99c6b-162e-4a56-a04f-7dbedee48eed",
-    "9d973829-36ff-4d58-957e-52e53ef0c9ee",
-    "c23405d1-265c-435a-a7c0-c34ccc58cc3c"
+    "9d973829-36ff-4d58-957e-52e53ef0c9ee"
   ]
 }
