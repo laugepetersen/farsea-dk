@@ -133,10 +133,9 @@
           "type": "testimonial",
           "settings": {
             "rating": 5,
-            "quote": "Jeg har købt kaviar her 3 eller 4 gange, og hver gang er det kommet på en ønskede dag og fint pakket og koldt.God kvalitet og rimelige priser.",
+            "quote": "Jeg har købt kaviar her 3 eller 4 gange, og hver gang er det kommet på en ønskede dag og fint pakket og koldt. God kvalitet og rimelige priser.",
             "name": "Tine Hansen",
-            "below_name_text": "Fra København S",
-            "profile": "shopify:\/\/shop_images\/exampleimage.webp"
+            "below_name_text": "Fra København S"
           }
         },
         "2fef9c06-f969-4307-8a4d-25945c9538f8": {
