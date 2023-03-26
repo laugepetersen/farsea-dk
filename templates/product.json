@@ -35,6 +35,12 @@
             "title": "Sundhedsfaktorer",
             "text": "<p>Kaviar anses generelt for at være sundt, da det er en kilde til højkvalitetsproteiner, som er vigtige byggesten i kroppen. Det er også rig på omega-3-fedtsyrer, som er gavnlige for hjertet og hjernen. Kaviar indeholder også vitaminer og mineraler, såsom A-vitamin, D-vitamin, jern og calcium<\/p>"
           }
+        },
+        "338c2591-8f3a-4705-96be-a22d71e7d8e9": {
+          "type": "key-point",
+          "settings": {
+            "text": "Rogn-størrelse fra 3.0-3.6mm.Smagen er cremet, let saltet med nuancer af smør og nødder.Støren er 16-25 år ved høst"
+          }
         }
       },
       "block_order": [
@@ -42,7 +48,8 @@
         "873d5811-d138-45f8-8a46-5a4b33a71b1e",
         "c29e806d-51c4-4bad-9ca9-bbdddd52b86b",
         "1d2d70cc-d80f-48b1-89db-8636b005f22d",
-        "05cdb1a8-2aef-469e-b625-2d5a55b665a6"
+        "05cdb1a8-2aef-469e-b625-2d5a55b665a6",
+        "338c2591-8f3a-4705-96be-a22d71e7d8e9"
       ],
       "settings": {
       }
