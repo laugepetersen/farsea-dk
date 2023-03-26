@@ -26,7 +26,7 @@
           "type": "read-more-item",
           "settings": {
             "title": "Allergener",
-            "text": "<p>{{ product.metafields.metafields.allegener | metafield_tag }}På basis af fisk<\/p>"
+            "text": "<p>På basis af fisk<\/p>"
           }
         },
         "05cdb1a8-2aef-469e-b625-2d5a55b665a6": {
