@@ -17,8 +17,9 @@
       <div class="product-media-swiper relative">
         <div class="swiper-wrapper">
           {%- for media in product.media -%}
-            <div class="swiper-slide">
-              {% render 'product-media', media: media %}
+            <div class="swiper-slide !h-auto">
+                <div class="select-none pointer-events-none absolute z-10 bottom-0 left-0 h-[15%] w-full bg-gradient-to-b from-transparent to-ocean-500 opacity-30"></div>
+              {% render 'product-media', media: media, wrapperClass: 'h-[100%]', mediaClass: 'h-[100%] object-cover' %}
             </div>
           {%- endfor -%}
         </div>

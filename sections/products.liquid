@@ -6,7 +6,7 @@
       {% when 'product-slide' %}
         {% assign i = i | plus: 1 %}
         {% assign product = block.settings.product %}
-        <div class="product max-sm:container max-sm:mb-5 max-sm:last-of-type:mb-0 md:flex md:h-screen relative">
+        <div class="product max-md:container max-sm:mb-5 max-sm:last-of-type:mb-0 md:flex md:h-screen relative">
           {% comment %} Start: Mobile Images {% endcomment %}
           <div class="product-image-mobile md:hidden mb-2">
             <a href="{{ product.url }}" class="pointer-events-auto h-0 pb-[100%] block relative overflow-hidden">
@@ -19,8 +19,8 @@
               <div class="md:max-w-[350px]">
                 <p class="text-ocean-500 opacity-100 mb-1">{% render 'price', product: product %}</p>
                 <h3 class="md:mt-2 md:mb-4">{{ product.title }}</h3>
-                <p class="">{{ block.settings.description }}</p>
-                <a href="{{ product.url }}" class="button primary w-full text-center mt-6 hidden md:block">Køb</a>
+                <p class="hidden md:block">{{ block.settings.description }}</p>
+                <a href="{{ product.url }}" class="button primary w-full text-center hidden md:mt-6 md:block">Køb</a>
               </div>
             </div>
           </div>

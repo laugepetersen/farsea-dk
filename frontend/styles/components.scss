@@ -31,7 +31,7 @@
 }
 
 .icon {
-  @apply w-6 h-6 inline-flex place-items-center;
+  @apply w-6 h-6 inline-flex place-items-center flex-shrink-0;
   svg {
     @apply block max-w-full max-h-full mx-auto;
   }
@@ -182,4 +182,9 @@
       white-space: nowrap;
     }
   }
+}
+
+.section-text-image {
+    .pos-center { margin-left: auto; margin-right: auto; }
+    .pos-right { margin-left: auto; margin-right: 0; }
 }

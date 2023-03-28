@@ -18,9 +18,20 @@
     </div>
   </div>
   <div class="absolute top-0 left-0 w-[100%] h-[100%] z-0">
-    <div class="bg-ocean-500 absolute top-0 left-0 w-[100%] h-[100%] z-10" style="opacity: {{ bgVisibility }}"></div>
+    <div class="bg-ocean-500 absolute top-0 left-0 w-full h-full z-20" style="opacity: {{ bgVisibility }}"></div>
+    {%- if section.settings.background_video -%}
+        <video 
+            muted 
+            autoplay 
+            playsinline 
+            loop 
+            src="{{ section.settings.background_video.sources[1].url }}"
+            class="image-bg z-10"
+        >
+        </video>
+    {%- endif -%}
     {%- if ss.desktop_image != nil -%}
-      {{ ss.desktop_image | image_url: width: 1024 | image_tag: preload: true, class: "hidden md:block image-bg z-0" }}
+      {{ ss.desktop_image | image_url: width: 2000 | image_tag: preload: true, class: "hidden md:block image-bg z-0" }}
     {%- endif -%}
     {%- if ss.mobile_image != nil -%}
       {{ ss.mobile_image | image_url: height: 1024 | image_tag: preload: true, class: "block md:hidden image-bg z-0" }}
@@ -64,6 +75,11 @@
       "label": "Background Image (Mobile)",
       "id": "mobile_image",
       "type": "image_picker"
+    },
+    {
+      "label": "Background Video",
+      "id": "background_video",
+      "type": "video"
     },
     {
       "type": "header",

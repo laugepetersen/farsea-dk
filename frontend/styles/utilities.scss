@@ -1,5 +1,5 @@
 .image-bg {
-  @apply w-[100%] h-[100%] object-cover;
+  @apply w-full h-full object-cover absolute top-0 left-0;
 }
 
 .py-section {

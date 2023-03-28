@@ -8,9 +8,9 @@
     {% for block in section.blocks %}
       {% case block.type %}
         {% when 'image' %}
-          <div class="relative h-[40vh] md:min-h-[500px] md:h-[80vh] max-sm:row-start-1">
+          <div class="relative max-md:h-0 max-md:pb-[100%] md:min-h-[500px] max-md:row-start-1">
             {% if block.settings.image %}
-              {{ block.settings.image | image_url: width: 900 | image_tag: class: 'object-cover absolute top-0 left-0 w-full h-full' }}
+              {{ block.settings.image | image_url: width: 1024 | image_tag: class: 'object-cover absolute top-0 left-0 w-full h-full' }}
             {% endif %}
           </div>
         {% when 'content' %}

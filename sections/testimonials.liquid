@@ -27,8 +27,10 @@
                     {{ block.settings.profile | image_url: width: 100 | image_tag: class: "rounded-full w-16 h-16 object-cover mr-3" }}
                   {% endif %}
                   <div>
-                    <p class="font-bold mb-[-4px]">{{ block.settings.name }}</p>
-                    <p class="text-sm">{{ block.settings.below_name_text }}</p>
+                    <p class="font-bold">{{ block.settings.name }}</p>
+                    {%- if block.settings.below_name != blank -%}
+                        <p class="text-sm -mt-1">{{ block.settings.below_name_text }}</p>
+                    {%- endif -%}
                   </div>
                 </div>
               </div>
