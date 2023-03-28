@@ -79,6 +79,17 @@
         "layout": "contained"
       }
     },
+    "753642d8-ec70-40ab-829a-2e6a1bb668a1": {
+      "type": "text",
+      "settings": {
+        "content": "",
+        "text_color": "",
+        "text_position": "center",
+        "background_color": "",
+        "background_color_visiblity": 100,
+        "background_video": "shopify:\/\/files\/videos\/pexels-long-truong-6154823.mp4"
+      }
+    },
     "2e148043-6719-4fc9-84de-818055ea5478": {
       "type": "text-image",
       "blocks": {
@@ -204,6 +215,7 @@
     "59a458a8-ca4c-4bcf-b31f-389726f93fd5",
     "a5bc0068-270a-4c37-b50a-616d124941f7",
     "71eb1a2b-e2fc-42c0-86a4-a794d4fd8afe",
+    "753642d8-ec70-40ab-829a-2e6a1bb668a1",
     "2e148043-6719-4fc9-84de-818055ea5478",
     "afda8a31-94c9-4953-8c09-c06640d9c20b",
     "0a4ef183-d026-4f9a-b44e-d2e758fc8d28"
