@@ -79,24 +79,12 @@
       "settings": {
         "layout": "contained"
       }
-    },
-    "45bd9648-8269-4951-97ae-b5b912bfbda8": {
-      "type": "text",
-      "settings": {
-        "content": "",
-        "text_color": "white",
-        "text_position": "left",
-        "background_color": "#110e2a",
-        "background_color_visiblity": 0,
-        "background_video": "shopify:\/\/files\/videos\/pexels-long-truong-6154823.mp4"
-      }
     }
   },
   "order": [
     "4494117e-534a-4204-bc70-922690c71a8b",
     "b87cfc16-2567-41dc-a31a-f4e12ed32ca2",
     "93c06612-2ed2-4c25-bcc6-9fac2e8c10b8",
-    "21b99c6b-162e-4a56-a04f-7dbedee48eed",
-    "45bd9648-8269-4951-97ae-b5b912bfbda8"
+    "21b99c6b-162e-4a56-a04f-7dbedee48eed"
   ]
 }
