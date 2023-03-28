@@ -29,6 +29,7 @@
         },
         "8cceddea-5a2a-47b3-8b66-dd5b953f63d8": {
           "type": "product-slide",
+          "disabled": true,
           "settings": {
             "product": "imperial-beluga",
             "description": "Far Sea Imperial Kaviar er kendt for at \"poppe\" i ganen, hvilket er en unik oplevelse, der gør det til en uforglemmelig smagsoplevelse."
