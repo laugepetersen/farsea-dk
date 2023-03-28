@@ -102,11 +102,11 @@
       "type": "text",
       "settings": {
         "content": "<p>Vi udbyder to slags Beluga kaviar, hvor kvaliteten og størrelsen på kaviaren er afgørende, da det både kan være sæsonpræget og forskelligt fra stør til stør. Vi vurderer kaviaren efter udtagningen for at sikre, at den opfylder vores kvalitetsstandarder for størrelse, fasthed, farve og smag. Når kaviaren er blevet nøje udvalgt, pakker vi den sikkert i de traditionelle kaviardåser, hvor den holder sig frisk og er lige til at spise.<\/p>",
-        "text_color": "white",
-        "text_position": "center",
+        "text_color": "",
+        "text_position": "left",
         "background_color": "",
-        "background_color_visiblity": 20,
-        "background_image": "shopify:\/\/shop_images\/Kadaver_kaviar2864.jpg"
+        "background_color_visiblity": 50,
+        "background_image": "shopify:\/\/shop_images\/Kadaver_kaviar2891_ff16b960-2240-4d6f-bac4-291485aa4b08.jpg"
       }
     }
   },
