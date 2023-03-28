@@ -35,11 +35,19 @@
             "product": "imperial-beluga",
             "description": "Far Sea Imperial Kaviar er kendt for at \"poppe\" i ganen, hvilket er en unik oplevelse, der gør det til en uforglemmelig smagsoplevelse."
           }
+        },
+        "c5232e2b-5c84-4da3-80b3-20df44fee02d": {
+          "type": "product-slide",
+          "settings": {
+            "product": "marmoraeske",
+            "description": ""
+          }
         }
       },
       "block_order": [
         "4cb89677-d3af-4a35-9ffd-f3e886766b8c",
-        "8cceddea-5a2a-47b3-8b66-dd5b953f63d8"
+        "8cceddea-5a2a-47b3-8b66-dd5b953f63d8",
+        "c5232e2b-5c84-4da3-80b3-20df44fee02d"
       ],
       "settings": {
       }
