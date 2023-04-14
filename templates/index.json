@@ -184,6 +184,15 @@
             "name": "Søren Hansen",
             "below_name_text": ""
           }
+        },
+        "f076a7ca-a6c4-4a3f-bb81-82b0246c3e83": {
+          "type": "testimonial",
+          "settings": {
+            "rating": 5,
+            "quote": "Jeg har netop modtaget min Beluga kaviar fra denne webshop, og jeg er simpelthen så imponeret over kvaliteten af produktet og den service, jeg modtog. Kaviaren selv var simpelthen sublim og smagte så frisk og luksuriøs. Jeg kan helt klart anbefale denne webshop til alle, der ønsker at forkæle sig selv eller en elsket med den fineste Beluga kaviar.",
+            "name": "Frederik Kristensen",
+            "below_name_text": ""
+          }
         }
       },
       "block_order": [
@@ -192,7 +201,8 @@
         "template--15707237089418__afda8a31-94c9-4953-8c09-c06640d9c20b-1668980055d8361d39-1",
         "template--15707237089418__afda8a31-94c9-4953-8c09-c06640d9c20b-1668980055d8361d39-2",
         "dbab5949-4aff-45ab-a5bb-55c80df21a35",
-        "template--15707237089418__afda8a31-94c9-4953-8c09-c06640d9c20b-1668980055d8361d39-0"
+        "template--15707237089418__afda8a31-94c9-4953-8c09-c06640d9c20b-1668980055d8361d39-0",
+        "f076a7ca-a6c4-4a3f-bb81-82b0246c3e83"
       ],
       "settings": {
         "heading": "Vores glade kunder",
