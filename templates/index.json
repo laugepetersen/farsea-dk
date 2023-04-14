@@ -166,13 +166,23 @@
             "name": "Mustafa Göz",
             "below_name_text": "Fra Ballerup"
           }
+        },
+        "dbab5949-4aff-45ab-a5bb-55c80df21a35": {
+          "type": "testimonial",
+          "settings": {
+            "rating": 5,
+            "quote": "Jeg har købt Beluga kaviar fra denne webshop flere gange, og jeg har aldrig været skuffet. Kvaliteten er altid i top, og smagen er uovertruffen. Jeg kan varmt anbefale denne webshop til alle, der er på udkig efter den bedste Beluga kaviar på markedet. Leveringen er også hurtig og pålidelig, og kundeservice er fantastisk.",
+            "name": "Noah S",
+            "below_name_text": "Fra Frederiksberg"
+          }
         }
       },
       "block_order": [
         "template--15707237089418__afda8a31-94c9-4953-8c09-c06640d9c20b-1668980055d8361d39-0",
         "template--15707237089418__afda8a31-94c9-4953-8c09-c06640d9c20b-1668980055d8361d39-1",
         "template--15707237089418__afda8a31-94c9-4953-8c09-c06640d9c20b-1668980055d8361d39-2",
-        "2fef9c06-f969-4307-8a4d-25945c9538f8"
+        "2fef9c06-f969-4307-8a4d-25945c9538f8",
+        "dbab5949-4aff-45ab-a5bb-55c80df21a35"
       ],
       "settings": {
         "heading": "Vores glade kunder",
