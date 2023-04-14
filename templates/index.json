@@ -131,6 +131,15 @@
     "afda8a31-94c9-4953-8c09-c06640d9c20b": {
       "type": "testimonials",
       "blocks": {
+        "9d32af9a-c084-4a04-ba41-6a99a5951f9f": {
+          "type": "testimonial",
+          "settings": {
+            "rating": 5,
+            "quote": "Jeg er simpelthen så imponeret over kvaliteten af Beluga kaviaren fra Far Sea! Den er virkelig en af de mest delikate og velsmagende kaviar jeg nogensinde har smagt. Det er tydeligt, at der er lagt stor omhu og passion i hvert eneste kaviarkorn. Jeg er også imponeret over virksomhedens bæredygtige tilgang og deres bidrag til at bekæmpe plastikforurening.",
+            "name": "Natali Gross",
+            "below_name_text": "Fra Charlottelund"
+          }
+        },
         "2fef9c06-f969-4307-8a4d-25945c9538f8": {
           "type": "testimonial",
           "settings": {
@@ -175,24 +184,15 @@
             "name": "Søren Hansen",
             "below_name_text": ""
           }
-        },
-        "9d32af9a-c084-4a04-ba41-6a99a5951f9f": {
-          "type": "testimonial",
-          "settings": {
-            "rating": 5,
-            "quote": "Jeg er simpelthen så imponeret over kvaliteten af Beluga kaviaren fra Far Sea! Den er virkelig en af de mest delikate og velsmagende kaviar jeg nogensinde har smagt. Det er tydeligt, at der er lagt stor omhu og passion i hvert eneste kaviarkorn. Jeg er også imponeret over virksomhedens bæredygtige tilgang og deres bidrag til at bekæmpe plastikforurening.",
-            "name": "Natali Gross",
-            "below_name_text": "Fra Charlottelund"
-          }
         }
       },
       "block_order": [
+        "9d32af9a-c084-4a04-ba41-6a99a5951f9f",
         "2fef9c06-f969-4307-8a4d-25945c9538f8",
         "template--15707237089418__afda8a31-94c9-4953-8c09-c06640d9c20b-1668980055d8361d39-1",
         "template--15707237089418__afda8a31-94c9-4953-8c09-c06640d9c20b-1668980055d8361d39-2",
         "dbab5949-4aff-45ab-a5bb-55c80df21a35",
-        "template--15707237089418__afda8a31-94c9-4953-8c09-c06640d9c20b-1668980055d8361d39-0",
-        "9d32af9a-c084-4a04-ba41-6a99a5951f9f"
+        "template--15707237089418__afda8a31-94c9-4953-8c09-c06640d9c20b-1668980055d8361d39-0"
       ],
       "settings": {
         "heading": "Vores glade kunder",
