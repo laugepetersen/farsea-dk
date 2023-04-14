@@ -131,13 +131,13 @@
     "afda8a31-94c9-4953-8c09-c06640d9c20b": {
       "type": "testimonials",
       "blocks": {
-        "template--15707237089418__afda8a31-94c9-4953-8c09-c06640d9c20b-1668980055d8361d39-0": {
+        "2fef9c06-f969-4307-8a4d-25945c9538f8": {
           "type": "testimonial",
           "settings": {
             "rating": 5,
-            "quote": "Jeg har flere gange bestilt caviar gennem siden og kvaliteten er rigtig fin. Det pakkes forsvarligt og sendes med is i termokasser.",
-            "name": "Søren Hansen",
-            "below_name_text": ""
+            "quote": "Meget fin indpakning i lille flamingokølekasse med køleelementer der stadig var frosne og iskolde dåser med caviar. Meget professionelhåndtering af min ordre hele vejen og jeg handler hos Far Sea når jeg skal bruge caviar igen.",
+            "name": "Mustafa Göz",
+            "below_name_text": "Fra Ballerup"
           }
         },
         "template--15707237089418__afda8a31-94c9-4953-8c09-c06640d9c20b-1668980055d8361d39-1": {
@@ -158,15 +158,6 @@
             "below_name_text": "Fra København S"
           }
         },
-        "2fef9c06-f969-4307-8a4d-25945c9538f8": {
-          "type": "testimonial",
-          "settings": {
-            "rating": 5,
-            "quote": "Meget fin indpakning i lille flamingokølekasse med køleelementer der stadig var frosne og iskolde dåser med caviar. Meget professionelhåndtering af min ordre hele vejen og jeg handler hos Far Sea når jeg skal bruge caviar igen.",
-            "name": "Mustafa Göz",
-            "below_name_text": "Fra Ballerup"
-          }
-        },
         "dbab5949-4aff-45ab-a5bb-55c80df21a35": {
           "type": "testimonial",
           "settings": {
@@ -174,6 +165,15 @@
             "quote": "Jeg har købt Beluga kaviar fra denne webshop flere gange, og jeg har aldrig været skuffet. Kvaliteten er altid i top, og smagen er uovertruffen. Jeg kan varmt anbefale denne webshop til alle, der er på udkig efter den bedste Beluga kaviar på markedet. Leveringen er også hurtig og pålidelig, og kundeservice er fantastisk.",
             "name": "Noah S",
             "below_name_text": "Fra Frederiksberg"
+          }
+        },
+        "template--15707237089418__afda8a31-94c9-4953-8c09-c06640d9c20b-1668980055d8361d39-0": {
+          "type": "testimonial",
+          "settings": {
+            "rating": 5,
+            "quote": "Jeg har flere gange bestilt caviar gennem siden og kvaliteten er rigtig fin. Det pakkes forsvarligt og sendes med is i termokasser.",
+            "name": "Søren Hansen",
+            "below_name_text": ""
           }
         },
         "9d32af9a-c084-4a04-ba41-6a99a5951f9f": {
@@ -187,11 +187,11 @@
         }
       },
       "block_order": [
-        "template--15707237089418__afda8a31-94c9-4953-8c09-c06640d9c20b-1668980055d8361d39-0",
+        "2fef9c06-f969-4307-8a4d-25945c9538f8",
         "template--15707237089418__afda8a31-94c9-4953-8c09-c06640d9c20b-1668980055d8361d39-1",
         "template--15707237089418__afda8a31-94c9-4953-8c09-c06640d9c20b-1668980055d8361d39-2",
-        "2fef9c06-f969-4307-8a4d-25945c9538f8",
         "dbab5949-4aff-45ab-a5bb-55c80df21a35",
+        "template--15707237089418__afda8a31-94c9-4953-8c09-c06640d9c20b-1668980055d8361d39-0",
         "9d32af9a-c084-4a04-ba41-6a99a5951f9f"
       ],
       "settings": {
