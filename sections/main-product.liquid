@@ -2,13 +2,27 @@
   <div class="grid relative lg:grid-cols-[6fr_4fr] lg:gap-x-16 lg:items-start">
 
     <div class="media desktop hidden lg:block">
-      {% render 'product-media', media: product.featured_media %}
+      <a 
+        class="product-media-swiper__item" href="{{ product.featured_media | image_url }}"
+        data-pswp-width="{{ product.featured_media.width }}" 
+        data-pswp-height="{{ product.featured_media.height }}" 
+        target="_blank"
+      >
+        {% render 'product-media', media: product.featured_media %}
+      </a>
       <div class="grid grid-cols-2 gap-2 mt-2">
         {% for media in product.media %}
           {%- if media == product.featured_media -%}
             {%- continue -%}
           {%- endif -%}
-          {% render 'product-media', media: media %}
+          <a 
+            class="product-media-swiper__item" href="{{ media | image_url }}"
+            data-pswp-width="{{ media.width }}" 
+            data-pswp-height="{{ media.height }}" 
+            target="_blank"
+          >
+            {% render 'product-media', media: media %}
+          </a>
         {% endfor %}
       </div>
     </div>
@@ -19,7 +33,14 @@
           {%- for media in product.media -%}
             <div class="swiper-slide !h-auto">
                 <div class="select-none pointer-events-none absolute z-10 bottom-0 left-0 h-[15%] w-full bg-gradient-to-b from-transparent to-ocean-500 opacity-30"></div>
-              {% render 'product-media', media: media, wrapperClass: 'h-[100%]', mediaClass: 'h-[100%] object-cover' %}
+                <a 
+                  class="product-media-swiper__item" href="{{ media | image_url }}"
+                  data-pswp-width="{{ media.width }}" 
+                  data-pswp-height="{{ media.height }}" 
+                  target="_blank"
+                >
+                  {% render 'product-media', media: media, wrapperClass: 'h-[100%]', mediaClass: 'h-[100%] object-cover' %}
+                </a>
             </div>
           {%- endfor -%}
         </div>

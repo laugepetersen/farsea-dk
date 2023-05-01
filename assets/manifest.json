@@ -15,21 +15,21 @@
     "file": "WorkSans-SemiBold.8c625572.woff2",
     "src": "frontend/fonts/WorkSans-SemiBold.woff2"
   },
-  "frontend/fonts/Parisienne-Regular.woff2": {
-    "file": "Parisienne-Regular.f788ce7d.woff2",
-    "src": "frontend/fonts/Parisienne-Regular.woff2"
-  },
   "frontend/fonts/WorkSans-MediumItalic.woff2": {
     "file": "WorkSans-MediumItalic.462ae944.woff2",
     "src": "frontend/fonts/WorkSans-MediumItalic.woff2"
+  },
+  "frontend/fonts/WorkSans-SemiBoldItalic.woff2": {
+    "file": "WorkSans-SemiBoldItalic.e12498e3.woff2",
+    "src": "frontend/fonts/WorkSans-SemiBoldItalic.woff2"
   },
   "frontend/fonts/WorkSans-Italic.woff2": {
     "file": "WorkSans-Italic.d3a46107.woff2",
     "src": "frontend/fonts/WorkSans-Italic.woff2"
   },
-  "frontend/fonts/WorkSans-SemiBoldItalic.woff2": {
-    "file": "WorkSans-SemiBoldItalic.e12498e3.woff2",
-    "src": "frontend/fonts/WorkSans-SemiBoldItalic.woff2"
+  "frontend/fonts/Parisienne-Regular.woff2": {
+    "file": "Parisienne-Regular.f788ce7d.woff2",
+    "src": "frontend/fonts/Parisienne-Regular.woff2"
   },
   "frontend/fonts/NoeDisplay-Regular.woff": {
     "file": "NoeDisplay-Regular.c44c9ec8.woff",
@@ -47,26 +47,41 @@
     "file": "WorkSans-SemiBold.b5db2462.woff",
     "src": "frontend/fonts/WorkSans-SemiBold.woff"
   },
-  "frontend/fonts/Parisienne-Regular.woff": {
-    "file": "Parisienne-Regular.a43e860e.woff",
-    "src": "frontend/fonts/Parisienne-Regular.woff"
-  },
   "frontend/fonts/WorkSans-MediumItalic.woff": {
     "file": "WorkSans-MediumItalic.fd325cca.woff",
     "src": "frontend/fonts/WorkSans-MediumItalic.woff"
-  },
-  "frontend/fonts/WorkSans-Italic.woff": {
-    "file": "WorkSans-Italic.4040639b.woff",
-    "src": "frontend/fonts/WorkSans-Italic.woff"
   },
   "frontend/fonts/WorkSans-SemiBoldItalic.woff": {
     "file": "WorkSans-SemiBoldItalic.1b15bd5a.woff",
     "src": "frontend/fonts/WorkSans-SemiBoldItalic.woff"
   },
+  "frontend/fonts/WorkSans-Italic.woff": {
+    "file": "WorkSans-Italic.4040639b.woff",
+    "src": "frontend/fonts/WorkSans-Italic.woff"
+  },
+  "frontend/fonts/Parisienne-Regular.woff": {
+    "file": "Parisienne-Regular.a43e860e.woff",
+    "src": "frontend/fonts/Parisienne-Regular.woff"
+  },
   "frontend/entrypoints/theme.js": {
-    "file": "theme.3500cc9e.js",
+    "file": "theme.241e8b78.js",
     "src": "frontend/entrypoints/theme.js",
-    "isEntry": true
+    "isEntry": true,
+    "dynamicImports": [
+      "node_modules/photoswipe/dist/photoswipe.esm.js"
+    ],
+    "css": [
+      "theme.6f214b75.css"
+    ]
+  },
+  "node_modules/photoswipe/dist/photoswipe.esm.js": {
+    "file": "photoswipe.esm.0b084a4b.js",
+    "src": "node_modules/photoswipe/dist/photoswipe.esm.js",
+    "isDynamicEntry": true
+  },
+  "frontend/entrypoints/theme.css": {
+    "file": "theme.6f214b75.css",
+    "src": "frontend/entrypoints/theme.css"
   },
   "frontend/entrypoints/theme.scss": {
     "file": "theme.e86834df.css",

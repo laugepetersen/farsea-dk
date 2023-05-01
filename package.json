@@ -33,6 +33,7 @@
   },
   "dependencies": {
     "gsap": "^3.11.3",
+    "photoswipe": "^5.3.7",
     "swiper": "^8.4.4"
   }
 }

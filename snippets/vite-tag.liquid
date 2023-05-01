@@ -4,7 +4,8 @@
 {% endcomment %}
 {% assign path = vite-tag | replace: '~/', '../' | replace: '@/', '../' %}
 {% if path == "theme.js" %}
-  <script src="{{ 'theme.3500cc9e.js' | asset_url }}" type="module" crossorigin="anonymous"></script>
+  <script src="{{ 'theme.241e8b78.js' | asset_url }}" type="module" crossorigin="anonymous"></script>
+  {{ 'theme.6f214b75.css' | asset_url | stylesheet_tag }}
 {% elsif path == "theme.scss" %}
   {{ 'theme.e86834df.css' | asset_url | stylesheet_tag }}
 {% endif %}

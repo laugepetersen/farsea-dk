@@ -1,4 +1,4 @@
-import { defineConfig } from 'vite'
+import { defineConfig } from "vite";
 import viteShopify from "vite-plugin-shopify";
 
 export default defineConfig({
@@ -15,7 +15,7 @@ export default defineConfig({
       // Front-end entry points directory
       entrypointsDir: "frontend/entrypoints",
       // Additional files to use as entry points (accepts an array of file paths or glob patterns)
-      additionalEntrypoints: []
-    })
-  ]
+      additionalEntrypoints: [],
+    }),
+  ],
 });
