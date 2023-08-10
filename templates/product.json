@@ -56,6 +56,13 @@
             "title": "Hvordan opbevares Caviar?",
             "text": "<p>Straks ved modtagelse af din kaviar fra Far Sea, anbefaler vi, at du placerer den i den koldeste del af dit køleskab, typisk bagerst, hvor temperaturen ligger mellem 0-4°C. Denne temperatur er ideel for at bevare kaviarens friskhed og smag. For at sikre den bedste kvalitet, bør du undgå at åbne dåsen indtil det ønskede tidspunkt for servering. Du kan finde udløbsdatoen for kaviaren under dåsen - opbevaring i uåbnet tilstand vil sikre produktets holdbarhed indtil denne dato.<\/p>"
           }
+        },
+        "d40b603d-4b83-43bd-bd4b-64cb9d0d158f": {
+          "type": "read-more-item",
+          "settings": {
+            "title": "Leveringtid",
+            "text": "<p>For bestillinger afgivet på vores webshop, leverer vi inden for 1-2 hverdage. Bemærk, at standardlevering ikke omfatter weekender. Skulle du ønske en endnu hurtigere levering, tilbyder vi ekspreslevering inden for 1 dag – dette gælder alle ugens dage. Vælg den leveringsmulighed, der passer bedst til dine behov, og nyd vores udsøgte kaviar hurtigst muligt.<\/p>"
+          }
         }
       },
       "block_order": [
@@ -66,7 +73,8 @@
         "1d2d70cc-d80f-48b1-89db-8636b005f22d",
         "05cdb1a8-2aef-469e-b625-2d5a55b665a6",
         "e6557aa7-68fd-4beb-8486-90cc8ff215af",
-        "da24a5e4-bc5c-4015-99c5-e25db0c87e77"
+        "da24a5e4-bc5c-4015-99c5-e25db0c87e77",
+        "d40b603d-4b83-43bd-bd4b-64cb9d0d158f"
       ],
       "settings": {
       }
