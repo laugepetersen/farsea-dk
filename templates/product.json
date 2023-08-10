@@ -167,7 +167,7 @@
         "template--17677362233612__0fa26897-498e-47fc-9c57-7bcabddc1577-16798474873ce5666a-0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Kadaver_kaviar2885.jpg"
+            "image": "shopify:\/\/shop_images\/Caviar_med_ske_og_daase_9ec32599-8e72-4dbb-bc9c-2419dd2b8ca7.png"
           }
         }
       },
@@ -176,7 +176,7 @@
         "template--17677362233612__0fa26897-498e-47fc-9c57-7bcabddc1577-16798474873ce5666a-0"
       ],
       "settings": {
-        "layout": "contained"
+        "layout": "full-width"
       }
     }
   },
