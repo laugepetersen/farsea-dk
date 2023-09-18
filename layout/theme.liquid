@@ -34,7 +34,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     {% render 'meta' %}
 
     {{ content_for_header }}
-  </head>
+  
+        <!-- SlideRule Script Start -->
+        {% include 'sliderule-data' %}
+        <!-- SlideRule Script End -->
+        </head>
 
   <body class="template-{{ template.name }} [&.no-scroll]:overflow-y-hidden overflow-x-hidden">
     {% section 'pre-header' %}
