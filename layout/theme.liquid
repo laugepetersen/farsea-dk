@@ -1,11 +1,35 @@
-{% comment %} 
+{% comment %}
   Follow practices shown at Dawn Theme
-  See more: https://github.com/Shopify/dawn/blob/main/layout/theme.liquid 
+  See more: https://github.com/Shopify/dawn/blob/main/layout/theme.liquid
 {% endcomment %}
 
 <!doctype html>
 <html class="no-js" lang="dk">
   <head>
+
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-T776X82D');</script>
+<!-- End Google Tag Manager -->
+
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T776X82D"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0DEBVT7WS6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0DEBVT7WS6');
+</script>
+    
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -25,9 +49,13 @@
     {% endif %}
 
     {% render 'meta' %}
-    
+
     {{ content_for_header }}
-  </head>
+  
+        <!-- SlideRule Script Start -->
+        {% include 'sliderule-data' %}
+        <!-- SlideRule Script End -->
+        </head>
 
   <body class="template-{{ template.name }} [&.no-scroll]:overflow-y-hidden overflow-x-hidden">
     {% section 'pre-header' %}
@@ -38,6 +66,5 @@
     </main>
 
     {% section 'footer' %}
-    
   </body>
 </html>
