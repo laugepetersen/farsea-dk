@@ -19,13 +19,7 @@
           "pre-header-0": {
             "type": "title",
             "settings": {
-              "title": "<strong>Fremragende<\/strong> på TrustPilot"
-            }
-          },
-          "pre-header-1": {
-            "type": "title",
-            "settings": {
-              "title": "<strong>Fri fragt<\/strong> fra 600 kr."
+              "title": "<strong>Ægte<\/strong> Iransk Kaviar"
             }
           },
           "pre-header-2": {
@@ -33,12 +27,18 @@
             "settings": {
               "title": "<strong>1-3 dages<\/strong> levering"
             }
+          },
+          "ed8df387-53a3-4487-a216-76fcc072f0c4": {
+            "type": "title",
+            "settings": {
+              "title": "<strong>Gratis<\/strong> caviar ske medfølger"
+            }
           }
         },
         "block_order": [
           "pre-header-0",
-          "pre-header-1",
-          "pre-header-2"
+          "pre-header-2",
+          "ed8df387-53a3-4487-a216-76fcc072f0c4"
         ],
         "settings": {
           "background": "#fcf9e7",
