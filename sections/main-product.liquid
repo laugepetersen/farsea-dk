@@ -52,7 +52,7 @@
       {% render 'breadcrumbs' %}
       <h1 class="h2 m-0">{{ product.title }}</h1>
 
-      <p class="text-[18px] mt-2 mb-6 md:mt-4 md:mb-8">{% render 'price', product %}</p>
+      <p class="text-[18px] mt-2 mb-6 md:mt-4 md:mb-8">{% render 'price' %}</p>
 
       <div class="text-[15px] mb-8 md:mb-10">
         <div class="short-desc">
@@ -168,3 +168,13 @@
   ]
 }
 {% endschema %}
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{% render 'price', product %}"
+  to: "{% render 'price' %}"
+  position: 2246..2266
+{% endcomment %}
